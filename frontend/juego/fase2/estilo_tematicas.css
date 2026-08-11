@@ -1,0 +1,262 @@
+:root{
+  --bg: #000712 url('../../compartido/recursos/imagenes/fondo_bienvenida.png') center/cover no-repeat fixed;
+  --card:#081A2D;
+  --text:#E6EEF8;
+  --muted:#AAB7C8;
+  --primary:#00C8FF;
+  --accent:#FF7A1A;
+  --radius:28px;
+  --shadow:0 18px 40px rgba(0,0,0,.6);
+  --fs-title: clamp(24px, 3.8vw, 38px);
+  --fs-sub: clamp(14px, 2vw, 17px);
+  --card-soft:   #0F2942;     
+  --card-soft-2: #123558;     
+  --card-border: rgba(0, 200, 255, 0.35);
+  --card-glow:   rgba(0, 200, 255, 0.20);
+}
+
+/* RESET */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* BASE */
+body {
+  padding: clamp(12px, 4vw, 24px);
+  background: var(--bg);
+  color: var(--text);
+  font-family:
+  "Poppins",
+  "Segoe UI Emoji",
+  "Apple Color Emoji",
+  "Noto Color Emoji",
+  system-ui,
+  sans-serif;
+}
+
+/* CONTENEDOR */
+.selector-container {
+  width: min(100%, 1100px);
+  margin: clamp(12px, 4vw, 32px) auto;
+  background: var(--card);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  padding: clamp(20px, 3vw, 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* HEADER */
+.header h1 {
+  font-size: var(--fs-title);
+  color: var(--accent);
+  font-weight: 800;
+  text-align: center;
+}
+.subtitle {
+  font-size: var(--fs-sub);
+  color: var(--muted);
+  text-align: center;
+}
+
+/* -------------------------------------------------
+   CARRUSEL
+-------------------------------------------------- */
+.themes-carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.themes-track {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  width: 100%;
+  padding: 8px 4px;
+}
+
+.themes-track::-webkit-scrollbar {
+  display: none;
+}
+
+/* ==== FLECHAS DEL CARRUSEL ==== */
+.carousel-btn {
+  background: rgba(0, 10, 25, 0.55);
+  color: #E6EEF8;
+  border: 1.5px solid rgba(255,255,255,0.12);
+  border-radius: 999px;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 
+    background .18s ease, 
+    transform .18s ease, 
+    box-shadow .18s ease,
+    border-color .18s ease;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.55);
+}
+.carousel-btn:hover {
+  background: rgba(0, 200, 255, 0.18);
+  border-color: rgba(0,200,255,0.55);
+  box-shadow: 0 0 14px rgba(0,200,255,0.45);
+  transform: translateY(-2px) scale(1.06);
+}
+@media (max-width: 640px) {
+  .carousel-btn { display: none; }
+}
+
+/* -------------------------------------------------
+   CARD FUTURISTA
+-------------------------------------------------- */
+.theme-card {
+  scroll-snap-align: center;
+  flex: 0 0 340px;
+  max-width: 340px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: radial-gradient(circle at 20% 0%, var(--card-soft-2), var(--card-soft));
+  border: 1.5px solid var(--card-border);
+  border-radius: 20px;
+  box-shadow:
+    0 12px 26px rgba(0,0,0,.75),
+    0 0 18px var(--card-glow);
+
+  overflow: hidden;
+  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+}
+
+.theme-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 16px 32px rgba(0,0,0,.85),
+    0 0 22px rgba(0,200,255,0.35);
+}
+
+.theme-card.selected {
+  border-color: #00FFD1;
+  box-shadow:
+    0 18px 36px rgba(0,0,0,.9),
+    0 0 26px rgba(0,255,209,0.7);
+}
+
+/* IMAGEN */
+.thumb {
+  aspect-ratio: 16 / 9;
+  background: #041423;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.thumb img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+/* CONTENIDO */
+.content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.content .title {
+  font-size: clamp(18px, 2.4vw, 22px);
+  font-weight: 800;
+  color: #E6EEF8;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  color: #E6EEF8;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.emoji {
+  font-family:
+    "Segoe UI Emoji",
+    "Apple Color Emoji",
+    "Noto Color Emoji",
+    sans-serif;
+  font-size: 14px;
+}
+
+.texto {
+  font-family: "Poppins", system-ui;
+}
+
+.desc {
+  color: var(--muted);
+  font-size: clamp(13px, 1.8vw, 15px);
+  line-height: 1.45;
+}
+
+/* BOTONES EN LAS CARDS */
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 16px 16px 16px;
+}
+
+.btn {
+  appearance: none;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn.select {
+  background: #0E253D;
+  color: #E6EEF8;
+}
+
+.theme-card.selected .btn.select {
+  background: var(--primary);
+  color: #000C18;
+  box-shadow: 0 0 14px rgba(0,200,255,0.7);
+}
+
+/* -------------------------------------------------
+   BOTÓN FINAL
+-------------------------------------------------- */
+.footer-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+}
+
+.btn.primary {
+  width: min(90%, 360px);
+  background: var(--primary);
+  color: #081A2D;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+}
+.btn.primary:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}

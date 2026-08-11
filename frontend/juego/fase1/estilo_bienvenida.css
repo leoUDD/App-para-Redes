@@ -1,0 +1,448 @@
+/* ============================================================
+   Misión Emprende UDD — estilo_bienvenida.css — FULL RESPONSIVE
+   ============================================================ */
+
+:root {
+  --text:         #E6EEF8;
+  --primary:      #00C8FF;
+  --accent:       #FF7A1A;
+  --radius:       28px;
+  --shadow:       0 18px 40px rgba(0,0,0,.6);
+  --frame-offset: clamp(8px, 2vw, 24px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; }
+img, video { max-width: 100%; display: block; }
+a { text-decoration: none; }
+
+body {
+  background:
+    url('../../compartido/recursos/imagenes/fondo_bienvenida.png') center / cover no-repeat fixed,
+    #000712;
+  color: var(--text);
+  font-family: "Poppins", system-ui, sans-serif;
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(var(--frame-offset) + 8px);
+}
+
+/* ============================================================
+   SCREEN WRAPPER
+   ============================================================ */
+.screen-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeUp 0.6s ease both;
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================================================
+   CARD (.phone)
+   ============================================================ */
+.phone {
+  position: relative;
+  container-type: inline-size;
+  container-name: phone;
+
+  width:  min(820px,
+              calc((100dvh - (var(--frame-offset) * 2) - 16px) * 0.808),
+              calc(100vw - (var(--frame-offset) * 2) - 16px));
+
+  height: min(calc(100dvh - (var(--frame-offset) * 2) - 16px),
+              calc(min(820px,
+                       calc((100dvh - (var(--frame-offset) * 2) - 16px) * 0.808),
+                       calc(100vw - (var(--frame-offset) * 2) - 16px)) * 1.237));
+
+  background-image: url('../../compartido/recursos/imagenes/mision_emprende_phone_bg.gif');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  border-radius: var(--radius);
+  box-shadow:
+    var(--shadow),
+    0 0 0 1px rgba(0,200,255,0.15),
+    0 0 30px rgba(0,200,255,0.12);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: clamp(10px, 4%, 36px);
+}
+
+.gif-spacer { display: none; }
+
+/* ============================================================
+   MARCO SVG — dentro del .phone
+   ============================================================ */
+.screen-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 20;
+  overflow: visible;
+  border-radius: var(--radius);
+}
+
+/* ============================================================
+   LOGO — absoluto arriba
+   ============================================================ */
+.logo-top {
+  position: absolute;
+  top: clamp(8px, 3.5%, 26px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(100px, 38cqw, 260px);
+  z-index: 2;
+  animation: fadeDown 0.6s ease both;
+}
+
+.logo-top img {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.15));
+}
+
+/* ============================================================
+   VIDEO + BOTÓN
+   ============================================================ */
+.video-overlay {
+  position: relative;
+  z-index: 1;
+  width: 88%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(6px, 2cqw, 16px);
+  animation: fadeUp 0.6s ease 0.2s both;
+}
+
+.video-instruccion {
+  margin: 0;
+  font-family: 'Share Tech Mono', monospace, system-ui;
+  font-size: clamp(13px, 3.5cqw, 22px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-align: center;
+  text-shadow: 0 0 14px rgba(255,122,26,0.7);
+  animation: instruccionPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes instruccionPulse {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0.6; }
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  border: 2px solid rgba(0,200,255,0.4);
+  box-shadow:
+    0 0 0 1px rgba(0,200,255,0.08),
+    0 0 22px rgba(0,200,255,0.18),
+    0 14px 32px rgba(0,0,0,.7);
+  background: #000;
+}
+
+.video {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #000;
+}
+
+/* ============================================================
+   AVISO DE SONIDO
+   ============================================================ */
+.sound-alert {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  padding: clamp(5px, 1cqw, 8px) clamp(10px, 2cqw, 14px);
+  background: rgba(8, 6, 2, 0.85);
+  border-bottom: 1.5px solid var(--primary);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: clamp(9px, 2cqw, 12px);
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  color: var(--primary);
+  text-align: center;
+  text-transform: uppercase;
+  animation: soundPulse 2s ease-in-out infinite;
+}
+
+@keyframes soundPulse {
+  0%,100% { opacity: 1; }
+  50%      { opacity: 0.55; }
+}
+
+/* ============================================================
+   BOTÓN
+   ============================================================ */
+.btn-iniciar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6em;
+  width: 90%;
+  max-width: 340px;
+  padding: clamp(10px, 2cqw, 16px) clamp(14px, 3cqw, 28px);
+
+  background: linear-gradient(135deg, #005f7a 0%, #003d52 100%);
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: clamp(11px, 2.6cqw, 17px);
+  letter-spacing: 0.15em;
+  border-radius: 10px;
+
+  box-shadow: 0 0 18px rgba(0,200,255,0.5), inset 0 0 14px rgba(0,200,255,0.06);
+  animation: pulse 2.2s ease-in-out infinite;
+  transition: transform .2s ease, box-shadow .2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-iniciar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgba(0,200,255,0.1) 50%, transparent 70%);
+  animation: shine 2.8s linear infinite;
+}
+
+.btn-icon { font-size: 0.9em; }
+
+.btn-iniciar:hover {
+  transform: translateY(-3px);
+  animation-play-state: paused;
+  box-shadow: 0 0 32px rgba(0,200,255,0.85), inset 0 0 20px rgba(0,200,255,0.1);
+}
+
+.btn-iniciar.btn-locked {
+  opacity: 0.3;
+  filter: grayscale(0.6);
+  cursor: not-allowed;
+  animation: none;
+  box-shadow: none;
+}
+
+.btn-iniciar.btn-locked::before { animation: none; }
+
+.btn-iniciar.btn-locked:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+/* ============================================================
+   ANIMACIONES
+   ============================================================ */
+@keyframes fadeDown {
+  from { opacity:0; transform:translateX(-50%) translateY(-12px); }
+  to   { opacity:1; transform:translateX(-50%) translateY(0); }
+}
+@keyframes fadeUp {
+  from { opacity:0; transform:translateY(14px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+@keyframes pulse {
+  0%,100% { box-shadow: 0 0 18px rgba(0,200,255,.5), inset 0 0 14px rgba(0,200,255,.06); }
+  50%     { box-shadow: 0 0 30px rgba(0,200,255,.88), inset 0 0 18px rgba(0,200,255,.10); }
+}
+@keyframes shine {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+/* ============================================================
+   FALLBACK sin container queries
+   ============================================================ */
+@supports not (width: 1cqw) {
+  .logo-top          { width: clamp(100px, 32vw, 240px); }
+  .btn-iniciar       { font-size: clamp(11px, 1.7vw, 17px); }
+  .video-instruccion { font-size: clamp(13px, 2vw, 22px); }
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 480px) {
+  :root { --frame-offset: 4px; }
+
+  body {
+    overflow: hidden;
+    padding: 8px;
+    align-items: center;
+    height: 100dvh;
+    min-height: unset;
+  }
+
+  .screen-wrapper {
+    height: 100%;
+    align-items: center;
+  }
+
+  .phone {
+    width: calc(100vw - 8px);
+    height: auto !important;
+    max-height: calc(100dvh - 16px) !important;
+    border-radius: 16px;
+    padding-bottom: clamp(10px, 3%, 18px);
+    justify-content: flex-start !important;
+    background-image: none !important;
+    background-color: #000c1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .gif-spacer {
+    display: block !important;
+    position: relative !important;
+    flex-shrink: 0;
+    pointer-events: none;
+    user-select: none;
+    opacity: 1;
+    /* El JS controla el alto exacto */
+  }
+
+  .logo-top {
+    width: clamp(90px, 35cqw, 140px);
+    top: clamp(4px, 1.5%, 10px);
+  }
+
+  .video-overlay {
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+    width: 90%;
+    gap: 8px;
+    animation: none;
+    opacity: 1;
+    margin: 0 auto;
+    /* Subir el video con margen negativo para tapar espacio vacío */
+    margin-top: -50%;
+  }
+
+  .video-instruccion { font-size: clamp(12px, 4vw, 16px); }
+
+  .btn-iniciar {
+    font-size: clamp(12px, 3.8vw, 15px);
+    padding: 10px 14px;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+/* ── Móvil pequeño (alto < 700px) ── */
+@media (max-height: 700px) and (max-width: 480px) {
+  .logo-top          { width: clamp(80px, 30cqw, 120px); }
+  .video-instruccion { font-size: clamp(11px, 3.5vw, 14px); }
+  .video-overlay     { gap: 4px; }
+  .btn-iniciar       { padding: 9px 12px; }
+}
+
+/* ── Móvil muy pequeño (alto < 600px) ── */
+@media (max-height: 600px) and (max-width: 480px) {
+  .video-instruccion { display: none; }
+  .btn-iniciar       { font-size: clamp(10px, 3vw, 13px); padding: 8px 12px; }
+}
+
+/* ── Landscape móvil (alto < 500px) ── */
+@media (max-height: 500px) and (orientation: landscape) {
+  :root { --frame-offset: 4px; }
+
+  body {
+    overflow: hidden;
+    padding: calc(var(--frame-offset) + 8px);
+    align-items: center;
+    height: 100dvh;
+    min-height: unset;
+  }
+
+  .screen-wrapper {
+    height: 100%;
+    align-items: center;
+  }
+
+  .phone {
+    width:  min(calc(100dvh * 0.808), calc(100vw - 8px)) !important;
+    height: calc(100dvh - 8px) !important;
+    background-image: url('../../compartido/recursos/imagenes/mision_emprende_phone_bg.gif') !important;
+    background-size: 100% 100% !important;
+    background-color: transparent !important;
+    justify-content: flex-end !important;
+    padding-bottom: 10px;
+  }
+
+  .gif-spacer        { display: none !important; }
+  .logo-top          { width: clamp(70px, 22cqw, 130px); top: 6px; }
+  .video-instruccion { display: none; }
+
+  .video-overlay {
+    width: 85%;
+    gap: 6px;
+    position: relative !important;
+    bottom: auto !important;
+    left: auto !important;
+    transform: none !important;
+  }
+
+  .btn-iniciar { font-size: clamp(10px, 2.4vw, 14px); padding: 8px 16px; }
+}
+
+/* ── Tablet portrait (481px – 768px) ── */
+@media (min-width: 481px) and (max-width: 768px) {
+  :root { --frame-offset: 12px; }
+
+  .phone {
+    width:  min(560px, calc(100vw - 24px));
+    height: min(calc(100dvh - 24px), calc(min(560px, calc(100vw - 24px)) * 1.237));
+  }
+
+  .logo-top    { width: clamp(120px, 36cqw, 220px); }
+  .btn-iniciar { font-size: clamp(12px, 2.2vw, 16px); }
+}
+
+/* ── Desktop grande (≥ 1200px) ── */
+@media (min-width: 1200px) {
+  .phone {
+    width:  min(760px, calc((100dvh - 48px) * 0.808));
+    height: min(calc(100dvh - 48px), calc(min(760px, calc((100dvh - 48px) * 0.808)) * 1.237));
+  }
+}
+
+@media (max-height: 600px) and (min-width: 481px) {
+  :root { --frame-offset: 8px; }
+  .logo-top          { width: clamp(80px, 26cqw, 160px); }
+  .video-instruccion { display: none; }
+}
+
+@media (max-width: 400px) {
+  :root { --frame-offset: 4px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-iniciar, .btn-iniciar::before,
+  .logo-top, .video-overlay,
+  .video-instruccion { animation: none; opacity: 1; }
+  .logo-top { transform: translateX(-50%); }
+}

@@ -1,0 +1,28 @@
+# Dependencias
+node_modules/
+
+# Artefactos de construccion y despliegue (AWS SAM)
+.aws-sam/
+.verificacion/
+sam-installation/
+
+# Variables de entorno
+.env
+.env.*
+env.local.json
+
+# Reportes de pruebas
+coverage/
+
+# Editores
+.vscode/
+.idea/
+.cursorignore
+.cursorindexingignore
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Datos locales heredados del backend anterior (no versionar)
+db.sqlite3

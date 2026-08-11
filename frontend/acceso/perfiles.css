@@ -1,0 +1,499 @@
+/* ============================================================
+   Misión Emprende UDD — estilo_perfiles.css  RESPONSIVE
+   ============================================================ */
+
+:root {
+  --card:        #081A2D;
+  --text:        #E6EEF8;
+  --primary:     #00C8FF;
+  --accent:      #FF7A1A;
+  --glow-cyan:   0 0 22px rgba(0, 200, 255, .75);
+  --glow-orange: 0 0 22px rgba(255, 122, 26, .75);
+  --glow-purple: 0 0 22px rgba(160, 100, 255, .75);
+  --radius:      28px;
+  --shadow:      0 18px 40px rgba(0, 0, 0, .6);
+  --frame-offset: clamp(12px, 2vw, 24px);
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; }
+img { max-width: 100%; display: block; }
+a   { text-decoration: none; }
+
+body {
+  background:
+    url('../compartido/recursos/imagenes/fondo_bienvenida.webp') center / cover no-repeat fixed,
+    #000712;
+  color: var(--text);
+  font-family: "Poppins", system-ui, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(var(--frame-offset) + 8px);
+}
+
+/* ============================================================
+   MODAL DE CONTRASEÑA
+   ============================================================ */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 500;
+  background: rgba(0,7,18,0.85);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease;
+}
+
+.modal-overlay.visible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-box {
+  width: min(360px, 88vw);
+  background: rgba(4, 16, 34, 0.97);
+  border: 1.5px solid rgba(0,200,255,0.4);
+  border-radius: 18px;
+  padding: clamp(24px, 4vw, 36px);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow:
+    0 0 40px rgba(0,200,255,0.15),
+    0 24px 48px rgba(0,0,0,0.6);
+  animation: modalIn .3s ease both;
+}
+
+@keyframes modalIn {
+  from { transform: translateY(16px) scale(0.97); opacity: 0; }
+  to   { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.modal-icon { font-size: 32px; }
+
+.modal-title {
+  margin: 0;
+  font-family: 'Share Tech Mono', monospace, system-ui;
+  font-size: clamp(14px, 3vw, 18px);
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--primary);
+  text-shadow: 0 0 12px rgba(0,200,255,0.5);
+}
+
+.modal-sub {
+  margin: 0;
+  font-size: 12px;
+  color: rgba(200,220,255,0.55);
+  letter-spacing: 0.06em;
+}
+
+.modal-input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 12px 16px;
+  background: rgba(0,200,255,0.05);
+  border: 1.5px solid rgba(0,200,255,0.3);
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: monospace;
+  letter-spacing: 0.2em;
+  color: var(--text);
+  text-align: center;
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.modal-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0,200,255,0.12);
+}
+
+.modal-error {
+  display: none;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #fca5a5;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-btn {
+  flex: 1;
+  padding: 11px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  font-family: 'Share Tech Mono', monospace, system-ui;
+  transition: transform .15s, box-shadow .15s;
+}
+
+.modal-btn--cancel {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: rgba(255,255,255,0.5);
+}
+
+.modal-btn--cancel:hover {
+  border-color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.8);
+}
+
+.modal-btn--confirm {
+  background: linear-gradient(135deg, #005f7a, #003d52);
+  border: 1.5px solid var(--primary);
+  color: var(--primary);
+  box-shadow: 0 0 14px rgba(0,200,255,0.3);
+}
+
+.modal-btn--confirm:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 22px rgba(0,200,255,0.6);
+}
+
+/* ============================================================
+   BOTÓN DE SONIDO — esquina inferior derecha
+   ============================================================ */
+.btn-sound {
+  position: absolute;
+  top: clamp(10px, 3%, 18px);
+  left: clamp(10px, 3%, 18px);
+  z-index: 10;
+  width: clamp(38px, 6cqw, 52px);
+  height: clamp(38px, 6cqw, 52px);
+  border-radius: 50%;
+  border: 2px solid rgba(0,200,255,0.9);
+  background: rgba(0, 20, 45, 0.9);
+  color: var(--primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow:
+    0 0 16px rgba(0,200,255,0.5),
+    inset 0 0 10px rgba(0,200,255,0.1);
+  transition: color .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.btn-sound:hover {
+  color: var(--primary);
+  border-color: rgba(0,200,255,1);
+  box-shadow: 0 0 24px rgba(0,200,255,0.7);
+}
+
+.btn-sound.active {
+  color: var(--primary);
+  border-color: var(--primary);
+  box-shadow: 0 0 20px rgba(0,200,255,0.7);
+  animation: soundPulse 2s ease-in-out infinite;
+}
+
+.btn-sound svg { width: 100%; height: 100%; }
+
+@keyframes soundPulse {
+  0%, 100% { box-shadow: 0 0 16px rgba(0,200,255,0.5); }
+  50%       { box-shadow: 0 0 30px rgba(0,200,255,1); }
+}
+
+/* ============================================================
+   SCREEN WRAPPER
+   ============================================================ */
+.screen-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeUp 0.6s ease both;
+  padding: var(--frame-offset);
+}
+
+.screen-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 20;
+  overflow: visible;
+}
+
+/* ============================================================
+   CARD (.phone)
+   ============================================================ */
+.phone {
+  position: relative;
+  container-type: inline-size;
+  container-name: phone;
+
+  width:  min(820px,
+              calc((100vh - (var(--frame-offset) * 2) - 16px) * 0.808),
+              calc(100vw - (var(--frame-offset) * 2) - 16px));
+
+  height: min(calc(100vh - (var(--frame-offset) * 2) - 16px),
+              calc(min(820px,
+                       calc((100vh - (var(--frame-offset) * 2) - 16px) * 0.808),
+                       calc(100vw - (var(--frame-offset) * 2) - 16px)) * 1.237));
+
+  /* GIF de fondo — sin animación encima para no interferir */
+background-image: url('../compartido/recursos/imagenes/mision_emprende_1536x1900_flicker.gif');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+
+  border-radius: var(--radius);
+  box-shadow:
+    var(--shadow),
+    0 0 0 1px rgba(0,200,255,0.15),
+    0 0 30px rgba(0,200,255,0.12);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: clamp(12px, 4%, 30px);
+  padding-bottom: clamp(18px, 5%, 44px);
+}
+
+/* ============================================================
+   LOGO SUPERIOR
+   ============================================================ */
+.logo-top {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5cqw;
+  animation: fadeDown 0.6s ease both;
+  width: clamp(140px, 52cqw, 380px);
+}
+
+.logo-top img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  filter: drop-shadow(0 0 12px rgba(255,255,255,0.2));
+}
+
+.logo-divider {
+  width: 70%;
+  height: 1px;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(0,200,255,0.7) 30%,
+    rgba(255,122,26,0.7) 70%,
+    transparent);
+  border-radius: 999px;
+}
+
+.logo-sub {
+  margin: 0;
+  font-size: clamp(11px, 2.8cqw, 17px);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(230, 238, 248, 0.9);
+  text-align: center;
+  text-shadow: 0 0 12px rgba(0,200,255,0.4);
+}
+
+/* ============================================================
+   PERFILES
+   ============================================================ */
+.perfiles {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4cqw;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6cqw;
+  flex: 0 0 auto;
+  animation: fadeUp 0.6s ease both;
+}
+
+.perfil:nth-child(1) { animation-delay: 0.1s; }
+.perfil:nth-child(2) { animation-delay: 0.2s; }
+.perfil:nth-child(3) { animation-delay: 0.3s; }
+
+.perfil > a {
+  position: relative;
+  width:  24cqw;
+  height: 24cqw;
+  max-width:  190px;
+  max-height: 190px;
+  min-width:  60px;
+  min-height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: clamp(2px, 0.5cqw, 6px) solid rgba(255,255,255,0.85);
+  background: var(--card);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.perfil > a img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform .3s ease;
+}
+
+.perfil--alumno  > a:hover { border-color: var(--primary); box-shadow: var(--glow-cyan),   0 12px 28px rgba(0,0,0,.6); transform: translateY(-8px) scale(1.05); }
+.perfil--profesor > a:hover { border-color: var(--accent);  box-shadow: var(--glow-orange), 0 12px 28px rgba(0,0,0,.6); transform: translateY(-8px) scale(1.05); }
+.perfil--admin   > a:hover { border-color: #a064ff;         box-shadow: var(--glow-purple), 0 12px 28px rgba(0,0,0,.6); transform: translateY(-8px) scale(1.05); }
+.perfil > a:hover img { transform: scale(1.08); }
+
+.perfil-texto {
+  margin: 0;
+  font-size: clamp(10px, 2.8cqw, 17px);
+  font-weight: 700;
+  color: var(--text);
+  white-space: nowrap;
+  text-shadow: 0 2px 10px rgba(0,0,0,.9);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.16);
+  border-radius: 999px;
+  padding: 0.3em 1em;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: background .3s ease, border-color .3s ease;
+}
+
+.perfil--alumno:hover   .perfil-texto { background: rgba(0,200,255,0.15);   border-color: rgba(0,200,255,0.4); }
+.perfil--profesor:hover .perfil-texto { background: rgba(255,122,26,0.15);  border-color: rgba(255,122,26,0.4); }
+.perfil--admin:hover    .perfil-texto { background: rgba(160,100,255,0.15); border-color: rgba(160,100,255,0.4); }
+
+/* Tooltip acceso restringido — candado siempre visible */
+.acceso-restringido {
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  width: clamp(20px, 3.5cqw, 28px);
+  height: clamp(20px, 3.5cqw, 28px);
+  border-radius: 50%;
+  background: rgba(0, 7, 18, 0.88);
+  border: 1.5px solid rgba(252,165,165,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5);
+  transition: all .25s ease;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.lock-icon {
+  width: clamp(10px, 1.8cqw, 14px);
+  height: clamp(10px, 1.8cqw, 14px);
+  flex-shrink: 0;
+}
+
+.acceso-texto {
+  display: none;
+  font-size: clamp(8px, 1.3cqw, 10px);
+  font-weight: 700;
+  color: #fca5a5;
+  letter-spacing: 0.05em;
+  margin-left: 4px;
+}
+
+.restringido:hover .acceso-restringido {
+  bottom: 50%;
+  right: 50%;
+  transform: translate(50%, 50%);
+  width: auto;
+  height: auto;
+  border-radius: 999px;
+  padding: 5px 10px;
+  gap: 4px;
+}
+
+.restringido:hover .acceso-texto { display: inline; }
+.restringido { cursor: not-allowed; }
+
+/* ============================================================
+   ANIMACIONES
+   ============================================================ */
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   FALLBACK sin container queries
+   ============================================================ */
+@supports not (width: 1cqw) {
+  .logo-top     { width: clamp(140px, 42vw, 360px); }
+  .logo-sub     { font-size: clamp(9px, 1.1vw, 13px); }
+  .perfil > a   { width: clamp(64px, 14vw, 160px); height: clamp(64px, 14vw, 160px); }
+  .perfil-texto { font-size: clamp(11px, 1.5vw, 17px); }
+  .perfiles     { gap: clamp(12px, 4vw, 56px); }
+  .perfil       { gap: clamp(6px, 1.2vh, 14px); }
+}
+
+/* ============================================================
+   BREAKPOINTS
+   ============================================================ */
+@media (max-height: 600px) {
+  :root { --frame-offset: 8px; }
+  .phone { padding-top: 8px; padding-bottom: 8px; }
+  .logo-sub { display: none; }
+  .perfil > a { min-width: 48px; min-height: 48px; }
+}
+
+@media (max-width: 400px) {
+  :root { --frame-offset: 8px; }
+  .perfil > a { min-width: 52px; min-height: 52px; }
+  .perfiles   { gap: 3cqw; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .perfil > a, .perfil > a img, .logo-top { transition: none; animation: none; }
+}

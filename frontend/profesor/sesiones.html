@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Misión Emprende UDD — Mis sesiones</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="sesiones.css">
+</head>
+
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <h2 class="sidebar-title">
+          Dashboard Profesor
+        </h2>
+      </div>
+
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="crear-sesion.html">Crear sesión</a></li>
+          <li>
+            <a class="active" href="sesiones.html">
+              Ver sesiones
+            </a>
+          </li>
+          <li class="sidebar-separator"></li>
+          <li>
+            <a href="#" class="back-link" id="cerrarProfesor">
+              ⟵ Cambiar de perfil
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <a
+        href="crear-sesion.html"
+        class="btn-primary btn-floating"
+      >
+        + Crear sesión
+      </a>
+
+      <h1 class="title">Mis sesiones</h1>
+
+      <p class="subtitle">
+        Revisa tus sesiones creadas y entra al panel de control.
+      </p>
+
+      <div id="mensaje" class="mensaje"></div>
+
+      <div
+        id="contenedorTabla"
+        class="contenedor-tabla"
+        hidden
+      >
+        <table class="table-sesiones">
+          <thead>
+            <tr>
+              <th>Sesión</th>
+              <th>Fecha</th>
+              <th>Grupos</th>
+              <th>Alumnos</th>
+              <th>Fase</th>
+              <th>Control</th>
+            </tr>
+          </thead>
+
+          <tbody id="tablaSesiones"></tbody>
+        </table>
+      </div>
+
+      <div id="estadoVacio" class="empty-state" hidden>
+        No has creado ninguna sesión todavía.<br>
+        Presiona <strong>“Crear sesión”</strong> para comenzar.
+      </div>
+    </main>
+  </div>
+
+  <script src="../compartido/js/api.js"></script>
+  <script src="comun.js"></script>
+  <script src="sesiones.js"></script>
+</body>
+</html>

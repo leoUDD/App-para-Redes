@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Misión Emprende UDD — Registro</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Poppins:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="registro.css">
+</head>
+
+<body>
+  <!-- Partículas de fondo originales -->
+  <div class="particles" aria-hidden="true">
+    <div class="particle"></div><div class="particle"></div>
+    <div class="particle"></div><div class="particle"></div>
+    <div class="particle"></div><div class="particle"></div>
+  </div>
+
+  <main class="terminal-device">
+    <!-- Marco original del dispositivo -->
+    <svg
+      class="device-frame"
+      viewBox="0 0 420 760"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      aria-hidden="true"
+    >
+      <path
+        d="M36 0 L384 0 L420 36 L420 724 L384 760 L36 760 L0 724 L0 36 Z"
+        fill="url(#bodyGrad)"
+        stroke="url(#borderGrad)"
+        stroke-width="1.5"
+      />
+      <path d="M0 150 L24 150 L24 170 L48 170" stroke="#00C8FF" stroke-width="0.8" opacity="0.25"/>
+      <path d="M0 200 L18 200" stroke="#00C8FF" stroke-width="0.8" opacity="0.2"/>
+      <path d="M0 250 L30 250 L30 270 L44 270" stroke="#00C8FF" stroke-width="0.8" opacity="0.15"/>
+      <path d="M420 380 L396 380 L396 400 L372 400" stroke="#FF7A1A" stroke-width="0.8" opacity="0.25"/>
+      <path d="M420 430 L402 430" stroke="#FF7A1A" stroke-width="0.8" opacity="0.2"/>
+      <rect x="-3" y="200" width="6" height="50" rx="2" fill="#0a1628" stroke="#1e3a56" stroke-width="1"/>
+      <rect x="-3" y="262" width="6" height="50" rx="2" fill="#0a1628" stroke="#1e3a56" stroke-width="1"/>
+      <rect x="417" y="240" width="6" height="70" rx="2" fill="#0a1628" stroke="#00C8FF" stroke-width="0.8" opacity="0.6"/>
+
+      <defs>
+        <linearGradient id="bodyGrad" x1="0" y1="0" x2="420" y2="760" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#0d1f38"/>
+          <stop offset="50%" stop-color="#060f1e"/>
+          <stop offset="100%" stop-color="#040c18"/>
+        </linearGradient>
+        <linearGradient id="borderGrad" x1="0" y1="0" x2="420" y2="760" gradientUnits="userSpaceOnUse">
+          <stop offset="0%" stop-color="#00C8FF" stop-opacity="0.7"/>
+          <stop offset="50%" stop-color="#1e3a56" stop-opacity="0.4"/>
+          <stop offset="100%" stop-color="#FF7A1A" stop-opacity="0.5"/>
+        </linearGradient>
+      </defs>
+    </svg>
+
+    <div class="device-screen">
+      <div class="screen-header">
+        <span class="screen-id">RECLUTA</span>
+        <div class="screen-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <span class="screen-signal">▲▲▲</span>
+      </div>
+
+      <div class="screen-content">
+        <div class="logo-top">
+          <img
+            src="../compartido/recursos/imagenes/logo_mision.webp"
+            alt="Misión Emprende"
+          >
+        </div>
+
+        <h1>UNIRSE AL<br>ESCUADRÓN</h1>
+
+        <div class="status-row">
+          <span class="status-dot"></span>
+          <span class="status-label">RECLUTAMIENTO ACTIVO</span>
+        </div>
+
+        <!-- Reemplaza el bloque condicional de error de Django -->
+        <div class="popup" id="popup_error" hidden>
+          <p id="popup_error_texto"></p>
+          <button
+            class="close-btn"
+            type="button"
+            id="cerrar_popup"
+            aria-label="Cerrar mensaje"
+          >✕</button>
+        </div>
+
+        <form id="form-registro" novalidate>
+          <label for="id_grupo">▸ CÓDIGO DE ESCUADRÓN</label>
+          <div class="input-wrap">
+            <input
+              type="text"
+              id="id_grupo"
+              name="id_grupo"
+              placeholder="_ _ _ _ _ _"
+              autocomplete="off"
+              autocapitalize="characters"
+              maxlength="8"
+              required
+            >
+            <div class="input-corner tl"></div>
+            <div class="input-corner br"></div>
+          </div>
+
+          <label for="nombre_grupo">▸ NOMBRE DEL ESCUADRÓN</label>
+          <div class="input-wrap">
+            <input
+              type="text"
+              id="nombre_grupo"
+              name="nombre_grupo"
+              placeholder="ESCRIBE EL NOMBRE DE TU EQUIPO"
+              autocomplete="off"
+              maxlength="100"
+            >
+            <div class="input-corner tl"></div>
+            <div class="input-corner br"></div>
+          </div>
+
+          <button type="button" class="btn-random-name" id="btnNombreAleatorio">
+            <span class="btn-random-icon">✦</span>
+            <span> NOMBRE ALEATORIO</span>
+          </button>
+
+          <button type="submit" class="btn-submit" id="botonContinuar">
+            CONTINUAR <span class="btn-arrow">▶▶</span>
+          </button>
+        </form>
+      </div>
+
+      <div class="screen-footer">
+        <div class="footer-logo">
+          <img
+            src="../compartido/recursos/imagenes/edem_udd_logo.webp"
+            alt="EdEm UDD"
+          >
+        </div>
+        <div class="footer-bar"></div>
+      </div>
+    </div>
+  </main>
+
+  <audio id="bg-music" loop>
+    <source
+      src="../compartido/recursos/sonidos/musica_registro.mp3"
+      type="audio/mpeg"
+    >
+  </audio>
+
+  <script src="../compartido/js/api.js"></script>
+  <script src="registro.js"></script>
+</body>
+</html>

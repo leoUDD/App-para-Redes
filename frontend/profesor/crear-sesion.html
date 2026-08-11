@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Misión Emprende UDD — Crear Sesión</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="crear-sesion.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <h2 class="sidebar-title">
+          Dashboard Profesor
+        </h2>
+      </div>
+
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a class="active" href="crear-sesion.html">
+              Crear sesión
+            </a>
+          </li>
+          <li><a href="sesiones.html">Ver sesiones</a></li>
+          <li class="sidebar-separator"></li>
+          <li>
+            <a href="#" class="back-link" id="cerrarProfesor">
+              ⟵ Cambiar de perfil
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <div id="mensaje" class="mensaje"></div>
+
+      <h1 class="title">Crear sesión</h1>
+
+      <p class="subtitle">
+        Carga el Excel, revisa la distribución automática
+        y luego crea la sesión.
+      </p>
+
+      <form id="formCrearSesion" class="form-card">
+        <div class="field">
+          <label for="nombreSesion">
+            Nombre de la sesión *
+          </label>
+
+          <input
+            id="nombreSesion"
+            type="text"
+            required
+          >
+        </div>
+
+        <div class="field">
+          <label for="correoProfesor">
+            Correo del profesor *
+          </label>
+
+          <input
+            id="correoProfesor"
+            type="email"
+            required
+          >
+        </div>
+
+        <div class="field">
+          <label for="facultad">
+            Facultad *
+          </label>
+
+          <select id="facultad" required>
+            <option value="">Seleccione una facultad</option>
+            <option>Arquitectura y Arte</option>
+            <option>Ciencias de la Salud</option>
+            <option>Comunicaciones</option>
+            <option>Derecho</option>
+            <option>Diseño</option>
+            <option>Economía y Negocios</option>
+            <option>Educación</option>
+            <option>Gobierno</option>
+            <option>Ingeniería</option>
+            <option>
+              Medicina Clínica Alemana Universidad del Desarrollo
+            </option>
+            <option>Psicología</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <span class="field-title">
+            Archivo Excel *
+          </span>
+
+          <div class="file-box">
+            <label
+              class="file-button"
+              for="archivoExcel"
+            >
+              Elegir archivo
+            </label>
+
+            <input
+              id="archivoExcel"
+              type="file"
+              accept=".xlsx,.xls,.csv"
+              required
+            >
+
+            <span id="nombreArchivo">
+              Ningún archivo seleccionado
+            </span>
+          </div>
+
+          <p class="hint">
+            Columnas: Correo, RUT, Nombre, Apellido Paterno,
+            Apellido Materno, Carrera.
+          </p>
+        </div>
+
+        <div class="field">
+          <span class="field-title">
+            Forma de creación *
+          </span>
+
+          <div class="option-box">
+            <label class="option-card">
+              <input
+                type="radio"
+                name="modoCreacion"
+                value="recomendado"
+                checked
+              >
+
+              <strong>Grupos recomendados</strong>
+
+              <span>
+                Una sola sesión con grupos automáticos.
+              </span>
+            </label>
+
+            <label class="option-card">
+              <input
+                type="radio"
+                name="modoCreacion"
+                value="dividir_dos"
+              >
+
+              <strong>Dividir sala en 2</strong>
+
+              <span>
+                Dos sesiones independientes con alumnos repartidos.
+              </span>
+            </label>
+
+            <label class="option-card">
+              <input
+                type="radio"
+                name="modoCreacion"
+                value="personalizado"
+              >
+
+              <strong>Personalizada</strong>
+
+              <span>
+                Define cuántas sesiones y grupos quieres.
+              </span>
+            </label>
+          </div>
+
+          <div
+            id="personalizado"
+            class="personalizado-grid"
+          >
+            <div class="field">
+              <label for="cantidadSesiones">
+                Cantidad de sesiones *
+              </label>
+
+              <input
+                id="cantidadSesiones"
+                type="number"
+                min="1"
+                max="10"
+                value="1"
+              >
+            </div>
+
+            <div class="field">
+              <label for="gruposPorSesion">
+                Grupos por sesión *
+              </label>
+
+              <input
+                id="gruposPorSesion"
+                type="number"
+                min="1"
+                max="30"
+                value="1"
+              >
+            </div>
+          </div>
+        </div>
+
+        <section
+          id="previewCard"
+          class="preview-card"
+        >
+          <h2>Previsualización</h2>
+          <div id="previewContenido"></div>
+        </section>
+
+        <div class="actions">
+          <a class="btn-secondary" href="sesiones.html">
+            Ver sesiones
+          </a>
+
+          <button
+            id="botonCrear"
+            class="btn-primary"
+            type="submit"
+          >
+            Crear sesión
+          </button>
+        </div>
+      </form>
+
+      <section
+        id="codesCard"
+        class="codes-card"
+      >
+        <h2>Códigos para unirse</h2>
+
+        <p class="hint">
+          Entrega estos códigos a cada grupo para que
+          ingresen a su sesión.
+        </p>
+
+        <div id="sesionesCreadas"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="../compartido/js/api.js"></script>
+  <script src="comun.js"></script>
+  <script src="crear-sesion.js"></script>
+</body>
+</html>

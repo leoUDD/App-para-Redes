@@ -1,0 +1,13 @@
+services:
+  dynamodb-local:
+    image: amazon/dynamodb-local:latest
+    container_name: mision-dynamodb-local
+    command: "-jar DynamoDBLocal.jar -sharedDb -inMemory"
+    ports:
+      - "8000:8000"
+    networks:
+      - mision-serverless
+
+networks:
+  mision-serverless:
+    name: mision-serverless

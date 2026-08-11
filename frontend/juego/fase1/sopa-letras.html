@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Misión Emprende UDD — Sopa de Letras</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo_sopadeletras.css">
+  <link rel="stylesheet" href="fase1-serverless.css">
+</head>
+<body class="sopa-serverless">
+  <main class="sopa-shell">
+    <header class="sopa-header">
+      <div>
+        <div class="sopa-kicker">MISIÓN DE RASTREO</div>
+        <h1 class="sopa-title">Sopa de Letras</h1>
+        <p class="sopa-help">Encuentra las palabras ocultas relacionadas con el emprendimiento.</p>
+      </div>
+
+      <div class="sopa-stats">
+        <div class="sopa-stat">
+          <strong id="tiempoSopa">01:00</strong>
+          <span>Tiempo restante</span>
+        </div>
+        <div class="sopa-stat">
+          <strong id="tokensSopa">0</strong>
+          <span>Tokens</span>
+        </div>
+      </div>
+    </header>
+
+    <div class="sopa-layout">
+      <section class="sopa-panel">
+        <div id="sopaGrid" class="sopa-grid" aria-label="Sopa de letras"></div>
+      </section>
+
+      <aside class="sopa-panel">
+        <h2>Palabras a encontrar</h2>
+        <p class="sopa-help">Arrastra desde la primera letra hasta la última. También puedes seleccionar al revés.</p>
+        <div id="listaPalabras" class="sopa-word-list"></div>
+        <div id="resultadoSopa" class="sopa-result"></div>
+      </aside>
+    </div>
+  </main>
+
+  <script src="../../compartido/js/api.js"></script>
+  <script src="../compartido.js"></script>
+  <script src="sopa-letras.js"></script>
+</body>
+</html>

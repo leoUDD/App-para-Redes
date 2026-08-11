@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Misión Emprende UDD — Ranking parcial</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo_ranking.css">
+  <link rel="stylesheet" href="fase1-serverless.css">
+  <link rel="stylesheet" href="../fase2/fase2-serverless.css">
+</head>
+<body class="ranking-serverless">
+  <main class="ranking-shell">
+    <header class="ranking-head">
+      <div class="kicker">CLASIFICACIÓN OFICIAL</div>
+      <h1>Ranking parcial</h1>
+      <p>Así van los equipos después de la primera misión.</p>
+    </header>
+
+    <section id="rankingLista" class="ranking-list" aria-live="polite"></section>
+
+    
+    <section class="serverless-f2-ready" style="margin-top:22px">
+      <button id="btnContinuarFase2" class="serverless-f2-button" type="button">
+        CONTINUAR A EMPATÍA
+      </button>
+      <div id="progresoInicioFase2" class="serverless-f2-progress">0/0 grupos listos</div>
+    </section>
+
+    <footer class="ranking-footer">
+      Fase 1 completada. El siguiente bloque será Empatía.
+    </footer>
+  </main>
+
+  <script src="../../compartido/js/api.js"></script>
+  <script src="../compartido.js"></script>
+  <script src="ranking.js"></script>
+
+  <script src="../fase2/fase2-comun.js"></script>
+  <script src="../fase2/iniciar-desde-ranking.js"></script>
+</body>
+</html>

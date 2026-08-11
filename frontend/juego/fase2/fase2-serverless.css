@@ -1,0 +1,276 @@
+:root {
+  --f2-cyan: #00c8ff;
+  --f2-orange: #ff7a1a;
+  --f2-panel: rgba(5, 20, 40, .93);
+  --f2-text: #e6eef8;
+  --f2-muted: #9fb0c6;
+}
+
+.serverless-f2-error {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  z-index: 9999;
+  transform: translateX(-50%);
+}
+
+.serverless-f2-ready {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.serverless-f2-button,
+.f2-primary-button {
+  min-width: 220px;
+  padding: 13px 24px;
+  color: #00141d;
+  background: linear-gradient(135deg, #00c8ff, #68edff);
+  border: 0;
+  border-radius: 999px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, .45);
+  font: 800 14px/1 "Poppins", sans-serif;
+  cursor: pointer;
+  transition: transform .18s ease, opacity .18s ease;
+}
+
+.serverless-f2-button:hover,
+.f2-primary-button:hover { transform: translateY(-2px); }
+.serverless-f2-button:disabled,
+.f2-primary-button:disabled { opacity: .55; cursor: wait; }
+
+.serverless-f2-progress {
+  color: #74eaff;
+  font: 700 13px/1.4 "Poppins", sans-serif;
+}
+
+.f2-page {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--f2-text);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(0,200,255,.17), transparent 40%),
+    url("../../compartido/recursos/imagenes/fondo_bienvenida.webp") center/cover fixed,
+    #000712;
+  font-family: "Poppins", sans-serif;
+}
+
+.f2-shell {
+  width: min(1180px, calc(100vw - 30px));
+  margin: 0 auto;
+  padding: 24px 0 40px;
+}
+
+.f2-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  background: var(--f2-panel);
+  border: 1px solid rgba(0,200,255,.25);
+  border-radius: 18px;
+  box-shadow: 0 16px 38px rgba(0,0,0,.36);
+}
+
+.f2-kicker {
+  color: var(--f2-cyan);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.f2-title {
+  margin: 2px 0 0;
+  font-size: clamp(28px, 4vw, 52px);
+  line-height: 1;
+}
+
+.f2-timer {
+  min-width: 126px;
+  padding: 9px 14px;
+  color: #8ff2ff;
+  text-align: center;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(0,200,255,.25);
+  border-radius: 14px;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.f2-panel {
+  padding: clamp(18px, 3vw, 30px);
+  background: var(--f2-panel);
+  border: 1px solid rgba(0,200,255,.22);
+  border-radius: 24px;
+  box-shadow: 0 20px 46px rgba(0,0,0,.42);
+}
+
+.f2-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.f2-card {
+  position: relative;
+  overflow: hidden;
+  min-height: 360px;
+  background: rgba(8, 26, 48, .96);
+  border: 1px solid rgba(255,255,255,.12);
+  border-radius: 22px;
+  box-shadow: 0 14px 30px rgba(0,0,0,.33);
+  transition: transform .2s ease, border-color .2s ease;
+}
+
+.f2-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent, var(--f2-cyan));
+}
+
+.f2-card-image {
+  height: 170px;
+  background:
+    linear-gradient(135deg, color-mix(in srgb, var(--accent) 50%, #001525), #031426);
+  background-position: center;
+  background-size: cover;
+}
+
+.f2-card-content { padding: 20px; }
+.f2-card h2 { margin: 0 0 8px; font-size: 22px; }
+.f2-card p { color: var(--f2-muted); line-height: 1.55; }
+
+.f2-chips { display: flex; flex-wrap: wrap; gap: 7px; margin: 14px 0; }
+.f2-chip {
+  padding: 5px 9px;
+  color: #dff9ff;
+  background: rgba(255,255,255,.08);
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.f2-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.f2-secondary-button {
+  padding: 10px 18px;
+  color: #dbeafe;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 999px;
+  font: 700 13px "Poppins", sans-serif;
+  cursor: pointer;
+}
+
+.f2-wait {
+  min-height: 65vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.f2-wait-card {
+  width: min(680px, 100%);
+  padding: 34px;
+  background: var(--f2-panel);
+  border: 1px solid rgba(0,200,255,.3);
+  border-radius: 26px;
+}
+
+.f2-spinner {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 18px;
+  border: 5px solid rgba(0,200,255,.16);
+  border-top-color: var(--f2-cyan);
+  border-radius: 50%;
+  animation: f2spin 1s linear infinite;
+}
+@keyframes f2spin { to { transform: rotate(360deg); } }
+
+.bubble-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(280px, .7fr);
+  gap: 20px;
+}
+
+.bubble-map-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.bubble-field {
+  padding: 15px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(0,200,255,.18);
+  border-radius: 18px;
+}
+
+.bubble-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #76eaff;
+  font-weight: 800;
+}
+
+.bubble-field textarea,
+.bubble-field input {
+  width: 100%;
+  padding: 11px 12px;
+  color: #e6eef8;
+  background: rgba(0,7,18,.7);
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 12px;
+  font: 500 14px/1.45 "Poppins", sans-serif;
+  resize: vertical;
+}
+
+.bubble-wide { grid-column: 1 / -1; }
+.bubble-score {
+  display: grid;
+  place-items: center;
+  min-height: 180px;
+  color: #00141d;
+  background: radial-gradient(circle, #72edff, #00a8d7);
+  border-radius: 50%;
+  aspect-ratio: 1;
+  max-width: 190px;
+  margin: 0 auto 18px;
+  box-shadow: 0 0 36px rgba(0,200,255,.42);
+}
+.bubble-score strong { font-size: 56px; }
+
+.f2-ranking-list { display: grid; gap: 12px; }
+.f2-ranking-row {
+  display: grid;
+  grid-template-columns: 72px 1fr auto;
+  gap: 14px;
+  align-items: center;
+  padding: 17px 20px;
+  background: rgba(7,25,46,.94);
+  border: 1px solid rgba(0,200,255,.2);
+  border-radius: 18px;
+}
+.f2-ranking-row.mine { border-color: #00c8ff; box-shadow: 0 0 22px rgba(0,200,255,.25); }
+.f2-ranking-pos { color: #ffb347; font-size: 27px; font-weight: 900; }
+.f2-ranking-token { color: #73eaff; font-weight: 900; }
+
+@media (max-width: 900px) {
+  .f2-grid { grid-template-columns: 1fr; }
+  .bubble-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 620px) {
+  .f2-topbar { align-items: flex-start; }
+  .bubble-map-grid { grid-template-columns: 1fr; }
+  .f2-ranking-row { grid-template-columns: 55px 1fr; }
+  .f2-ranking-token { grid-column: 2; }
+}

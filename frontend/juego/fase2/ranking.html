@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Misión Emprende UDD — Ranking Fase 2</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo_ranking.css"><link rel="stylesheet" href="fase2-serverless.css">
+  <link rel="stylesheet" href="../fase3/fase3-serverless.css">
+</head>
+<body class="f2-page">
+  <main class="f2-shell">
+    <header style="text-align:center;margin-bottom:24px"><div class="f2-kicker">CLASIFICACIÓN OFICIAL</div><h1 class="f2-title">Ranking · Empatía</h1><p style="color:#a9b8cc">Resultados acumulados después del Bubble Map.</p></header>
+    <section id="ranking" class="f2-ranking-list"></section>
+    <footer class="f2-panel" style="margin-top:22px;text-align:center">Fase 2 completada. El siguiente bloque será Creatividad.</footer>
+  
+    <section class="serverless-f3-ready">
+      <button
+        id="btnContinuarFase3"
+        class="serverless-f3-button"
+        type="button"
+      >
+        CONTINUAR A CREATIVIDAD
+      </button>
+
+      <div
+        id="progresoInicioFase3"
+        class="serverless-f3-progress"
+      >
+        0/0 grupos listos
+      </div>
+    </section>
+
+  </main>
+  <script src="../../compartido/js/api.js"></script><script src="../compartido.js"></script><script src="fase2-comun.js"></script><script src="ranking.js"></script>
+
+  <script src="../fase3/fase3-comun.js"></script>
+  <script src="../fase3/iniciar-desde-ranking.js"></script>
+
+</body>
+</html>

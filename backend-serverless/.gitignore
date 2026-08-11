@@ -1,0 +1,7 @@
+node_modules/
+.aws-sam/
+.verificacion/
+env.local.json
+.env
+coverage/
+sam-installation/

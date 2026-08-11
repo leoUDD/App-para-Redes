@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>
+    Misión Emprende UDD — Ranking Fase 3
+  </title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="estilo_ranking.css">
+  <link rel="stylesheet" href="fase3-serverless.css">
+</head>
+
+<body class="f3-ranking-page">
+  <main class="f3-ranking-shell">
+    <header class="f3-ranking-header">
+      <div class="f3-kicker">
+        CLASIFICACIÓN OFICIAL
+      </div>
+
+      <h1>Ranking · Creatividad</h1>
+
+      <p>
+        Resultados acumulados después
+        de la construcción LEGO.
+      </p>
+    </header>
+
+    <section
+      id="rankingFase3"
+      class="f3-ranking-list"
+    ></section>
+
+    <section class="f3-ranking-next">
+      <button
+        id="btnContinuarFinal"
+        class="f3-primary-button"
+        type="button"
+      >
+        CONTINUAR A MISIÓN FINAL
+      </button>
+
+      <div
+        id="progresoFinal"
+        class="f3-progress"
+      >
+        0/0 grupos listos
+      </div>
+    </section>
+  </main>
+
+  <script src="../../compartido/js/api.js"></script>
+  <script src="../compartido.js"></script>
+  <script src="fase3-comun.js"></script>
+  <script src="ranking.js"></script>
+</body>
+</html>

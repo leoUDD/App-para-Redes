@@ -1,0 +1,68 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Misión Emprende UDD — Trabajo en Equipo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo_trabajoenequipo.css" />
+  <link rel="stylesheet" href="fase1-serverless.css">
+</head>
+
+<body >
+
+  <main class="team-container-wrap">
+    <div class="team-container" role="region" aria-label="Introducción a trabajo en equipo">
+      <section class="team-section">
+
+        <!-- TÍTULO CON MARCO PROPIO -->
+        <div class="title-wrapper">
+          <h1 data-i18n="trabajo_equipo_titulo">Trabajo en Equipo</h1>
+        </div>
+
+        <!-- PANEL UNIFICADO: texto + recordatorio + botón -->
+        <div class="mission-panel">
+
+          <p data-i18n="desafios_intro_texto">
+            Agentes, toda misión inicia con un desafío.
+            Ahora elegirán su siguiente objetivo.
+          </p>
+
+          <div class="tablet-reminder" data-i18n="desafios_intro_tablet">
+            📱 Protocolo: recuerden rotar la tablet.
+          </div>
+
+          <div class="panel-divider"></div>
+
+          <div class="next-step">
+            <div class="serverless-inline-ready">
+      <button id="btnListoPreSopa" class="serverless-ready-button" type="button">
+        ¡ESTOY LISTO!
+      </button>
+      <p id="esperaPreSopa" class="serverless-waiting">
+        Esperando a los demás equipos...
+        <span id="progresoPreSopa" class="serverless-progress">0/0 grupos listos</span>
+      </p>
+    </div>
+          </div>
+
+        </div>
+
+      </section>
+    </div>
+  </main>
+
+  <div id="routes" ></div>
+
+  
+
+  
+  
+
+  <script src="../../compartido/js/api.js"></script>
+  <script src="../compartido.js"></script>
+  <script src="trabajo-equipo.js"></script>
+</body>
+</html>

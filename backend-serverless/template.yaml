@@ -1,0 +1,501 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: Backend serverless de Mision Emprende UDD
+
+Parameters:
+  Entorno:
+    Type: String
+    Default: dev
+    AllowedValues:
+      - dev
+      - prod
+
+  OrigenCors:
+    Type: String
+    Default: "*"
+    Description: Dominio autorizado para consumir la API.
+
+  ClaveToken:
+    Type: String
+    NoEcho: true
+    Default: cambiar-antes-de-produccion
+    Description: Clave usada para firmar los tokens.
+
+  ClaveAccesoProfesor:
+    Type: String
+    NoEcho: true
+    Default: profe123
+    Description: Clave temporal de acceso del profesor.
+
+  DynamoDbEndpointLocal:
+    Type: String
+    Default: ""
+    Description: >
+      Endpoint de DynamoDB local (solo para sam local). Vacío en AWS real,
+      donde el SDK usa el endpoint real de DynamoDB automáticamente.
+
+Globals:
+  Function:
+    Runtime: nodejs22.x
+    Architectures:
+      - x86_64
+    MemorySize: 512
+    Timeout: 15
+    Environment:
+      Variables:
+        NOMBRE_TABLA: !Ref TablaMision
+        CLAVE_TOKEN: !Ref ClaveToken
+        CLAVE_ACCESO_PROFESOR: !Ref ClaveAccesoProfesor
+        DURACION_TOKEN_SEGUNDOS: "28800"
+        ORIGEN_CORS: !Ref OrigenCors
+        ENTORNO: !Ref Entorno
+        DYNAMODB_ENDPOINT: !Ref DynamoDbEndpointLocal
+
+  HttpApi:
+    CorsConfiguration:
+      AllowOrigins:
+        - !Ref OrigenCors
+      AllowHeaders:
+        - Authorization
+        - Content-Type
+      AllowMethods:
+        - GET
+        - POST
+        - OPTIONS
+      MaxAge: 600
+
+Resources:
+  ApiBackend:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      StageName: "$default"
+
+  TablaMision:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub "MisionEmprende-${Entorno}"
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: PK
+          AttributeType: S
+        - AttributeName: SK
+          AttributeType: S
+        - AttributeName: GSI1PK
+          AttributeType: S
+        - AttributeName: GSI1SK
+          AttributeType: S
+      KeySchema:
+        - AttributeName: PK
+          KeyType: HASH
+        - AttributeName: SK
+          KeyType: RANGE
+      GlobalSecondaryIndexes:
+        - IndexName: GSI1
+          KeySchema:
+            - AttributeName: GSI1PK
+              KeyType: HASH
+            - AttributeName: GSI1SK
+              KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: false
+      SSESpecification:
+        SSEEnabled: true
+      Tags:
+        - Key: Proyecto
+          Value: MisionEmprendeUDD
+        - Key: Entorno
+          Value: !Ref Entorno
+
+  FuncionAcceso:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: src/acceso/api.manejador
+      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Events:
+        Ingresar:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/acceso/ingresar
+            Method: POST
+    Metadata:
+      BuildMethod: esbuild
+      BuildProperties:
+        EntryPoints:
+          - src/acceso/api.ts
+        Bundle: true
+        Minify: false
+        Sourcemap: true
+        Target: es2022
+        Platform: node
+        Format: cjs
+
+  FuncionProfesor:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: src/profesor/api.manejador
+      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Events:
+        IngresarProfesor:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/profesor/ingresar
+            Method: POST
+        ListarSesionesProfesor:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/profesor/sesiones
+            Method: GET
+        CrearSesionProfesor:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/profesor/sesiones
+            Method: POST
+        ObtenerSesionProfesor:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/profesor/sesiones/{sesionId}
+            Method: GET
+        AccionesSesionProfesor:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/profesor/sesiones/{sesionId}/acciones
+            Method: POST
+    Metadata:
+      BuildMethod: esbuild
+      BuildProperties:
+        EntryPoints:
+          - src/profesor/api.ts
+        Bundle: true
+        Minify: false
+        Sourcemap: true
+        Target: es2022
+        Platform: node
+        Format: cjs
+
+  FuncionSesiones:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: src/sesiones/api.manejador
+      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Events:
+        ObtenerSesionActual:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/sesiones/actual
+            Method: GET
+    Metadata:
+      BuildMethod: esbuild
+      BuildProperties:
+        EntryPoints:
+          - src/sesiones/api.ts
+        Bundle: true
+        Minify: false
+        Sourcemap: true
+        Target: es2022
+        Platform: node
+        Format: cjs
+
+  FuncionFase1:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: src/fase1/api.manejador
+      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Events:
+        EstadoFase1:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase1/estado
+            Method: GET
+        IniciarFase1:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase1/iniciar
+            Method: POST
+        ModoEquipoFase1:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase1/modo-equipo
+            Method: POST
+        ListoFase1:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase1/listo
+            Method: POST
+        FinalizarConocidosFase1:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase1/finalizar-conocidos
+            Method: POST
+        PalabrasFase1:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase1/palabras
+            Method: POST
+        CompletarFase1:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase1/completar
+            Method: POST
+        RankingFase1:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase1/ranking
+            Method: GET
+    Metadata:
+      BuildMethod: esbuild
+      BuildProperties:
+        EntryPoints:
+          - src/fase1/api.ts
+        Bundle: true
+        Minify: false
+        Sourcemap: true
+        Target: es2022
+        Platform: node
+        Format: cjs
+
+  FuncionFase2:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: src/fase2/api.manejador
+      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Events:
+        EstadoFase2:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase2/estado
+            Method: GET
+        IniciarFase2:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase2/iniciar
+            Method: POST
+        ListoFase2:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase2/listo
+            Method: POST
+        SeleccionFase2:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase2/seleccion
+            Method: POST
+        AsignarAzarFase2:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase2/asignar-azar
+            Method: POST
+        GuardarBubbleMapFase2:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase2/bubblemap/guardar
+            Method: POST
+        CompletarBubbleMapFase2:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase2/bubblemap/completar
+            Method: POST
+        RankingFase2:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase2/ranking
+            Method: GET
+    Metadata:
+      BuildMethod: esbuild
+      BuildProperties:
+        EntryPoints:
+          - src/fase2/api.ts
+        Bundle: true
+        Minify: false
+        Sourcemap: true
+        Target: es2022
+        Platform: node
+        Format: cjs
+
+  FuncionFase3:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: src/fase3/api.manejador
+      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Events:
+        EstadoFase3:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase3/estado
+            Method: GET
+        IniciarFase3:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase3/iniciar
+            Method: POST
+        ListoFase3:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase3/listo
+            Method: POST
+        CompletarLegoFase3:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase3/lego/completar
+            Method: POST
+        GirarRuletaFase3:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase3/ruleta/girar
+            Method: POST
+        ResponderAstronautaFase3:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase3/astronauta/responder
+            Method: POST
+        RankingFase3:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase3/ranking
+            Method: GET
+    Metadata:
+      BuildMethod: esbuild
+      BuildProperties:
+        EntryPoints:
+          - src/fase3/api.ts
+        Bundle: true
+        Minify: false
+        Sourcemap: true
+        Target: es2022
+        Platform: node
+        Format: cjs
+  FuncionFase4:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: src/fase4/api.manejador
+      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Events:
+        EstadoFase4:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase4/estado
+            Method: GET
+        ListoFase4:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase4/listo
+            Method: POST
+        GuardarPitchFase4:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase4/pitch/guardar
+            Method: POST
+        IniciarPitchFase4:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase4/pitch/iniciar
+            Method: POST
+    Metadata:
+      BuildMethod: esbuild
+      BuildProperties:
+        EntryPoints:
+          - src/fase4/api.ts
+        Bundle: true
+        Minify: false
+        Sourcemap: true
+        Target: es2022
+        Platform: node
+        Format: cjs
+
+  FuncionFase5:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: .
+      Handler: src/fase5/api.manejador
+      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Events:
+        EstadoFase5:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase5/estado
+            Method: GET
+        EvaluarFase5:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase5/evaluar
+            Method: POST
+        RankingFase5:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase5/ranking
+            Method: GET
+        RankingListoFase5:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref ApiBackend
+            Path: /api/fase5/ranking/listo
+            Method: POST
+    Metadata:
+      BuildMethod: esbuild
+      BuildProperties:
+        EntryPoints:
+          - src/fase5/api.ts
+        Bundle: true
+        Minify: false
+        Sourcemap: true
+        Target: es2022
+        Platform: node
+        Format: cjs
+
+Outputs:
+  UrlApi:
+    Description: URL publica de API Gateway
+    Value: !Sub "https://${ApiBackend}.execute-api.${AWS::Region}.${AWS::URLSuffix}"
+
+  NombreTabla:
+    Description: Nombre de la tabla DynamoDB
+    Value: !Ref TablaMision
+
+  ArnTabla:
+    Description: ARN de la tabla DynamoDB
+    Value: !GetAtt TablaMision.Arn

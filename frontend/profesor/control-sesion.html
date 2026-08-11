@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Panel de seguimiento</title>
+
+  <link rel="stylesheet" href="control-sesion.css">
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h1>Panel de seguimiento</h1>
+
+      <div>
+        <a href="index.html" class="btn-volver">
+          ⟵ Dashboard
+        </a>
+
+        <a href="sesiones.html" class="btn-volver">
+          Ver sesiones
+        </a>
+      </div>
+
+      <div class="card">
+        <div class="mini-label">Sesión</div>
+        <div class="big" id="nombreSesion">Cargando...</div>
+
+        <br>
+
+        <div class="mini-label">Actividad actual</div>
+        <div class="pill" id="faseEtiqueta">—</div>
+
+        <br><br>
+
+        <div class="mini-label">Tiempo restante</div>
+        <div class="timer" id="timerGrande">00:00</div>
+
+        <p class="nota">
+          Esta vista es solo de seguimiento. El avance,
+          timers y acciones principales las realizan los estudiantes.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Qué debe hacer el profesor</h2>
+
+        <div id="accionProfesor" class="accion-profesor">
+          Esperar el avance de los grupos.
+        </div>
+      </div>
+
+      <div class="card dev-card">
+        <h2>Herramientas DEV</h2>
+
+        <p class="nota">
+          Botones temporales para pruebas.
+        </p>
+
+        <div class="acciones-dev">
+          <button
+            class="btn-dev btn-next"
+            data-accion="siguiente_fase"
+          >
+            Avanzar fase
+          </button>
+
+          <button
+            class="btn-dev btn-back"
+            data-accion="fase_anterior"
+          >
+            Retroceder fase
+          </button>
+
+          <button
+            class="btn-dev btn-start"
+            data-accion="iniciar_timer"
+          >
+            Iniciar timer
+          </button>
+
+          <button
+            class="btn-dev btn-stop"
+            data-accion="detener_timer"
+          >
+            Detener timer
+          </button>
+
+          <button
+            class="btn-dev btn-reset"
+            data-accion="reiniciar_timer"
+          >
+            Reiniciar tiempo de fase
+          </button>
+
+          <button
+            class="btn-dev btn-timer-10"
+            data-accion="timer_10"
+          >
+            Timer a 10 segundos
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Avance general</h2>
+
+        <div class="progreso">
+          <div class="paso" data-habilidad="f1">
+            F1 · Trabajo en equipo
+          </div>
+
+          <div class="paso" data-habilidad="f2">
+            F2 · Empatía
+          </div>
+
+          <div class="paso" data-habilidad="f3">
+            F3 · Creatividad
+          </div>
+
+          <div class="paso" data-habilidad="f4">
+            F4 · Comunicación
+          </div>
+
+          <div class="paso" data-habilidad="f5">
+            F5 · Apoyo
+          </div>
+
+          <div class="paso" data-habilidad="f6">
+            Ranking / Cierre
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Códigos de acceso</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Grupo</th>
+              <th>Código</th>
+            </tr>
+          </thead>
+
+          <tbody id="tablaCodigos"></tbody>
+        </table>
+      </div>
+    </aside>
+
+    <main class="contenido">
+      <div id="errorControl" class="mensaje-error"></div>
+
+      <div class="grid">
+        <div class="card">
+          <div class="mini-label">Grupos en sesión</div>
+          <div class="big" id="totalGrupos">0</div>
+        </div>
+
+        <div class="card">
+          <div class="mini-label">
+            Grupos listos etapa actual
+          </div>
+
+          <div class="big" id="gruposListos">0/0</div>
+        </div>
+
+        <div class="card">
+          <div class="mini-label">Estado timer</div>
+          <div class="big" id="timerEstado">Detenido</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Ver pantalla de un grupo</h2>
+
+        <p class="nota">
+          Abre el registro del estudiante con el código
+          preparado para observación.
+        </p>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Grupo</th>
+              <th>Código</th>
+              <th>Tokens</th>
+              <th>Ver</th>
+            </tr>
+          </thead>
+
+          <tbody id="tablaVerGrupos"></tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>Estado de grupos</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Grupo</th>
+              <th>Tokens</th>
+              <th>Listo</th>
+              <th>Temática</th>
+              <th>Desafío</th>
+              <th>LEGO</th>
+              <th>Pitch</th>
+            </tr>
+          </thead>
+
+          <tbody id="tablaEstadoGrupos"></tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script src="../compartido/js/api.js"></script>
+  <script src="comun.js"></script>
+  <script src="control-sesion.js"></script>
+</body>
+</html>

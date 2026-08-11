@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Habilidades de Misión</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Exo+2:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="mapa.css">
+</head>
+<body>
+
+
+
+<div class="root" id="root">
+  <div class="topbar">
+    <div class="tb-left">
+      <div class="tb-badge" data-i18n="mapa_clasificado">CLASIFICADO</div>
+      <div class="tb-title" data-i18n="mapa_topbar">
+  HABILIDADES DE MISIÓN
+</div>
+    </div>
+    <div class="tb-pips" id="pips"></div>
+  </div>
+
+  <div class="body">
+    <div class="panel">
+      <div class="panel-empty" id="pempty">
+        <div class="pe-icon">📍</div>
+        <div class="pe-text" data-i18n="mapa_selecciona_punto">
+  SELECCIONA<br>EL PUNTO<br>EN EL MAPA
+</div>
+      </div>
+
+      <div class="panel-card" id="pcard">
+        <div class="pc-header">
+          <div class="pc-em" id="pc-em"></div>
+          <div class="pc-name" id="pc-name"></div>
+          <div class="pc-sub" id="pc-sub"></div>
+        </div>
+
+        <div class="pc-body">
+          <div class="pc-desc" id="pc-desc"></div>
+          <div class="pc-pills" id="pc-pills"></div>
+        </div>
+
+        <div class="pc-footer">
+          <button class="pc-btn" id="pc-btn" onclick="markDone()">[ ENTENDIDO ]</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="map-wrap" id="map-wrap">
+      <svg class="msvg" id="msvg"></svg>
+      <div class="pdot" id="pdot"></div>
+    </div>
+  </div>
+
+<div class="bottom">
+  <div class="bt-hint" id="bt-hint" data-i18n="mapa_hint">
+  // SELECCIONA LA HABILIDAD ACTIVA Y CONTINÚA LA MISIÓN
+</div>
+  <a href="#" class="bt-btn" id="bt-btn" style="display:none;">
+    ▶ MISIÓN FINAL · PRÓXIMA FASE
+  </a>
+</div>
+</div>
+
+<div class="habilidad-overlay" id="habilidadOverlay">
+  <div class="habilidad-box">
+    <div class="habilidad-label">HABILIDAD ACTIVADA</div>
+    <h1 id="habilidadTitulo">EMPATÍA</h1>
+    <video id="habilidadVideo" playsinline preload="auto"></video>
+  </div>
+</div>
+
+<audio id="bg-music" loop>
+  <source src="../../compartido/recursos/sonidos/musica_habilidades.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Rutas de imágenes disponibles para mapa_agente.js -->
+<script>
+  const STATIC_IMAGES = {
+    "trabajo en equipo": "../../compartido/recursos/imagenes/trabajoenEquipo.png",
+    "empatia":           "../../compartido/recursos/imagenes/empatiaa.png",
+    "creatividad":       "../../compartido/recursos/imagenes/creatividadd.png",
+    "comunicacion":      "../../compartido/recursos/imagenes/comunicacionn.png",
+    "negociacion":       "../../compartido/recursos/imagenes/negociacion.png",
+  };
+</script>
+
+<script>
+  window.MAPA_HABILIDADES_CONFIG = {
+  habilidadActiva: "Misión final",
+  habilidadesCompletadas: ["Trabajo en equipo", "Empatía", "Creatividad"],
+  rutaContinuar: "#",
+  textoBoton: "MISIÓN FINAL · PRÓXIMA FASE"
+};
+</script>
+
+<script src="mapa-agente.js"></script>
+
+<script>
+const videosHabilidades = {
+  "trabajo en equipo": "../../compartido/recursos/videos/TeamWork.mp4",
+  "empatia":           "../../compartido/recursos/videos/Empatia.mp4",
+  "creatividad":       "../../compartido/recursos/videos/Creatividad.mp4",
+  "comunicacion":      "../../compartido/recursos/videos/Comunicacion.mp4",
+  "negociacion":       "../../compartido/recursos/videos/Negociacion.mp4",
+  "mision final": [
+    "../../compartido/recursos/videos/Comunicacion.mp4",
+    "../../compartido/recursos/videos/Negociacion.mp4"
+  ]
+};
+
+  function normalizarTexto(texto) {
+    return texto
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .trim();
+  }
+function mostrarAnimacionHabilidad(nombre) {
+  const overlay = document.getElementById("habilidadOverlay");
+  const titulo  = document.getElementById("habilidadTitulo");
+  const video   = document.getElementById("habilidadVideo");
+
+  const clave = normalizarTexto(nombre);
+  const src = videosHabilidades[clave];
+
+  if (!src) return;
+
+  overlay.classList.add("show");
+
+  const music = document.getElementById("bg-music");
+  if (music) music.pause();
+
+  video.pause();
+  video.currentTime = 0;
+  video.volume = 1.0;
+
+  // Caso especial: MISIÓN FINAL reproduce Comunicación y luego Negociación
+  if (Array.isArray(src)) {
+    let indiceVideo = 0;
+
+    function reproducirSiguienteVideo() {
+      if (indiceVideo >= src.length) {
+        cerrarAnimacionHabilidad();
+        return;
+      }
+
+      if (indiceVideo === 0) {
+        titulo.textContent = "COMUNICACIÓN";
+      } else {
+        titulo.textContent = "NEGOCIACIÓN";
+      }
+
+      video.pause();
+      video.currentTime = 0;
+      video.src = src[indiceVideo];
+
+      indiceVideo++;
+
+      video.play().catch(() => {
+        setTimeout(reproducirSiguienteVideo, 1800);
+      });
+    }
+
+    video.onended = reproducirSiguienteVideo;
+    reproducirSiguienteVideo();
+    return;
+  }
+
+  titulo.textContent = nombre.toUpperCase();
+  video.src = src;
+
+  video.play().catch(() => {
+    setTimeout(cerrarAnimacionHabilidad, 2600);
+  });
+
+  video.onended = cerrarAnimacionHabilidad;
+}
+
+  function cerrarAnimacionHabilidad() {
+    const overlay = document.getElementById("habilidadOverlay");
+    const video   = document.getElementById("habilidadVideo");
+    overlay.classList.remove("show");
+    video.pause();
+    video.currentTime = 0;
+
+    // Reanudar música de fondo
+    const music = document.getElementById("bg-music");
+    if (music) music.play().catch(() => {});
+  }
+
+  document.addEventListener("click", function(event) {
+    const nodo = event.target.closest(".nd");
+    if (!nodo || nodo.classList.contains("locked")) return;
+
+    const label = nodo.querySelector(".nd-lbl");
+    if (!label) return;
+
+    setTimeout(() => {
+      mostrarAnimacionHabilidad(label.textContent);
+    }, 120);
+  });
+</script>
+
+  <script src="../../compartido/js/api.js"></script>
+  <script src="../compartido.js"></script>
+  <script src="../fase3/fase3-comun.js"></script>
+  <script src="mapa-final.js"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+:root {
+  --bg: #000712 url('../../compartido/recursos/imagenes/fondo_bienvenida.png') center/cover no-repeat fixed;
+  --card: #081A2D;
+  --text: #E6EEF8;
+  --muted: #AAB7C8;
+  --primary: #00C8FF;
+  --accent: #FF7A1A;
+  --radius: 28px;
+  --shadow: 0 18px 40px rgba(0,0,0,.6);
+  --glow: 0 0 25px rgba(0,200,255,.35);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1101px) {
+  body { padding-left: 155px; }
+}
+
+/* ── Contenedor principal ── */
+.team-container {
+  width: clamp(620px, 72vw, 980px);
+  min-height: clamp(620px, 78vh, 820px);
+  background: url('../../compartido/recursos/imagenes/empatia.png') center/cover no-repeat;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+  padding: 34px 42px 42px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.team-section {
+  width: 100%;
+  position: relative;
+}
+
+/* ── Marco del título ── */
+.title-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 6;
+  padding: 6px 28px 8px;
+  border-radius: 14px;
+  background: rgba(0, 10, 22, 0.48);
+  border: 1.5px solid rgba(255, 122, 26, 0.55);
+  backdrop-filter: blur(8px) saturate(140%);
+  -webkit-backdrop-filter: blur(8px) saturate(140%);
+  box-shadow:
+    0 0 14px rgba(255, 122, 26, 0.22),
+    0 0 30px rgba(255, 80, 0, 0.10);
+  text-align: center;
+}
+
+.title {
+  color: var(--accent);
+  font-size: clamp(38px, 3.8vw, 56px);
+  font-weight: 800;
+  line-height: 1.05;
+  text-shadow: 0 0 14px rgba(255, 122, 26, 0.50);
+}
+
+/* ── Panel unificado ── */
+.mission-panel {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(70%, 600px);
+  padding: 8px 20px;
+  border-radius: 12px;
+  background: rgba(0, 20, 38, 0.62);
+  border: 1.8px solid rgba(0, 200, 255, 0.78);
+  backdrop-filter: blur(10px) saturate(150%);
+  -webkit-backdrop-filter: blur(10px) saturate(150%);
+  box-shadow:
+    0 0 18px rgba(0, 200, 255, .42),
+    0 0 45px rgba(0, 120, 255, .22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  z-index: 7;
+  align-self: end;
+}
+
+.mission-panel > p {
+  color: #E8F6FF;
+  font-size: clamp(13px, 1.1vw, 15px);
+  line-height: 1.4;
+  font-weight: 500;
+  text-align: left;
+  width: 100%;
+  margin: 0 0 8px;
+}
+
+/* ── Recordatorio tablet ── */
+.tablet-reminder {
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: 10px;
+  background: rgba(255, 122, 26, 0.16);
+  border: 1.5px solid rgba(255, 122, 26, 0.75);
+  color: #FFD2A8;
+  font-weight: 700;
+  font-size: 0.82em;
+  line-height: 1.3;
+  box-shadow: 0 0 12px rgba(255, 122, 26, 0.22);
+}
+
+/* ── Divisor ── */
+.panel-divider {
+  width: calc(100% + 36px);
+  margin: 12px -18px;
+  height: 1.5px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(0, 200, 255, 0.50) 20%,
+    rgba(0, 200, 255, 0.50) 80%,
+    transparent
+  );
+}
+
+/* ── Zona del botón dentro del panel ── */
+.next-step {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
+}
+
+.next-step::before {
+  content: "PUNTO DE CONTROL";
+  color: #AEEBFF;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .16em;
+  opacity: .9;
+  text-shadow: 0 0 8px rgba(0, 200, 255, .55);
+}
+
+.next-step button,
+.next-step .btn,
+.next-step .btn-chip {
+  min-width: 150px;
+  max-width: 200px;
+  font-size: 14px;
+}
+
+.next-step span,
+.next-step p,
+.next-step strong,
+.oai-estado-listo {
+  font-size: 14px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+/* ── Tablet (≤1100px) ── */
+@media (max-width: 1100px) {
+  body { padding-left: 105px; }
+
+  .team-container {
+    width: clamp(560px, 78vw, 860px);
+    min-height: 720px;
+    padding: 30px 34px 34px;
+  }
+
+  .title { font-size: clamp(36px, 5vw, 54px); }
+
+  .mission-panel { width: min(84%, 640px); }
+}
+
+/* ── Móvil (≤700px) ── */
+@media (max-width: 700px) {
+  body {
+    padding: 14px;
+    padding-bottom: 95px;
+    align-items: flex-start;
+  }
+
+  .team-container {
+    width: 100%;
+    min-height: 760px;
+    padding: 24px 16px 28px;
+    border-radius: 22px;
+  }
+
+  .team-section {
+    gap: 16px;
+  }
+
+  .title-wrapper {
+    padding: 8px 24px 10px;
+  }
+
+  .title { font-size: clamp(30px, 9vw, 42px); }
+
+  .mission-panel {
+    width: 88%;
+    padding: 16px 16px;
+  }
+
+  .panel-divider {
+    width: calc(100% + 32px);
+    margin: 14px -16px;
+  }
+
+  .mission-panel > p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .next-step::before { font-size: 9px; }
+}

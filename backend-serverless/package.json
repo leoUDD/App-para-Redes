@@ -1,0 +1,36 @@
+{
+  "name": "mision-emprende-backend-serverless",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend serverless en TypeScript para Misión Emprende UDD.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "tipos": "tsc --noEmit",
+    "pruebas": "vitest run",
+    "empaquetar:verificar": "rm -rf .verificacion && esbuild src/acceso/api.ts src/profesor/api.ts src/sesiones/api.ts src/fase1/api.ts src/fase2/api.ts src/fase3/api.ts --bundle --platform=node --target=node22 --format=cjs --outdir=.verificacion",
+    "verificar": "npm run tipos && npm run pruebas && npm run empaquetar:verificar",
+    "construir": "sam build",
+    "local:base": "docker compose up -d",
+    "local:detener": "docker compose down",
+    "local:preparar": "tsx scripts/prepararLocal.ts",
+    "local:api": "sam local start-api --host 0.0.0.0 --env-vars env.local.json --docker-network mision-serverless --warm-containers EAGER",
+    "sam:build": "PATH=$PWD/node_modules/.bin:$PATH sam build"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.1085.0",
+    "@aws-sdk/lib-dynamodb": "^3.1085.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.162",
+    "@types/node": "^24.13.3",
+    "esbuild": "^0.28.1",
+    "tsx": "^4.23.1",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true
+  }
+}

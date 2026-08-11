@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>Misión Emprende UDD — Dashboard Profesor</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="profesor.css">
+</head>
+
+<body>
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="sidebar-logo">
+        <h2 class="sidebar-title">
+          Dashboard Profesor
+        </h2>
+      </div>
+
+      <nav class="sidebar-nav">
+        <ul>
+          <li>
+            <a class="active" href="index.html">
+              Inicio
+            </a>
+          </li>
+
+          <li>
+            <a href="crear-sesion.html">
+              Crear sesión
+            </a>
+          </li>
+
+          <li>
+            <a href="sesiones.html">
+              Ver sesiones
+            </a>
+          </li>
+
+          <li class="sidebar-separator"></li>
+
+          <li>
+            <a
+              href="#"
+              class="back-link"
+              id="cerrarProfesor"
+            >
+              ⟵ Cambiar de perfil
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <h1 class="title">
+        Bienvenido, Profesor/a
+      </h1>
+
+      <p class="subtitle">
+        Desde aquí puedes crear sesiones, cargar estudiantes
+        y controlar el avance de cada grupo.
+      </p>
+
+      <div class="video-wrap">
+        <video
+          class="video"
+          controls
+          playsinline
+          preload="metadata"
+        >
+          <source
+            src="../compartido/recursos/videos/TutorialProfesor.mp4"
+            type="video/mp4"
+          >
+
+          Tu navegador no admite el elemento
+          <code>video</code>.
+        </video>
+      </div>
+    </main>
+  </div>
+
+  <script src="../compartido/js/api.js"></script>
+  <script src="comun.js"></script>
+
+  <script>
+    if (exigirAccesoProfesor()) {
+      document
+        .getElementById("cerrarProfesor")
+        .addEventListener("click", (evento) => {
+          evento.preventDefault();
+          cerrarAccesoProfesor();
+        });
+    }
+  </script>
+</body>
+</html>

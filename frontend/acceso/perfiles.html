@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Misión Emprende UDD — Perfiles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="perfiles.css" />
+</head>
+<body>
+
+  <!-- Modal de contraseña -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <span class="modal-icon">🔒</span>
+        <h2 class="modal-title">ACCESO RESTRINGIDO</h2>
+        <p class="modal-sub">Ingresa el código de acceso</p>
+      </div>
+      <div class="modal-input-wrap">
+        <input type="password" id="modalInput" class="modal-input"
+               placeholder="••••••••" autocomplete="off" maxlength="20">
+        <div class="modal-error" id="modalError">Código incorrecto</div>
+      </div>
+      <div class="modal-actions">
+        <button class="modal-btn modal-btn--cancel" id="modalCancel">CANCELAR</button>
+        <button class="modal-btn modal-btn--confirm" id="modalConfirm">ACCEDER ▶</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="screen-wrapper">
+
+    <!-- Marco futurista SVG -->
+    <svg class="screen-frame" viewBox="0 0 100 100" preserveAspectRatio="none"
+         xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="fg1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#00C8FF" stop-opacity="0.9"/>
+          <stop offset="100%" stop-color="#FF7A1A" stop-opacity="0.8"/>
+        </linearGradient>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="0.4" result="blur"/>
+          <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+      </defs>
+
+      <polygon points="5,0 95,0 100,5 100,95 95,100 5,100 0,95 0,5"
+        fill="none" stroke="url(#fg1)" stroke-width="0.4" opacity="0.5"/>
+
+      <!-- ESQUINA SUPERIOR IZQUIERDA -->
+      <polyline points="0,18 0,5 5,0 22,0" fill="none" stroke="#00C8FF" stroke-width="1.2" filter="url(#glow)" opacity="0.95"/>
+      <line x1="0" y1="10" x2="3" y2="10" stroke="#00C8FF" stroke-width="0.6" opacity="0.6"/>
+      <line x1="10" y1="0" x2="10" y2="3" stroke="#00C8FF" stroke-width="0.6" opacity="0.6"/>
+      <path d="M22,0 L28,0 L28,2" fill="none" stroke="#00C8FF" stroke-width="0.4" opacity="0.5"/>
+      <circle cx="28" cy="2" r="0.6" fill="#00C8FF" opacity="0.7"/>
+      <path d="M0,18 L0,24 L2,24" fill="none" stroke="#00C8FF" stroke-width="0.4" opacity="0.5"/>
+      <circle cx="2" cy="24" r="0.6" fill="#00C8FF" opacity="0.7"/>
+
+      <!-- ESQUINA SUPERIOR DERECHA -->
+      <polyline points="78,0 95,0 100,5 100,18" fill="none" stroke="#00C8FF" stroke-width="1.2" filter="url(#glow)" opacity="0.95"/>
+      <line x1="100" y1="10" x2="97" y2="10" stroke="#00C8FF" stroke-width="0.6" opacity="0.6"/>
+      <line x1="90" y1="0" x2="90" y2="3" stroke="#00C8FF" stroke-width="0.6" opacity="0.6"/>
+      <path d="M78,0 L72,0 L72,2" fill="none" stroke="#00C8FF" stroke-width="0.4" opacity="0.5"/>
+      <circle cx="72" cy="2" r="0.6" fill="#00C8FF" opacity="0.7"/>
+      <path d="M100,18 L100,24 L98,24" fill="none" stroke="#00C8FF" stroke-width="0.4" opacity="0.5"/>
+      <circle cx="98" cy="24" r="0.6" fill="#00C8FF" opacity="0.7"/>
+
+      <!-- ESQUINA INFERIOR IZQUIERDA -->
+      <polyline points="0,82 0,95 5,100 22,100" fill="none" stroke="#FF7A1A" stroke-width="1.2" filter="url(#glow)" opacity="0.95"/>
+      <line x1="0" y1="90" x2="3" y2="90" stroke="#FF7A1A" stroke-width="0.6" opacity="0.6"/>
+      <line x1="10" y1="100" x2="10" y2="97" stroke="#FF7A1A" stroke-width="0.6" opacity="0.6"/>
+      <path d="M22,100 L28,100 L28,98" fill="none" stroke="#FF7A1A" stroke-width="0.4" opacity="0.5"/>
+      <circle cx="28" cy="98" r="0.6" fill="#FF7A1A" opacity="0.7"/>
+      <path d="M0,82 L0,76 L2,76" fill="none" stroke="#FF7A1A" stroke-width="0.4" opacity="0.5"/>
+      <circle cx="2" cy="76" r="0.6" fill="#FF7A1A" opacity="0.7"/>
+
+      <!-- ESQUINA INFERIOR DERECHA -->
+      <polyline points="78,100 95,100 100,95 100,82" fill="none" stroke="#FF7A1A" stroke-width="1.2" filter="url(#glow)" opacity="0.95"/>
+      <line x1="100" y1="90" x2="97" y2="90" stroke="#FF7A1A" stroke-width="0.6" opacity="0.6"/>
+      <line x1="90" y1="100" x2="90" y2="97" stroke="#FF7A1A" stroke-width="0.6" opacity="0.6"/>
+      <path d="M78,100 L72,100 L72,98" fill="none" stroke="#FF7A1A" stroke-width="0.4" opacity="0.5"/>
+      <circle cx="72" cy="98" r="0.6" fill="#FF7A1A" opacity="0.7"/>
+      <path d="M100,82 L100,76 L98,76" fill="none" stroke="#FF7A1A" stroke-width="0.4" opacity="0.5"/>
+      <circle cx="98" cy="76" r="0.6" fill="#FF7A1A" opacity="0.7"/>
+
+      <!-- LÍNEAS DE CIRCUITO IZQUIERDA -->
+      <g opacity="0.45">
+        <path d="M0,35 L3,35 L3,40 L1.5,40" fill="none" stroke="#00C8FF" stroke-width="0.5"/>
+        <circle cx="1.5" cy="40" r="0.7" fill="#00C8FF"/>
+        <path d="M0,45 L2,45" fill="none" stroke="#00C8FF" stroke-width="0.5"/>
+        <path d="M0,55 L4,55 L4,60 L2,60" fill="none" stroke="#00C8FF" stroke-width="0.5"/>
+        <circle cx="2" cy="60" r="0.7" fill="#00C8FF"/>
+        <path d="M0,65 L1.5,65" fill="none" stroke="#00C8FF" stroke-width="0.5"/>
+      </g>
+
+      <!-- LÍNEAS DE CIRCUITO DERECHA -->
+      <g opacity="0.45">
+        <path d="M100,38 L97,38 L97,43 L98.5,43" fill="none" stroke="#FF7A1A" stroke-width="0.5"/>
+        <circle cx="98.5" cy="43" r="0.7" fill="#FF7A1A"/>
+        <path d="M100,50 L98,50" fill="none" stroke="#FF7A1A" stroke-width="0.5"/>
+        <path d="M100,58 L96,58 L96,63 L98,63" fill="none" stroke="#FF7A1A" stroke-width="0.5"/>
+        <circle cx="98" cy="63" r="0.7" fill="#FF7A1A"/>
+      </g>
+
+      <!-- TICKS BORDE SUPERIOR -->
+      <g stroke="#00C8FF" stroke-width="0.5" opacity="0.5">
+        <line x1="35" y1="0" x2="35" y2="2"/>
+        <line x1="50" y1="0" x2="50" y2="3"/>
+        <line x1="65" y1="0" x2="65" y2="2"/>
+      </g>
+      <polygon points="50,3.5 51.5,1.5 50,0 48.5,1.5" fill="#00C8FF" opacity="0.7"/>
+
+      <!-- TICKS BORDE INFERIOR -->
+      <g stroke="#FF7A1A" stroke-width="0.5" opacity="0.5">
+        <line x1="35" y1="100" x2="35" y2="98"/>
+        <line x1="50" y1="100" x2="50" y2="97"/>
+        <line x1="65" y1="100" x2="65" y2="98"/>
+      </g>
+      <polygon points="50,96.5 51.5,98.5 50,100 48.5,98.5" fill="#FF7A1A" opacity="0.7"/>
+
+    </svg>
+
+    <main class="phone" role="region" aria-label="Pantalla de perfiles">
+
+      <!-- Botón de sonido dentro del phone -->
+      <button class="btn-sound" id="btnSound" aria-label="Activar música">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="iconMute">
+            <path d="M11 5L6 9H2v6h4l5 4V5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <line x1="23" y1="9" x2="17" y2="15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <line x1="17" y1="9" x2="23" y2="15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </g>
+          <g id="iconSound" style="display:none">
+            <path d="M11 5L6 9H2v6h4l5 4V5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          </g>
+        </svg>
+      </button>
+
+      <!-- Logo superior EdEm UDD -->
+      <div class="logo-top">
+        <img src="../compartido/recursos/imagenes/edem_udd_logo.png" alt="EdEm UDD — Escuela de Emprendimiento">
+        <div class="logo-divider"></div>
+        <p class="logo-sub">ELIGE TU ROL PARA JUGAR</p>
+      </div>
+
+      <!-- Círculos de perfil -->
+      <section class="perfiles">
+
+        <div class="perfil perfil--alumno">
+          <a href="registro.html" aria-label="Ingresar como Alumno">
+            <img src="../compartido/recursos/imagenes/alumno.png" alt="Alumno">
+          </a>
+          <p class="perfil-texto">Alumno</p>
+        </div>
+
+        <div class="perfil perfil--profesor">
+          <a
+    href="../profesor/index.html"
+    data-rol="profesor"
+    aria-label="Ingresar como Profesor"
+    class="restringido"
+>
+            <img src="../compartido/recursos/imagenes/proofe.png" alt="Profesor">
+            <div class="acceso-restringido">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="lock-icon">
+                <rect x="5" y="11" width="14" height="10" rx="2" stroke="#fca5a5" stroke-width="1.8"/>
+                <path d="M8 11V7a4 4 0 0 1 8 0v4" stroke="#fca5a5" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+              <span class="acceso-texto">Acceso restringido</span>
+            </div>
+          </a>
+          <p class="perfil-texto">Profesor</p>
+        </div>
+
+        <div class="perfil perfil--admin">
+          <a
+    href="../administracion/index.html"
+    data-rol="admin"
+    aria-label="Ingresar como Administrador"
+    class="restringido"
+>
+            <img src="../compartido/recursos/imagenes/admin.png" alt="Administrador">
+            <div class="acceso-restringido">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="lock-icon">
+                <rect x="5" y="11" width="14" height="10" rx="2" stroke="#fca5a5" stroke-width="1.8"/>
+                <path d="M8 11V7a4 4 0 0 1 8 0v4" stroke="#fca5a5" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+              <span class="acceso-texto">Acceso restringido</span>
+            </div>
+          </a>
+          <p class="perfil-texto">Administrador</p>
+        </div>
+
+      </section>
+
+    </main>
+  </div>
+
+  <script>
+    // ── Botón de sonido ──
+    const btnSound   = document.getElementById('btnSound');
+    const iconMute   = document.getElementById('iconMute');
+    const iconSound  = document.getElementById('iconSound');
+    let audio        = null;
+    let playing      = false;
+
+    btnSound.addEventListener('click', () => {
+      if (!playing) {
+        if (!audio) {
+          audio = new Audio(
+                "../compartido/recursos/sonidos/musica_inicio.mp3"
+          );
+          audio.loop   = true;
+          audio.volume = 1;
+        }
+        audio.play().catch(() => {});
+        iconMute.style.display  = 'none';
+        iconSound.style.display = 'block';
+        btnSound.classList.add('active');
+        playing = true;
+      } else {
+        audio.pause();
+        iconMute.style.display  = 'block';
+        iconSound.style.display = 'none';
+        btnSound.classList.remove('active');
+        playing = false;
+      }
+    });
+
+    // ── Hover: escáner ──
+    function playHoverSound() {
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const now = ctx.currentTime;
+        const osc  = ctx.createOscillator(), gain = ctx.createGain();
+        osc.connect(gain); gain.connect(ctx.destination);
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(280, now);
+        osc.frequency.linearRampToValueAtTime(520, now + 0.12);
+        gain.gain.setValueAtTime(0.07, now);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.14);
+        osc.start(now); osc.stop(now + 0.15);
+        const osc2 = ctx.createOscillator(), gain2 = ctx.createGain();
+        osc2.connect(gain2); gain2.connect(ctx.destination);
+        osc2.type = 'triangle';
+        osc2.frequency.setValueAtTime(560, now + 0.06);
+        osc2.frequency.linearRampToValueAtTime(800, now + 0.14);
+        gain2.gain.setValueAtTime(0.03, now + 0.06);
+        gain2.gain.exponentialRampToValueAtTime(0.001, now + 0.16);
+        osc2.start(now + 0.06); osc2.stop(now + 0.17);
+      } catch(e) {}
+    }
+
+    // ── Click: agente confirmado ──
+    function playClickSound() {
+      try {
+        const ctx = new (window.AudioContext || window.webkitAudioContext)();
+        const now = ctx.currentTime;
+        const bufLen = Math.floor(ctx.sampleRate * 0.03);
+        const buf    = ctx.createBuffer(1, bufLen, ctx.sampleRate);
+        const data   = buf.getChannelData(0);
+        for (let i = 0; i < bufLen; i++)
+          data[i] = (Math.random() * 2 - 1) * Math.exp(-i / 50);
+        const noise = ctx.createBufferSource(), noiseGain = ctx.createGain();
+        noise.buffer = buf; noise.connect(noiseGain); noiseGain.connect(ctx.destination);
+        noiseGain.gain.value = 0.25; noise.start(now);
+        const osc = ctx.createOscillator(), gain = ctx.createGain();
+        osc.connect(gain); gain.connect(ctx.destination);
+        osc.type = 'sine';
+        osc.frequency.setValueAtTime(180, now + 0.02);
+        osc.frequency.exponentialRampToValueAtTime(90, now + 0.18);
+        gain.gain.setValueAtTime(0.18, now + 0.02);
+        gain.gain.exponentialRampToValueAtTime(0.001, now + 0.20);
+        osc.start(now + 0.02); osc.stop(now + 0.22);
+        [{ t: 0.22, f: 440 }, { t: 0.32, f: 660 }].forEach(({ t, f }) => {
+          const o = ctx.createOscillator(), g = ctx.createGain();
+          o.connect(g); g.connect(ctx.destination);
+          o.type = 'sine'; o.frequency.value = f;
+          g.gain.setValueAtTime(0.10, now + t);
+          g.gain.exponentialRampToValueAtTime(0.001, now + t + 0.08);
+          o.start(now + t); o.stop(now + t + 0.09);
+        });
+      } catch(e) {}
+    }
+
+    // ── Modal de contraseña para perfiles restringidos ──
+    // Profesor se valida ahora mediante el backend serverless.
+    // Administrador continúa temporalmente con validación local.
+    const PASSWORDS = {
+      'admin': 'admin123',
+    };
+
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalInput   = document.getElementById('modalInput');
+    const modalError   = document.getElementById('modalError');
+    const modalConfirm = document.getElementById('modalConfirm');
+    const modalCancel  = document.getElementById('modalCancel');
+    let   pendingHref  = null;
+    let   pendingRol   = null;
+
+    function openModal(href, rol) {
+      pendingHref = href;
+      pendingRol  = rol;
+      modalInput.value = '';
+      modalError.style.display = 'none';
+      modalOverlay.classList.add('visible');
+      setTimeout(() => modalInput.focus(), 100);
+    }
+
+    function closeModal() {
+      modalOverlay.classList.remove('visible');
+      pendingHref = null;
+      pendingRol  = null;
+    }
+
+    function checkPassword() {
+      // El acceso Profesor lo intercepta profesor-acceso.js
+      // y se valida contra Lambda.
+      if (pendingRol === 'profesor') {
+        return;
+      }
+
+      const pass = PASSWORDS[pendingRol] || '';
+
+      if (modalInput.value === pass) {
+        const destino = pendingHref;  // guardamos ANTES de cerrar
+        closeModal();
+        window.location.href = destino;
+      } else {
+        modalError.style.display = 'block';
+        modalInput.value = '';
+        modalInput.focus();
+      }
+    }
+
+    modalConfirm.addEventListener('click', checkPassword);
+    modalCancel.addEventListener('click', closeModal);
+    modalInput.addEventListener('keydown', e => { if (e.key === 'Enter') checkPassword(); });
+    modalOverlay.addEventListener('click', e => { if (e.target === modalOverlay) closeModal(); });
+
+    // ── Eventos ──
+    document.querySelectorAll('.perfil > a').forEach(link => {
+      link.addEventListener('mouseenter', playHoverSound);
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const href = link.getAttribute('href');
+        const rol  = link.dataset.rol;
+        if (link.classList.contains('restringido')) {
+          openModal(href, rol);
+        } else {
+          playClickSound();
+          setTimeout(() => { window.location.href = href; }, 420);
+        }
+      });
+    });
+  </script>
+
+  <!-- Integración serverless del acceso Profesor -->
+  <script src="../compartido/js/api.js"></script>
+  <script src="profesor-acceso.js"></script>
+</body>
+</html>

@@ -1,0 +1,713 @@
+/* ============================================================
+   Misión Emprende UDD — estilo_login.css
+   Dispositivo sci-fi — FULL RESPONSIVE + BOTÓN GENERAR NOMBRE
+   ============================================================ */
+
+:root {
+  --text:    #E6EEF8;
+  --muted:   #7a9ab5;
+  --primary: #00C8FF;
+  --accent:  #FF7A1A;
+  --dark:    #040c18;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; padding: 0; overflow: hidden; }
+img { max-width: 100%; display: block; }
+
+button,
+input {
+  font: inherit;
+}
+
+body {
+  background: #000712 url('../compartido/recursos/imagenes/fondo_bienvenida.webp') center/cover no-repeat fixed;
+  color: var(--text);
+  font-family: "Poppins", system-ui, sans-serif;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============================================================
+   PARTÍCULAS
+   ============================================================ */
+.particles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.particle {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: var(--primary);
+  opacity: 0;
+  animation: particleFloat linear infinite;
+}
+
+.particle:nth-child(1) { left: 15%; animation-duration: 8s;  animation-delay: 0s;  width: 3px; height: 3px; }
+.particle:nth-child(2) { left: 35%; animation-duration: 11s; animation-delay: 2s; }
+.particle:nth-child(3) { left: 55%; animation-duration: 7s;  animation-delay: 4s;  background: var(--accent); }
+.particle:nth-child(4) { left: 70%; animation-duration: 13s; animation-delay: 1s; }
+.particle:nth-child(5) { left: 85%; animation-duration: 9s;  animation-delay: 3s;  background: var(--accent); }
+.particle:nth-child(6) { left: 5%;  animation-duration: 10s; animation-delay: 5s; }
+
+@keyframes particleFloat {
+  0%   { bottom: -10px; opacity: 0; }
+  10%  { opacity: 0.6; }
+  90%  { opacity: 0.4; }
+  100% { bottom: 105vh; opacity: 0; }
+}
+
+/* ============================================================
+   DISPOSITIVO
+   ============================================================ */
+.terminal-device {
+  position: relative;
+  width: min(520px, 96vw);
+  height: min(880px, 96dvh);
+  z-index: 1;
+  animation: deviceIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+
+  filter: drop-shadow(0 0 24px rgba(0,200,255,0.28))
+          drop-shadow(0 0 70px rgba(0,200,255,0.1));
+}
+
+@keyframes deviceIn {
+  from { opacity: 0; transform: translateY(24px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.device-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ============================================================
+   PANTALLA INTERIOR
+   ============================================================ */
+.device-screen {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+
+  clip-path: polygon(
+    20px 0%, calc(100% - 20px) 0%,
+    100% 20px, 100% calc(100% - 20px),
+    calc(100% - 20px) 100%, 20px 100%,
+    0% calc(100% - 20px), 0% 20px
+  );
+
+  background:
+    radial-gradient(ellipse at 50% 0%,   rgba(0,200,255,0.1)  0%, transparent 55%),
+    radial-gradient(ellipse at 50% 100%, rgba(255,122,26,0.07) 0%, transparent 55%),
+    #050e1c;
+
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.screen-header {
+  flex-shrink: 0;
+  padding: clamp(6px, 1.2vh, 10px) 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0,200,255,0.12);
+  background: rgba(0,200,255,0.04);
+}
+
+.screen-id {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: clamp(8px, 1.2vw, 11px);
+  letter-spacing: 0.2em;
+  color: var(--primary);
+  opacity: 0.7;
+}
+
+.screen-dots { display: flex; gap: 4px; }
+
+.screen-dots span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(0,200,255,0.3);
+}
+
+.screen-dots span:nth-child(2) { background: rgba(0,200,255,0.5); }
+.screen-dots span:nth-child(3) { background: var(--primary); box-shadow: 0 0 6px var(--primary); }
+
+.screen-signal {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: clamp(7px, 1vw, 9px);
+  letter-spacing: 0.05em;
+  color: #22c55e;
+  text-shadow: 0 0 6px rgba(34,197,94,0.8);
+}
+
+/* ============================================================
+   CONTENIDO
+   ============================================================ */
+.screen-content {
+  flex: 1;
+  padding: clamp(12px, 2.5vh, 28px) clamp(16px, 4vw, 32px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 0;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.screen-content::-webkit-scrollbar {
+  display: none;
+}
+
+/* ============================================================
+   LOGO
+   ============================================================ */
+.logo-top {
+  width: clamp(130px, 35%, 210px);
+  filter: drop-shadow(0 0 18px rgba(0,200,255,0.6));
+  animation: float 3.5s ease-in-out infinite;
+}
+
+.logo-top img {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: screen;
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0) rotate(-1deg); }
+  50%     { transform: translateY(-8px) rotate(1deg); }
+}
+
+/* ============================================================
+   TÍTULO
+   ============================================================ */
+h1 {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(28px, 6.5vw, 48px);
+  font-weight: 900;
+  color: var(--text);
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  text-shadow: 0 0 20px rgba(0,200,255,0.3);
+}
+
+/* ============================================================
+   STATUS
+   ============================================================ */
+.status-row {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: clamp(12px, 2vw, 16px);
+  letter-spacing: 0.16em;
+  color: var(--primary);
+  opacity: 0.8;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 8px rgba(34,197,94,1);
+  animation: blink 1.4s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%,100% { opacity: 1; }
+  50%     { opacity: 0.15; }
+}
+
+/* ============================================================
+   ERROR
+   ============================================================ */
+.popup {
+  width: 100%;
+  background: rgba(239,68,68,0.1);
+  border: 1px solid rgba(239,68,68,0.4);
+  border-radius: 6px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.popup p {
+  margin: 0;
+  font-size: clamp(10px, 1.4vw, 13px);
+  color: #fca5a5;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: #fca5a5;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* ============================================================
+   FORMULARIO
+   ============================================================ */
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(8px, 1.5vh, 14px);
+}
+
+label {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: clamp(12px, 1.8vw, 15px);
+  letter-spacing: 0.14em;
+  color: var(--primary);
+  opacity: 0.85;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input-wrap input {
+  width: 100%;
+  padding: clamp(10px, 1.8vh, 16px) 14px;
+  background: rgba(0,200,255,0.04);
+  border: 1px solid rgba(0,200,255,0.3);
+  border-radius: 0;
+
+  clip-path: polygon(
+    10px 0%, 100% 0%, 100% calc(100% - 10px),
+    calc(100% - 10px) 100%, 0% 100%, 0% 10px
+  );
+
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(16px, 2.8vw, 22px);
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--text);
+  text-align: center;
+  outline: none;
+  transition: background .2s, box-shadow .2s;
+}
+
+.input-wrap input::placeholder {
+  color: rgba(0,200,255,0.2);
+  letter-spacing: 0.3em;
+}
+
+.input-wrap input:focus {
+  background: rgba(0,200,255,0.08);
+  box-shadow: 0 0 0 1px rgba(0,200,255,0.4), 0 0 20px rgba(0,200,255,0.15);
+}
+
+.input-corner {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-color: var(--primary);
+  border-style: solid;
+  opacity: 0.8;
+}
+
+.input-corner.tl {
+  top: 0;
+  left: 0;
+  border-width: 1.5px 0 0 1.5px;
+}
+
+.input-corner.br {
+  bottom: 0;
+  right: 0;
+  border-width: 0 1.5px 1.5px 0;
+}
+
+/* ============================================================
+   BOTÓN GENERAR NOMBRE — CORREGIDO, NO GRIS
+   ============================================================ */
+.btn-random-name {
+  all: unset;
+
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  width: auto;
+  min-width: 210px;
+  max-width: 100%;
+  align-self: center;
+
+  margin: -2px auto 2px;
+  padding: 10px 16px;
+
+  background:
+    linear-gradient(90deg, rgba(0,200,255,0.16) 0%, rgba(0,200,255,0.07) 100%) !important;
+
+  border: 1px solid rgba(0,200,255,0.58) !important;
+  border-radius: 0 !important;
+
+  clip-path: polygon(
+    0% 0%, calc(100% - 12px) 0%, 100% 12px,
+    100% 100%, 12px 100%, 0% calc(100% - 12px)
+  );
+
+  font-family: 'Orbitron', sans-serif !important;
+  font-size: clamp(10px, 1.8vw, 12px);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  color: var(--primary) !important;
+  text-transform: uppercase;
+  line-height: 1;
+
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+  box-shadow:
+    0 0 12px rgba(0,200,255,0.22),
+    inset 0 0 12px rgba(0,200,255,0.06) !important;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background .2s ease,
+    border-color .2s ease,
+    color .2s ease;
+}
+
+.btn-random-name::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(0,200,255,0.18) 50%,
+      transparent 100%
+    );
+  transform: translateX(-110%);
+  animation: randomNameShine 2.8s linear infinite;
+  pointer-events: none;
+}
+
+.btn-random-name::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  border: 1px solid rgba(255,122,26,0.16);
+  clip-path: polygon(
+    0% 0%, calc(100% - 10px) 0%, 100% 10px,
+    100% 100%, 10px 100%, 0% calc(100% - 10px)
+  );
+  pointer-events: none;
+}
+
+.btn-random-name:hover {
+  transform: translateY(-2px);
+  background:
+    linear-gradient(90deg, rgba(0,200,255,0.24) 0%, rgba(0,200,255,0.12) 100%) !important;
+  border-color: rgba(0,200,255,0.9) !important;
+  color: #ffffff !important;
+  box-shadow:
+    0 0 22px rgba(0,200,255,0.42),
+    inset 0 0 16px rgba(0,200,255,0.12) !important;
+}
+
+.btn-random-name:active {
+  transform: translateY(0);
+  box-shadow:
+    0 0 12px rgba(0,200,255,0.25),
+    inset 0 0 14px rgba(0,200,255,0.16) !important;
+}
+
+.btn-random-icon {
+  color: var(--accent);
+  font-size: 13px;
+  line-height: 1;
+  text-shadow: 0 0 10px rgba(255,122,26,0.75);
+}
+
+@keyframes randomNameShine {
+  0%   { transform: translateX(-110%); }
+  100% { transform: translateX(110%); }
+}
+
+/* ============================================================
+   BOTÓN PRINCIPAL
+   ============================================================ */
+.btn-submit {
+  width: 100%;
+  padding: clamp(12px, 2vh, 18px) 16px;
+  background: linear-gradient(90deg, rgba(0,200,255,0.15) 0%, rgba(0,200,255,0.08) 100%);
+  border: 1px solid rgba(0,200,255,0.5);
+  border-radius: 0;
+
+  clip-path: polygon(
+    0% 0%, calc(100% - 14px) 0%, 100% 14px,
+    100% 100%, 14px 100%, 0% calc(100% - 14px)
+  );
+
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(12px, 2vw, 16px);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  position: relative;
+  overflow: hidden;
+  animation: btnPulse 2.5s ease-in-out infinite;
+  transition: transform .2s;
+}
+
+.btn-submit::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(0,200,255,0.15) 50%, transparent 100%);
+  animation: shine 2.5s linear infinite;
+}
+
+.btn-arrow {
+  font-size: 0.8em;
+  opacity: 0.7;
+  animation: arrowPulse 1s ease-in-out infinite;
+}
+
+.btn-submit:hover {
+  transform: translateY(-2px);
+  animation-play-state: paused;
+  background: rgba(0,200,255,0.2);
+  box-shadow: 0 0 24px rgba(0,200,255,0.4);
+}
+
+@keyframes btnPulse {
+  0%,100% { box-shadow: 0 0 12px rgba(0,200,255,0.2); }
+  50%     { box-shadow: 0 0 24px rgba(0,200,255,0.5); }
+}
+
+@keyframes arrowPulse {
+  0%,100% { transform: translateX(0); opacity: 0.7; }
+  50%     { transform: translateX(3px); opacity: 1; }
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.screen-footer {
+  flex-shrink: 0;
+  padding: clamp(6px, 1.2vh, 12px) 16px clamp(8px, 1.5vh, 14px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border-top: 1px solid rgba(0,200,255,0.1);
+}
+
+.footer-logo {
+  width: clamp(130px, 55%, 220px);
+  opacity: 0.85;
+}
+
+.footer-logo img {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: screen;
+}
+
+.footer-bar {
+  width: 60px;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(0,200,255,0.4), transparent);
+}
+
+/* ============================================================
+   ANIMACIONES
+   ============================================================ */
+@keyframes shine {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(200%); }
+}
+
+/* ============================================================
+   RESPONSIVE — PANTALLAS PEQUEÑAS
+   ============================================================ */
+
+/* Móvil vertical */
+@media (max-width: 480px) {
+  .terminal-device {
+    width: 96vw;
+    height: 96dvh;
+  }
+
+  .screen-content {
+    padding: 16px 20px;
+    justify-content: space-around;
+  }
+
+  .logo-top {
+    width: clamp(130px, 38vw, 190px);
+  }
+
+  h1 {
+    font-size: clamp(32px, 9vw, 42px);
+  }
+
+  .status-row {
+    font-size: clamp(11px, 3.2vw, 14px);
+  }
+
+  label {
+    font-size: clamp(11px, 3vw, 14px);
+  }
+
+  .input-wrap input {
+    font-size: clamp(16px, 4.5vw, 20px);
+    padding: 14px;
+  }
+
+  .btn-random-name {
+    min-width: 0;
+    width: 100%;
+    padding: 13px 14px;
+    font-size: clamp(10px, 3vw, 12px);
+    letter-spacing: 0.14em;
+  }
+
+  .btn-submit {
+    font-size: clamp(12px, 3.5vw, 15px);
+    padding: 16px;
+  }
+
+  .footer-logo {
+    width: clamp(160px, 55vw, 220px);
+  }
+
+  .screen-id,
+  .screen-signal {
+    font-size: 10px;
+  }
+}
+
+/* Móvil vertical pequeño altura */
+@media (max-height: 700px) and (max-width: 480px) {
+  .logo-top {
+    width: clamp(80px, 22vw, 110px);
+  }
+
+  .screen-content {
+    padding: 10px 18px;
+  }
+
+  h1 {
+    font-size: clamp(22px, 6.5vw, 30px);
+  }
+
+  .btn-random-name {
+    padding: 10px 12px;
+  }
+}
+
+/* Móvil landscape */
+@media (max-height: 500px) and (orientation: landscape) {
+  body {
+    align-items: center;
+  }
+
+  .terminal-device {
+    width: min(680px, 98vw);
+    height: min(420px, 96dvh);
+  }
+
+  .device-screen {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+
+  .screen-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 20px;
+    gap: 12px;
+  }
+
+  .logo-top {
+    width: clamp(60px, 10vw, 90px);
+  }
+
+  h1 {
+    font-size: clamp(16px, 3.5vw, 22px);
+  }
+
+  form {
+    max-width: 320px;
+  }
+
+  .btn-random-name {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* Tablet/desktop pequeño */
+@media (min-width: 768px) and (min-height: 700px) {
+  .terminal-device {
+    width: min(540px, 60vw);
+    height: min(900px, 94dvh);
+  }
+}
+
+/* Desktop grande */
+@media (min-width: 1200px) and (min-height: 800px) {
+  .terminal-device {
+    width: min(560px, 42vw);
+    height: min(920px, 92dvh);
+  }
+}
+
+/* Accesibilidad: reduce animaciones */
+@media (prefers-reduced-motion: reduce) {
+  .btn-submit,
+  .btn-submit::before,
+  .logo-top,
+  .status-dot,
+  .particle,
+  .btn-arrow,
+  .btn-random-name::before {
+    animation: none;
+    opacity: 1;
+  }
+}

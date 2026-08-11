@@ -1,0 +1,575 @@
+:root{
+  --bg: #000712 url('../../compartido/recursos/imagenes/fondo_bienvenida.png') center/cover no-repeat fixed;
+  --card:#081A2D;
+  --text:#E6EEF8;
+  --muted:#AAB7C8;
+  --primary:#00C8FF;
+  --accent:#FF7A1A;
+  --radius:28px;
+  --shadow:0 18px 40px rgba(0,0,0,.6);
+  --glow:0 0 25px rgba(0,200,255,.35);
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+html, body { min-height:100vh; height:100%; }
+
+body{
+  font-family:"Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--accent);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px 20px;
+  overflow-y: auto;
+}
+
+/* ── Contenedor principal ── */
+.bubblemap-container{
+  width: clamp(360px, 96vw, 1100px);
+  background: url('../../compartido/recursos/imagenes/fondo_card.png') center/cover no-repeat fixed;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  padding: 16px 24px 16px;
+  text-align: center;
+  margin: 8px 0 16px;
+}
+
+.bubblemap-container h1{
+  font-size: clamp(22px, 3vw, 38px);
+  color: var(--accent);
+  margin-bottom: 4px;
+  line-height: 1.1;
+}
+
+.subtitle{
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: clamp(13px, 1.4vw, 17px);
+}
+
+/* ── Timer ── */
+.timer-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 4px auto 12px;
+  position: relative;
+  z-index: 3;
+}
+
+.timer-bubblemap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: clamp(150px, 26vw, 220px);
+  height: clamp(56px, 8vw, 78px);
+  background: #0a0a0a;
+  color: #fff;
+  font-weight: 800;
+  font-size: clamp(24px, 4.5vw, 36px);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: .04em;
+  border: clamp(3px, .6vw, 5px) solid #00d4ff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #00d4ff, 0 0 40px #0077ff inset;
+  text-shadow: 0 0 8px #00d4ff;
+  animation: neonPulse 1.2s ease-in-out infinite;
+}
+
+/* ── Panel desafío ── */
+.desafio-panel{
+  width: 100%;
+  max-width: 680px;
+  margin: 0 auto 10px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 2px solid rgba(0, 200, 255, 0.35);
+  background: rgba(7, 38, 70, 0.78);
+  box-shadow: 0 10px 28px rgba(0,0,0,.22);
+}
+
+.desafio-toggle{
+  width: 100%;
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  text-align: left;
+}
+
+.desafio-toggle-head{ display: flex; flex-direction: column; gap: 2px; }
+.desafio-etiqueta{ font-size: 0.85rem; font-weight: 700; color: #00c8ff; }
+.desafio-titulo{ font-size: 0.95rem; font-weight: 700; color: #ffffff; }
+.desafio-icono{ font-size: 0.9rem; font-weight: 800; color: #00c8ff; }
+
+.desafio-body{
+  border-top: 1px solid rgba(255,255,255,.12);
+  padding: 12px 16px 14px;
+}
+
+.desafio-descripcion{
+  margin: 0;
+  color: #d9e6f2;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
+/* ── Reglas desplegable ── */
+.reglas-bubble{
+  width: min(92%, 900px);
+  margin: 0 auto 10px;
+  padding: 10px 16px;
+  border-radius: 14px;
+  background: rgba(7, 21, 43, 0.92);
+  border: 1px solid rgba(0, 200, 255, 0.30);
+  color: #E6EEF8;
+  line-height: 1.5;
+  box-shadow: 0 10px 28px rgba(0,0,0,.25);
+}
+
+.reglas-bubble summary{
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 0.95rem;
+  color: #00C8FF;
+}
+
+.reglas-bubble li{
+  margin-bottom: 4px;
+  font-weight: 600;
+  color: #d9e6f2;
+  font-size: 0.9rem;
+}
+
+.reglas-bubble ul{ margin: 8px 0 0 16px; padding: 0; }
+
+/* ══════════════════════════════════════════
+   BUBBLE STAGE — disposición circular
+══════════════════════════════════════════ */
+.bubble-stage{
+  /* tamaño cuadrado para que el cálculo de círculo funcione */
+  width: min(94vw, 560px);
+  height: min(94vw, 560px);
+  margin: 0 auto 10px;
+  position: relative;
+}
+
+/* Burbuja base */
+.bubble{
+  position: absolute;
+  border-radius: 50%;
+  padding: 14px;
+  border: 1px solid rgba(255,255,255,.26);
+  /* texto oscuro para contraste */
+  color: #1a1a2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,.22);
+  transition: transform .2s ease, box-shadow .2s ease;
+  overflow: hidden;
+}
+
+.bubble:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,.28);
+}
+
+/* ── Burbuja central ── */
+.bubble.central{
+  width: 160px;
+  height: 160px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: default;
+  background: rgba(255,255,255,.18);
+  border: 2px solid rgba(255,255,255,.35);
+  z-index: 2;
+}
+
+.bubble.central:hover{ transform: translate(-50%, -50%); }
+
+.bubble.central img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ── Burbujas satélite ── */
+/* Tamaño de cada satélite: 120px. Radio del círculo: ~190px desde el centro */
+.bubble-item{
+  width: 120px;
+  height: 120px;
+  z-index: 3;
+}
+
+/*
+  6 burbujas en círculo, separadas 60° cada una.
+  Centro del stage: 50% / 50%. Radio: 190px.
+  Posición = centro - radio*cos/sin - mitad_burbuja (60px)
+  Stage 560px → centro = 280px
+
+  Ángulos (empezando arriba, sentido horario):
+    0°  = arriba        → top: 280-190=90px,  left: 280-0=280px  → left:calc(50%-60px), top: ~33px
+    60° = arriba-derecha
+    120°= abajo-derecha
+    180°= abajo
+    240°= abajo-izquierda
+    300°= arriba-izquierda
+
+  Usamos transform: translate(-50%,-50%) con left/top en % del stage.
+*/
+
+/* 12h */ .bubble-gustos    { left: calc(50% +   0.0px); top: calc(50% - 190.0px); transform: translate(-50%, -50%); background: #ff9f0a; }
+/* 2h  */ .bubble-emociones  { left: calc(50% + 164.5px); top: calc(50% -  95.0px); transform: translate(-50%, -50%); background: #9cff1a; }
+/* 4h  */ .bubble-habitos    { left: calc(50% + 164.5px); top: calc(50% +  95.0px); transform: translate(-50%, -50%); background: #8ee889; }
+/* 6h  */ .bubble-entorno    { left: calc(50% +   0.0px); top: calc(50% + 190.0px); transform: translate(-50%, -50%); background: #ef767a; }
+/* 8h  */ .bubble-otros      { left: calc(50% - 164.5px); top: calc(50% +  95.0px); transform: translate(-50%, -50%); background: #ff9f7a; }
+/* 10h */ .bubble-obstaculos { left: calc(50% - 164.5px); top: calc(50% -  95.0px); transform: translate(-50%, -50%); background: #add8e6; }
+
+/* ── Contenido interior de las burbujas ── */
+.bubble-title{
+  font-size: 0.88rem;
+  font-weight: 900;
+  margin-bottom: 4px;
+  color: #1a1a2e;
+  text-shadow: none;
+}
+
+.bubble-preview{
+  font-size: 0.72rem;
+  line-height: 1.2;
+  opacity: .85;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.bubble-status{
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  font-size: .72rem;
+  background: rgba(0,0,0,.15);
+  border-radius: 999px;
+  padding: 2px 6px;
+}
+
+.bubble-count{
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  min-width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(0,0,0,.20);
+  border: 1px solid rgba(255,255,255,.30);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .72rem;
+  font-weight: 900;
+  color: #1a1a2e;
+}
+
+/* ── Acciones de burbujas ── */
+.bubble-actions{
+  width: min(94%, 900px);
+  margin: 0 auto 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bubble-action-btn{
+  border: 1px solid rgba(255,255,255,.28);
+  background: rgba(255,255,255,.12);
+  color: #fff;
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-weight: 800;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.bubble-action-btn:hover{ background: rgba(255,255,255,.20); }
+
+/* ── Footer ── */
+.footer-actions{
+  width: min(94%, 900px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* ── Objeto celular ── */
+.objeto-celular-trigger{
+  position: fixed;
+  right: clamp(18px, 4vw, 54px);
+  bottom: clamp(92px, 15vh, 150px);
+  width: 68px;
+  height: 68px;
+  border: none;
+  border-radius: 20px;
+  background: rgba(7, 21, 43, 0.86);
+  border: 1px solid rgba(0, 200, 255, 0.32);
+  box-shadow: 0 12px 26px rgba(0,0,0,.30), 0 0 18px rgba(0,200,255,.18);
+  cursor: pointer;
+  z-index: 60;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: celularFloat 4.2s ease-in-out infinite alternate;
+}
+
+.objeto-celular-trigger:hover{
+  transform: scale(1.06);
+  box-shadow: 0 14px 30px rgba(0,0,0,.34), 0 0 24px rgba(0,200,255,.30);
+}
+
+.objeto-celular-icon{
+  width: 72px;
+  height: auto;
+  object-fit: contain;
+  animation: celularBounce 1.4s ease-in-out infinite alternate;
+}
+
+@keyframes celularFloat{
+  from { translate: 0 0; }
+  to   { translate: -24px -18px; }
+}
+
+@keyframes celularBounce{
+  from { transform: translateY(0) rotate(-4deg); }
+  to   { transform: translateY(-6px) rotate(4deg); }
+}
+
+.objeto-celular-trigger.oculto{ display: none; }
+
+/* ── Overlay astro ── */
+.astro-object-overlay{
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  z-index: 90;
+  background: rgba(0,0,0,.54);
+  backdrop-filter: blur(5px);
+}
+
+.astro-object-overlay.activo{ display: flex; }
+
+.astro-object-card{
+  width: min(92vw, 520px);
+  border-radius: 22px;
+  padding: 20px;
+  background: radial-gradient(circle at top left, rgba(0,200,255,.18), transparent 40%), rgba(7,21,43,0.96);
+  border: 1px solid rgba(0,200,255,.34);
+  box-shadow: 0 18px 44px rgba(0,0,0,.42);
+  color: #fff;
+  text-align: center;
+  animation: objectCardIn .28s ease both;
+}
+
+@keyframes objectCardIn{
+  from { opacity: 0; transform: translateY(14px) scale(.96); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.astro-object-card h3{ margin: 0 0 10px; font-size: 1.25rem; color: #00c8ff; }
+.astro-object-card p{ margin: 0 0 10px; line-height: 1.5; color: #d9e6f2; font-weight: 600; }
+.astro-object-card strong{ color: #ffe29a; }
+
+.astro-object-close{
+  margin-top: 10px;
+  border: 1px solid rgba(0,200,255,.42);
+  border-radius: 999px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, rgba(0,200,255,.90), rgba(0,120,255,.90));
+  color: #fff;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.astro-flex{ display: flex; align-items: center; gap: 20px; }
+.astro-img{ width: 120px; height: auto; flex-shrink: 0; }
+.astro-text{ display: flex; flex-direction: column; gap: 8px; text-align: left; }
+
+/* ── Overlay inicio fase ── */
+.inicio-fase-overlay{
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 20px 16px 16px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+.inicio-fase-card{
+  width: min(92%, 820px);
+  background: rgba(8,24,48,0.92);
+  border: 1px solid rgba(0,200,255,.30);
+  box-shadow: 0 12px 30px rgba(0,0,0,.24);
+  border-radius: 20px;
+  padding: 16px 20px;
+  color: #fff;
+  backdrop-filter: blur(6px);
+  pointer-events: auto;
+}
+
+.inicio-fase-badge{
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(0,200,255,.12);
+  border: 1px solid rgba(0,200,255,.28);
+  font-weight: 700;
+  font-size: 0.84rem;
+  color: #dff7ff;
+}
+
+.inicio-fase-card h3{ margin: 0 0 8px; font-size: 1.05rem; font-weight: 800; }
+.inicio-fase-card p{ margin: 0 0 8px; line-height: 1.45; font-size: 0.95rem; }
+
+.btn-chip{
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(0,200,255,.4);
+  background: linear-gradient(135deg, rgba(0,200,255,.15), rgba(0,120,255,.25));
+  color: #E6F7FF;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all .25s ease;
+  box-shadow: 0 0 10px rgba(0,200,255,.25);
+  backdrop-filter: blur(4px);
+}
+
+.btn-chip:hover{
+  transform: translateY(-1px) scale(1.03);
+  background: linear-gradient(135deg, rgba(0,200,255,.35), rgba(0,120,255,.45));
+  box-shadow: 0 0 18px rgba(0,200,255,.45);
+}
+
+.btn-chip:disabled{ opacity: .65; cursor: not-allowed; box-shadow: none; }
+
+.contador-fase{ margin-top: 8px; font-size: 0.9rem; opacity: .95; }
+
+/* estados blur */
+.blur-target-bloqueado{ filter: blur(6px); pointer-events: none; user-select: none; opacity: .70; transition: all .3s ease; }
+.blur-target-activo{ filter: none; pointer-events: auto; user-select: auto; opacity: 1; transition: all .3s ease; }
+.timer-esperando{ opacity: .55; }
+.overlay-hidden{ display: none; }
+
+/* ── Responsive tablet ── */
+@media (max-width: 900px){
+  .bubble-stage{
+    width: min(94vw, 480px);
+    height: min(94vw, 480px);
+  }
+
+  .bubble.central{ width: 140px; height: 140px; }
+  .bubble-item{ width: 108px; height: 108px; }
+
+  /* radio reducido */
+  .bubble-gustos { left: calc(50% + -0.0px); top: calc(50% + -165.0px); transform: translate(-50%, -50%); }
+  .bubble-gustos:hover { transform: translate(-50%, calc(-50% - 3px)) scale(1.04); }
+  .bubble-emociones { left: calc(50% + 142.9px); top: calc(50% + -82.5px); transform: translate(-50%, -50%); }
+  .bubble-emociones:hover { transform: translate(-50%, calc(-50% - 3px)) scale(1.04); }
+  .bubble-habitos { left: calc(50% + 142.9px); top: calc(50% + 82.5px); transform: translate(-50%, -50%); }
+  .bubble-habitos:hover { transform: translate(-50%, calc(-50% - 3px)) scale(1.04); }
+  .bubble-entorno { left: calc(50% + 0.0px); top: calc(50% + 165.0px); transform: translate(-50%, -50%); }
+  .bubble-entorno:hover { transform: translate(-50%, calc(-50% - 3px)) scale(1.04); }
+  .bubble-otros { left: calc(50% + -142.9px); top: calc(50% + 82.5px); transform: translate(-50%, -50%); }
+  .bubble-otros:hover { transform: translate(-50%, calc(-50% - 3px)) scale(1.04); }
+  .bubble-obstaculos { left: calc(50% + -142.9px); top: calc(50% + -82.5px); transform: translate(-50%, -50%); }
+  .bubble-obstaculos:hover { transform: translate(-50%, calc(-50% - 3px)) scale(1.04); }
+}
+
+/* ── Responsive móvil ── */
+@media (max-width: 640px){
+  body{ padding: 8px 12px; align-items: flex-start; }
+
+  .bubblemap-container{
+    padding: 14px 12px;
+    margin: 4px 0 12px;
+    border-radius: 20px;
+  }
+
+  .bubblemap-container h1{ font-size: clamp(20px, 7vw, 30px); }
+  .subtitle{ font-size: 13px; margin-bottom: 8px; }
+
+  .timer-bubblemap{ width: 150px; height: 56px; font-size: 26px; border-radius: 16px; }
+
+  /* móvil: grid en vez de círculo */
+  .bubble-stage{
+    width: 100%;
+    height: auto;
+    min-height: unset;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(110px, 1fr));
+    gap: 12px;
+  }
+
+  .bubble{
+    position: relative;
+    left: auto !important; right: auto !important;
+    top: auto !important; bottom: auto !important;
+    transform: none !important;
+    width: 100%;
+    aspect-ratio: 1/1;
+    height: auto;
+  }
+
+  .bubble:hover{ transform: translateY(-2px) scale(1.03) !important; }
+
+  .bubble.central{
+    grid-column: 1 / -1;
+    width: 160px;
+    height: 160px;
+    justify-self: center;
+    position: relative;
+    left: auto; top: auto;
+    transform: none;
+  }
+
+  .bubble.central:hover{ transform: none; }
+
+  .inicio-fase-overlay{ padding: 12px 10px 10px; }
+  .inicio-fase-card{ width: 100%; border-radius: 16px; padding: 12px 14px; }
+  .inicio-fase-card h3{ font-size: 0.95rem; }
+  .inicio-fase-card p{ font-size: 0.88rem; }
+  .btn-chip{ width: 100%; justify-content: center; }
+
+  .astro-flex{ flex-direction: column; text-align: center; }
+  .astro-text{ text-align: center; }
+  .astro-img{ width: 100px; }
+
+  .objeto-celular-trigger{ width: 58px; height: 58px; border-radius: 18px; bottom: 76px; }
+}
+
+@keyframes neonPulse{
+  0%,100%{ box-shadow: 0 0 20px #00d4ff, 0 0 40px #0077ff inset; }
+  50%{ box-shadow: 0 0 40px #00ffff, 0 0 60px #00aaff inset; }
+}
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation: none !important; transition: none !important; }
+}

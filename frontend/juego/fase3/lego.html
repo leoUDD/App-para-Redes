@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <title>
+    Misión Emprende UDD — LEGO
+  </title>
+
+  <link rel="stylesheet" href="estilo_lego.css">
+  <link rel="stylesheet" href="fase3-serverless.css">
+</head>
+
+<body class="f3-lego-page">
+  <audio
+    id="musicaLego"
+    src="../../compartido/recursos/sonidos/musica_lego.mp3"
+    loop
+    preload="auto"
+  ></audio>
+
+  <button
+    id="btnMusicaLego"
+    class="f3-sound"
+    type="button"
+    aria-label="Activar o silenciar música"
+  >
+    🔊
+  </button>
+
+  <main class="phone f3-lego-shell">
+    <div
+      id="inicioLegoOverlay"
+      class="inicio-fase-overlay"
+    >
+      <section class="inicio-fase-card">
+        <div class="inicio-fase-badge">
+          MISIÓN DE CREATIVIDAD
+        </div>
+
+        <h3>Antes de comenzar</h3>
+
+        <p>
+          Agentes, revisen el desafío y preparen
+          su construcción.
+        </p>
+
+        <p>
+          Tendrán 15 segundos para construir.
+          Cuando todos los equipos presionen
+          “Listo para comenzar”, la actividad
+          se habilitará automáticamente.
+        </p>
+
+        <button
+          id="btnListoInicioLego"
+          type="button"
+          class="btn-chip"
+        >
+          ⚡ Listo para comenzar
+        </button>
+
+        <div
+          id="textoEsperaLego"
+          class="contador-fase"
+        >
+          Esperando a los demás equipos...
+        </div>
+
+        <div
+          id="contadorInicioLego"
+          class="contador-fase"
+        >
+          0/0 grupos listos
+        </div>
+      </section>
+    </div>
+
+    <img
+      id="legoLogo"
+      src="../../compartido/recursos/imagenes/Lego-logo.png"
+      class="logo blur-target-bloqueado"
+      alt="LEGO"
+    >
+
+    <h1
+      id="legoTitle"
+      class="title blur-target-bloqueado"
+    >
+      Construye tu solución
+    </h1>
+
+    <section
+      id="ruletaLegoCard"
+      class="ruleta-lego-card blur-target-bloqueado"
+    >
+      <div class="ruleta-lego-head">
+        <div>
+          <div class="ruleta-lego-kicker">
+            Opcional
+          </div>
+
+          <h3 class="ruleta-lego-title">
+            🎡 Ruleta LEGO
+          </h3>
+
+          <p class="ruleta-lego-texto">
+            Puedes lanzar la ruleta hasta
+            3 veces durante esta fase.
+          </p>
+        </div>
+
+        <button
+          id="btnAbrirRuleta"
+          class="f3-secondary-button"
+          type="button"
+        >
+          Abrir ruleta
+        </button>
+      </div>
+
+      <div class="ruleta-lego-resumen">
+        <span id="intentosRuleta">
+          Intentos disponibles: 3/3
+        </span>
+
+        <span id="ultimoResultadoRuleta">
+          Aún no has lanzado la ruleta.
+        </span>
+      </div>
+    </section>
+
+    <section
+      id="desafioPanel"
+      class="f3-panel blur-target-bloqueado"
+    >
+      <button
+        id="desafioToggle"
+        class="f3-panel-toggle"
+        type="button"
+      >
+        <span>
+          Desafío seleccionado:
+          <strong id="desafioNombre">
+            Cargando...
+          </strong>
+        </span>
+
+        <span id="desafioIcono">▼</span>
+      </button>
+
+      <div id="desafioBody" hidden>
+        <p id="desafioDescripcion">
+          Cargando descripción...
+        </p>
+      </div>
+    </section>
+
+    <section
+      id="ideasPanel"
+      class="f3-panel blur-target-bloqueado"
+    >
+      <h3>
+        Recuerda las características
+        de tu cliente
+      </h3>
+
+      <ul id="ideasList">
+        <li>
+          Cargando hallazgos del Bubble Map...
+        </li>
+      </ul>
+    </section>
+
+    <p
+      id="legoSubtitle"
+      class="f3-lego-subtitle blur-target-bloqueado"
+    >
+      Ahora usa las piezas de LEGO
+      para construir tu solución.
+    </p>
+
+    <div
+      id="timer"
+      class="f3-lego-timer blur-target-bloqueado"
+    >
+      00:15
+    </div>
+
+    <section
+      id="fotoPanel"
+      class="foto-panel blur-target-bloqueado"
+    >
+      <h3>
+        Prepara la foto de tu solución LEGO
+      </h3>
+
+      <p>
+        Al terminar el tiempo podrás subir
+        una foto de la construcción.
+      </p>
+
+      <button
+        id="btnAbrirPregunta"
+        class="f3-secondary-button"
+        type="button"
+      >
+        🧑‍🚀 Pregunta del astronauta
+      </button>
+    </section>
+  </main>
+
+  <div
+    id="modalFin"
+    class="modal f3-modal"
+  >
+    <div class="modal-content f3-modal-content">
+      <h2>Tiempo terminado</h2>
+
+      <p>
+        Sube una foto de tu LEGO o marca
+        que no pudieron subirla.
+      </p>
+
+      <form id="formFotoLego">
+        <input
+          type="file"
+          id="fotoLego"
+          class="foto-input"
+          accept="image/*"
+        >
+
+        <label
+          class="sin-foto-label"
+          for="sinFotoLego"
+        >
+          <input
+            type="checkbox"
+            id="sinFotoLego"
+          >
+
+          <span>
+            No pudimos subir foto
+          </span>
+        </label>
+
+        <div
+          id="previewFotoWrapper"
+          class="preview-wrapper"
+        >
+          <div class="preview-label">
+            Vista previa
+          </div>
+
+          <img
+            id="previewFoto"
+            class="preview-img"
+            alt="Vista previa de la foto LEGO"
+          >
+        </div>
+
+        <div
+          id="errorFotoLego"
+          class="error-foto"
+        ></div>
+
+        <button
+          id="btnGuardarLego"
+          class="btn-guardar-foto"
+          type="submit"
+          disabled
+        >
+          Guardar y continuar
+        </button>
+
+        <div
+          id="estadoGruposLego"
+          class="estado-grupos-lego"
+        >
+          0/0 grupos listos
+        </div>
+
+        <div
+          id="detalleGruposLego"
+          class="detalle-grupos-lego"
+        >
+          0 con foto · 0 sin foto
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div
+    id="modalRuleta"
+    class="modal f3-modal"
+  >
+    <div class="modal-content f3-modal-content">
+      <button
+        id="btnCerrarRuleta"
+        class="f3-modal-close"
+        type="button"
+      >
+        ✕
+      </button>
+
+      <h2>🎡 Desafío LEGO</h2>
+
+      <div
+        id="ruletaVisual"
+        class="f3-wheel"
+      >
+        UDD
+      </div>
+
+      <p id="resultadoRuleta">
+        Lanza la ruleta para descubrir
+        una oportunidad o restricción.
+      </p>
+
+      <button
+        id="btnGirarRuleta"
+        class="f3-primary-button"
+        type="button"
+      >
+        Lanzar ruleta
+      </button>
+    </div>
+  </div>
+
+  <div
+    id="modalPregunta"
+    class="modal f3-modal"
+  >
+    <div class="modal-content f3-modal-content">
+      <button
+        id="btnCerrarPregunta"
+        class="f3-modal-close"
+        type="button"
+      >
+        ✕
+      </button>
+
+      <h2>🧑‍🚀 Pregunta del astronauta</h2>
+
+      <p>
+        ¿Qué habilidades y en qué orden
+        han visto hasta ahora?
+      </p>
+
+      <div class="f3-answer-grid">
+        <button
+          type="button"
+          data-respuesta="A"
+        >
+          A) Creatividad → Trabajo en equipo
+          → Empatía
+        </button>
+
+        <button
+          type="button"
+          data-respuesta="B"
+        >
+          B) Trabajo en equipo → Empatía
+          → Creatividad
+        </button>
+
+        <button
+          type="button"
+          data-respuesta="C"
+        >
+          C) Empatía → Comunicación → Apoyo
+        </button>
+
+        <button
+          type="button"
+          data-respuesta="D"
+        >
+          D) Comunicación → Creatividad
+          → Trabajo en equipo
+        </button>
+      </div>
+
+      <p id="resultadoPregunta"></p>
+    </div>
+  </div>
+
+  <script src="../../compartido/js/api.js"></script>
+  <script src="../compartido.js"></script>
+  <script src="fase3-comun.js"></script>
+  <script src="lego.js"></script>
+</body>
+</html>

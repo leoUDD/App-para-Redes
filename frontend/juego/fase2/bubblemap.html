@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Misión Emprende UDD — Bubble Map</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilo_bubblemap.css"><link rel="stylesheet" href="fase2-serverless.css">
+</head>
+<body class="f2-page">
+  <main class="f2-shell">
+    <header class="f2-topbar"><div><div class="f2-kicker">MISIÓN DE EMPATÍA</div><h1 class="f2-title">Bubble Map</h1><p id="objetivo" style="color:#a9b8cc;margin:6px 0 0"></p></div><div id="timer" class="f2-timer">03:00</div></header>
+    <div class="bubble-layout">
+      <section class="f2-panel bubble-map-grid">
+        <div class="bubble-field"><label>¿Qué siente?</label><textarea id="emociones" rows="3" placeholder="Emociones, preocupaciones..."></textarea></div>
+        <div class="bubble-field"><label>¿Qué le gusta?</label><textarea id="gustos" rows="3" placeholder="Intereses y preferencias..."></textarea></div>
+        <div class="bubble-field"><label>¿Cómo es su entorno?</label><textarea id="entorno" rows="3" placeholder="Familia, trabajo, comunidad..."></textarea></div>
+        <div class="bubble-field"><label>¿Qué necesita?</label><textarea id="necesidades" rows="3" placeholder="Necesidades principales..."></textarea></div>
+        <div class="bubble-field"><label>¿Qué la limita?</label><textarea id="limitaciones" rows="3" placeholder="Barreras y dificultades..."></textarea></div>
+        <div class="bubble-field"><label>¿Qué la motiva?</label><textarea id="motivaciones" rows="3" placeholder="Metas y motivaciones..."></textarea></div>
+        <div class="bubble-field bubble-wide"><label>Otros hallazgos (uno por línea)</label><textarea id="otros" rows="3" placeholder="Tecnología\nSeguridad"></textarea></div>
+        <div class="bubble-field bubble-wide"><label>Relato breve de la persona</label><textarea id="relato" rows="4" placeholder="Escriban una historia breve desde su perspectiva..."></textarea></div>
+        <div class="bubble-field bubble-wide"><label>Link o noticia de apoyo</label><input id="link" type="url" placeholder="https://..."></div>
+      </section>
+      <aside class="f2-panel">
+        <div class="bubble-score"><div style="text-align:center"><strong id="puntaje">0</strong><div>de 10</div></div></div>
+        <p style="color:#a9b8cc;line-height:1.55">Cada dimensión completada suma tokens. Mientras más completa sea la mirada sobre la persona objetivo, mayor será la recompensa.</p>
+        <div id="guardado" class="serverless-f2-progress">Cambios sin guardar</div>
+        <button id="completar" class="f2-primary-button" style="width:100%;margin-top:16px">FINALIZAR BUBBLE MAP</button>
+        <div id="progreso" class="serverless-f2-progress" style="margin-top:12px;text-align:center"></div>
+      </aside>
+    </div>
+  </main>
+  <script src="../../compartido/js/api.js"></script><script src="../compartido.js"></script><script src="fase2-comun.js"></script><script src="bubblemap.js"></script>
+</body>
+</html>

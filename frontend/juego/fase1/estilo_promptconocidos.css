@@ -1,0 +1,209 @@
+:root{
+  --bg: #000712 url('../../compartido/recursos/imagenes/fondo_bienvenida.png') center/cover no-repeat fixed;
+  --card:#081A2D;
+  --text:#E6EEF8;
+  --muted:#AAB7C8;
+  --primary:#00C8FF;
+  --accent:#FF7A1A;
+  --radius:28px;
+  --shadow:0 18px 40px rgba(0,0,0,.6);
+  --glow:0 0 25px rgba(0,200,255,.35);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+}
+
+/* Contenedor */
+.mode-container{
+  width:clamp(360px, 94vw, 980px);
+  background:var(--card);
+  border-radius:28px;
+  box-shadow:var(--shadow);
+  padding:clamp(24px, 4vw, 44px);
+}
+
+/* Encabezado */
+.mode-header{
+  text-align:center;
+  margin-bottom:clamp(16px, 2.5vw, 24px);
+}
+.mode-title{
+  margin:0 0 6px;
+  font-size:clamp(24px, 4.2vw, 36px);
+  font-weight:800;
+  color:var(--primary);
+}
+.mode-subtitle{
+  margin:0;
+  color:var(--muted);
+  font-size:clamp(14px, 2vw, 18px);
+}
+
+/* Grid de opciones */
+.mode-grid{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:clamp(14px, 2vw, 20px);
+  margin-top:clamp(14px, 2vw, 20px);
+}
+@media (min-width: 720px){
+  .mode-grid{ grid-template-columns:repeat(2, 1fr); }
+}
+
+/* ===== Tarjeta con imagen de fondo ===== */
+.mode-card{
+  position:relative;
+  display:flex;
+  height:clamp(240px, 34vw, 320px);
+  border-radius:20px;
+  overflow:hidden;
+  text-decoration:none;
+  color:#fff;
+  box-shadow:0 10px 22px rgba(0,0,0,.14);
+  transition:transform .18s ease, box-shadow .18s ease, filter .18s ease;
+  background-position:center -15px;
+  background-size:cover;
+  background-repeat:no-repeat;
+
+  animation: cardGlow 5.2s ease-in-out infinite;
+}
+
+/* Desfase entre cada card para que no se animen igual */
+.mode-grid .mode-card:nth-child(1){
+  animation-delay: 0s;
+}
+.mode-grid .mode-card:nth-child(2){
+  animation-delay: 1.3s;
+}
+
+/* imágenes por tarjeta */
+.mode-intro{
+  background-image:url("../../compartido/recursos/imagenes/desconocidos.png");
+}
+.mode-known{
+  background-image:url("../../compartido/recursos/imagenes/conocidoos.png");
+}
+
+/* overlay para contraste */
+.mode-card .overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+      180deg,
+      rgba(10,19,40,.55) 0%,
+      rgba(10,19,40,.35) 45%,
+      rgba(10,19,40,.65) 100%
+  );
+  pointer-events:none;
+}
+
+.mode-content{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  gap:8px;
+  width:100%;
+  padding:clamp(16px, 2.4vw, 22px);
+  z-index:1;
+}
+
+/* chip/emoji */
+.mode-emoji{
+  width:54px;height:54px;
+  display:grid;place-items:center;
+  border-radius:14px;
+  background:rgba(255,255,255,.18);
+  backdrop-filter:saturate(180%) blur(6px);
+  border:1px solid rgba(255,255,255,.35);
+  font-size:26px;
+  box-shadow:inset 0 0 0 2px rgba(255,255,255,.08);
+}
+
+/* textos */
+.mode-name{
+  margin:6px 0 0;
+  font-size:clamp(18px, 2.2vw, 22px);
+  font-weight:800;
+  line-height:1.2;
+  text-shadow:0 2px 8px rgba(0,0,0,.4);
+}
+.mode-desc{
+  margin:0;
+  font-size:clamp(13px, 1.8vw, 16px);
+  line-height:1.45;
+  color:#eef3ff;
+  text-shadow:0 2px 8px rgba(0,0,0,.35);
+}
+
+.mode-cta{
+  margin-top:8px;
+  align-self:flex-end;
+  background:#ffffff;
+  color:#1e2a44;
+  font-weight:800;
+  font-size:14px;
+  padding:10px 14px;
+  border-radius:12px;
+  box-shadow:0 10px 20px rgba(0,0,0,.18);
+  transition:transform .15s ease, background .15s ease;
+  user-select:none;
+}
+
+.mode-card:hover {
+  transform:translateY(-3px);
+  box-shadow:0 16px 32px rgba(0,0,0,.23);
+  filter:brightness(1.03);
+}
+.mode-card:hover .mode-cta{
+  transform:translateY(-1px);
+  background:#eaf0ff;
+}
+
+/* Accesibilidad */
+.mode-card:focus-visible{
+  outline:none;
+  box-shadow:0 0 0 4px rgba(255,255,255,.9), 0 0 0 8px rgba(75,116,170,.45);
+}
+
+@keyframes cardGlow{
+  0%,100%{
+    box-shadow:0 10px 22px rgba(0,0,0,.14);
+    filter:brightness(1);
+  }
+  50%{
+    box-shadow:0 18px 40px rgba(0,0,0,.28);
+    filter:brightness(1.04);
+  }
+}
+
+/* ── Título ── */
+.mode-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  color: #FF7A1A;
+  text-shadow: 0 0 12px rgba(255, 122, 26, 0.5);
+  letter-spacing: 0.04em;
+}
+
+/* ── Hover en cards ── */
+.mode-card {
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.mode-card:hover {
+  border: 2px solid rgba(0, 200, 255, 0.6);
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.25), inset 0 0 12px rgba(0, 200, 255, 0.06);
+}
