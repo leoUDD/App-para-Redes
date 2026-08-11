@@ -289,9 +289,7 @@
     // ── Modal de contraseña para perfiles restringidos ──
     // Profesor se valida ahora mediante el backend serverless.
     // Administrador continúa temporalmente con validación local.
-    const PASSWORDS = {
-      'admin': 'admin123',
-    };
+    const PASSWORDS = {};
 
     const modalOverlay = document.getElementById('modalOverlay');
     const modalInput   = document.getElementById('modalInput');
@@ -348,6 +346,10 @@
         e.preventDefault();
         const href = link.getAttribute('href');
         const rol  = link.dataset.rol;
+        if (rol=== 'admin') {
+          alert('El acceso de Administrador está en construcción.');
+          return;
+        }
         if (link.classList.contains('restringido')) {
           openModal(href, rol);
         } else {
