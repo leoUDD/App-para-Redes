@@ -1,0 +1,7769 @@
+[
+{
+  "model": "sessions.session",
+  "pk": "1jz39xcj0db4uloewv22i87f5fm10ipi",
+  "fields": {
+    "session_data": "eyJzZXNpb25faWQiOjE1LCJyYW5raW5nX2ZsYWdzX3Jlc2V0ZWFkb3MiOmZhbHNlLCJtb2RvX2Nvbm9jaWRvcyI6InJhcGlkbyJ9:1wMhLU:AqZsrGpq-G9eq4-Ki8Dmp8eoftZ7ifrqCXMYVzWmBF8",
+    "expire_date": "2026-05-26T07:16:00.352Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "1mop7jxc625nu59wscsy6j9eendsewsu",
+  "fields": {
+    "session_data": "eyJncnVwb19pZCI6MzUsInNlc2lvbl9pZCI6MTMsInJhbmtpbmdfZmxhZ3NfcmVzZXRlYWRvcyI6ZmFsc2V9:1wMfFQ:qFMj3fLYBK9_PSwQEqtUNcenIs38AG9NZTYemWmDndQ",
+    "expire_date": "2026-05-26T05:01:36.907Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "25463fm5pbu48w6m4dlxx36d0oyrbjf9",
+  "fields": {
+    "session_data": "eyJncnVwb19pZCI6MzUsInNlc2lvbl9pZCI6MTMsInJhbmtpbmdfZmxhZ3NfcmVzZXRlYWRvcyI6ZmFsc2V9:1wMY8e:iIN7KNhO68nlsNy4M_9etwT44CgSsvD7ANnXiUtAoyQ",
+    "expire_date": "2026-05-25T21:26:08.460Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "4j2mao0o8rmn57q9iwgzod8fgdd7jbof",
+  "fields": {
+    "session_data": "eyJzZXNpb25faWQiOjMsInJhbmtpbmdfZmxhZ3NfcmVzZXRlYWRvcyI6ZmFsc2V9:1w88LR:KGHSBhltEAStRKdBafq4UrJsJM7f3bmE4N_lWvP4IXM",
+    "expire_date": "2026-04-16T03:03:45.479Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "6snh1wms1vweg0amvl2fpkw491jlku9y",
+  "fields": {
+    "session_data": "eyJ0ZW1hIjoic2FsdWQifQ:1vLCOu:hq4J5T95Qut3IFhcuc_b4rJwq3IPnALUf6b-PaI-pDQ",
+    "expire_date": "2025-12-02T03:29:04.471Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "b9tht2rysphbl5jpeynrqqq137qcat4o",
+  "fields": {
+    "session_data": "eyJ0ZW1hIjoic3VzdGVudGFiaWxpZGFkIn0:1vLC5O:7T8YA6EXSm57JHpR3w-GdIM7g9_vw9U4ZNcjy8-ffxU",
+    "expire_date": "2025-12-02T03:08:54.771Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "df4t0mv5cgxvuk3ampcivk2hrakkya4u",
+  "fields": {
+    "session_data": "eyJzZXNpb25faWQiOjMsInJhbmtpbmdfZmxhZ3NfcmVzZXRlYWRvcyI6ZmFsc2V9:1w88Lh:pZK8NyhKCJMHcZwvof4kO8v25dA2OTgcIZg9ppPn_ns",
+    "expire_date": "2026-04-16T03:04:01.102Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ezk44h945gx9xpwmowkt162sloqw8r36",
+  "fields": {
+    "session_data": "eyJzZXNpb25faWQiOjQsInJhbmtpbmdfZmxhZ3NfcmVzZXRlYWRvcyI6ZmFsc2UsIm1vZG9fY29ub2NpZG9zIjoibm9ybWFsIn0:1wGUdi:5SgkX-CQny4Ecr8vMYehPRJH4BEcDueCuDurB5Eb8pw",
+    "expire_date": "2026-05-09T04:29:10.392Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "gcp1mf3ka74h66muq2xjlkmk8z92b0dq",
+  "fields": {
+    "session_data": "eyJzZXNpb25faWQiOjE1LCJyYW5raW5nX2ZsYWdzX3Jlc2V0ZWFkb3MiOmZhbHNlLCJtb2RvX2Nvbm9jaWRvcyI6Im5vcm1hbCJ9:1wMhLT:swu20zBgS3JJTzbV6Bnnm7pRx0j5O2BmQOBijB-V8NQ",
+    "expire_date": "2026-05-26T07:15:59.410Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "hzp0r7nla11ebsghzlzyo7309ancwwyo",
+  "fields": {
+    "session_data": ".eJwdyDEKgDAMAMC_ZO6kg9DPhNCmJdgmkugk_l3oePdC9-cylAp52xMEh5guHgmc9BTt2Ab1QOfgm6laQG40ghNMq4bF1IqsBjWfNOD7AWsJH7I:1wLtYr:PIZJ8JOEEyUtUAOZongFmXQbGaop5nVU1rB9tMZdzco",
+    "expire_date": "2026-05-24T02:06:29.609Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ij07vb7m3fzktr4co8wf0nklkhqlxtge",
+  "fields": {
+    "session_data": ".eJwdi0EKwCAMwP7Ss6cxGPiZUrRKmWvFbqexv0-8JYG8UMfTDSVD3PYAzi6mS48Ag_QUrVgaVcfBzjdTNodYqDkHuCwbJlNLsvI8-iT4fmsHH6k:1wLtYv:3Vsf3FkuNWMgFMEayo-CzQRW8lGGUkWQ8JVKemDKVY4",
+    "expire_date": "2026-05-24T02:06:33.574Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "mtk6zsyp8smmqn4wjj5gliu4r87or048",
+  "fields": {
+    "session_data": "eyJzZXNpb25faWQiOjMsInJhbmtpbmdfZmxhZ3NfcmVzZXRlYWRvcyI6ZmFsc2V9:1w88LW:gK-5Pw8H0UoGb5Tbni3cKImAsgKBKj11Tsp-z_CK1XE",
+    "expire_date": "2026-04-16T03:03:50.727Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "pz1xa4pvgu7jn3o778n05u0khbrzd4d3",
+  "fields": {
+    "session_data": "eyJ0ZW1hIjoic2FsdWQiLCJ1c2VyX3Rva2VucyI6MSwiZ3J1cG9faWQiOjd9:1vQheW:HuD8XKdCF73jP4rKdfmX4MtMm3LdGUSEeubItby0c8w",
+    "expire_date": "2025-12-17T07:51:56.077Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "vhse6bitkspkx157f99m3bagkf646j0f",
+  "fields": {
+    "session_data": "eyJ0ZW1hIjoic2FsdWQifQ:1vOQn0:1PUHN2yUfOWhv3tKrQV3Yhak1lFy2Ry3DN2zFqrporw",
+    "expire_date": "2025-12-11T01:27:18.307Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "yjqku0nla226pmkasfv9a0ewjge9ausx",
+  "fields": {
+    "session_data": "eyJ0ZW1hIjoic2FsdWQifQ:1vLCO9:vKT9MRsgbupeXvewQitue4MSCE3ZYb4d8nAQgPmBukM",
+    "expire_date": "2025-12-02T03:28:17.713Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "zu3uky9c3r5tjmg1w4bxi6xubi39p8yw",
+  "fields": {
+    "session_data": "eyJzZXNpb25faWQiOjQsInJhbmtpbmdfZmxhZ3NfcmVzZXRlYWRvcyI6ZmFsc2UsIm1vZG9fY29ub2NpZG9zIjoicmFwaWRvIn0:1wGUdk:5ilc_4a7Dd4Uw83NajHKfJbvOoT3K7WRFp1jKvEL2_A",
+    "expire_date": "2026-05-09T04:29:12.214Z"
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 5,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "j.azuajep@udd.cl",
+    "rutalumno": "26083316",
+    "nombrealumno": "JESUS ALEJANDRO",
+    "apellidopaternoalumno": "AZUAJE",
+    "apellidomaternoalumno": "PEREZ",
+    "carreraalumno": "",
+    "grupo": 5
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 6,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "lanascot@udd.cl",
+    "rutalumno": "21793579",
+    "nombrealumno": "LEANDRO",
+    "apellidopaternoalumno": "AÑASCO",
+    "apellidomaternoalumno": "TELLERI",
+    "carreraalumno": "",
+    "grupo": 5
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 7,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "r.barbosap@udd.cl",
+    "rutalumno": "21552660",
+    "nombrealumno": "RAIMUNDO",
+    "apellidopaternoalumno": "BARBOSA",
+    "apellidomaternoalumno": "PETIT",
+    "carreraalumno": "",
+    "grupo": 5
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 8,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "a.barrientosv@udd.cl",
+    "rutalumno": "21594003",
+    "nombrealumno": "ALEJANDRO PATRICIO",
+    "apellidopaternoalumno": "BARRIENTOS",
+    "apellidomaternoalumno": "VILLALOBOS",
+    "carreraalumno": "",
+    "grupo": 5
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 9,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "b.farinal@udd.cl",
+    "rutalumno": "21756083",
+    "nombrealumno": "BASTIÁN IGNACIO",
+    "apellidopaternoalumno": "FARIÑA",
+    "apellidomaternoalumno": "LARA",
+    "carreraalumno": "",
+    "grupo": 5
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 10,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "m.guerreroa@udd.cl",
+    "rutalumno": "21605843",
+    "nombrealumno": "MARTÍN ISAIAS",
+    "apellidopaternoalumno": "GUERRERO",
+    "apellidomaternoalumno": "ANCAPICHÚN",
+    "carreraalumno": "",
+    "grupo": 5
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 11,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "m.olivaresr@udd.cl",
+    "rutalumno": "21644638",
+    "nombrealumno": "MARTÍN ALEJANDRO",
+    "apellidopaternoalumno": "OLIVARES",
+    "apellidomaternoalumno": "ROJAS",
+    "carreraalumno": "",
+    "grupo": 6
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 12,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "spagem@udd.cl",
+    "rutalumno": "21612007",
+    "nombrealumno": "SANTIAGO ANDRÉS",
+    "apellidopaternoalumno": "PAGE",
+    "apellidomaternoalumno": "MUNITA",
+    "carreraalumno": "",
+    "grupo": 6
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 13,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "sramorinoc@udd.cl",
+    "rutalumno": "21782154",
+    "nombrealumno": "SEBASTIÁN",
+    "apellidopaternoalumno": "RAMORINO",
+    "apellidomaternoalumno": "CARRILLO",
+    "carreraalumno": "",
+    "grupo": 6
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 14,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "a.reyesp@udd.cl",
+    "rutalumno": "21150243",
+    "nombrealumno": "AGUSTÍN EDUARDO",
+    "apellidopaternoalumno": "REYES",
+    "apellidomaternoalumno": "PEREIRA",
+    "carreraalumno": "",
+    "grupo": 6
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 15,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "l.riquelmet@udd.cl",
+    "rutalumno": "21303074",
+    "nombrealumno": "LUCAS JEREMÍAS",
+    "apellidopaternoalumno": "RIQUELME",
+    "apellidomaternoalumno": "TORRES",
+    "carreraalumno": "",
+    "grupo": 6
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 16,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "d.romerob@udd.cl",
+    "rutalumno": "21439688",
+    "nombrealumno": "DANIEL ANDRÉS",
+    "apellidopaternoalumno": "ROMERO",
+    "apellidomaternoalumno": "BELTRÁN",
+    "carreraalumno": "",
+    "grupo": 6
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 17,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "s.ruizr@udd.cl",
+    "rutalumno": "21675942",
+    "nombrealumno": "SEBASTIAN FERNANDO",
+    "apellidopaternoalumno": "RUIZ",
+    "apellidomaternoalumno": "RIFFO",
+    "carreraalumno": "",
+    "grupo": 7
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 18,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "jsaavedrah@udd.cl",
+    "rutalumno": "21551254",
+    "nombrealumno": "JOSE IGNACIO",
+    "apellidopaternoalumno": "SAAVEDRA",
+    "apellidomaternoalumno": "HANS",
+    "carreraalumno": "",
+    "grupo": 7
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 19,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "a.torresf@udd.cl",
+    "rutalumno": "21740840",
+    "nombrealumno": "ÁLVARO FRANCISCO",
+    "apellidopaternoalumno": "TORRES",
+    "apellidomaternoalumno": "FERNÁNDEZ",
+    "carreraalumno": "",
+    "grupo": 7
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 20,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "r.varelar@udd.cl",
+    "rutalumno": "21765535",
+    "nombrealumno": "RENATO IGNACIO",
+    "apellidopaternoalumno": "VARELA",
+    "apellidomaternoalumno": "ROJAS",
+    "carreraalumno": "",
+    "grupo": 7
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 21,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 1,
+    "emailalumno": "matvergaraf@udd.cl",
+    "rutalumno": "20914842",
+    "nombrealumno": "MATÍAS ALEJANDRO",
+    "apellidopaternoalumno": "VERGARA",
+    "apellidomaternoalumno": "FLORES",
+    "carreraalumno": "",
+    "grupo": 7
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 22,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "j.azuajep@udd.cl",
+    "rutalumno": "26083316",
+    "nombrealumno": "JESUS ALEJANDRO",
+    "apellidopaternoalumno": "AZUAJE",
+    "apellidomaternoalumno": "PEREZ",
+    "carreraalumno": "",
+    "grupo": 8
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 23,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "lanascot@udd.cl",
+    "rutalumno": "21793579",
+    "nombrealumno": "LEANDRO",
+    "apellidopaternoalumno": "AÑASCO",
+    "apellidomaternoalumno": "TELLERI",
+    "carreraalumno": "",
+    "grupo": 8
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 24,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "r.barbosap@udd.cl",
+    "rutalumno": "21552660",
+    "nombrealumno": "RAIMUNDO",
+    "apellidopaternoalumno": "BARBOSA",
+    "apellidomaternoalumno": "PETIT",
+    "carreraalumno": "",
+    "grupo": 8
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 25,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "a.barrientosv@udd.cl",
+    "rutalumno": "21594003",
+    "nombrealumno": "ALEJANDRO PATRICIO",
+    "apellidopaternoalumno": "BARRIENTOS",
+    "apellidomaternoalumno": "VILLALOBOS",
+    "carreraalumno": "",
+    "grupo": 8
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 26,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "b.farinal@udd.cl",
+    "rutalumno": "21756083",
+    "nombrealumno": "BASTIÁN IGNACIO",
+    "apellidopaternoalumno": "FARIÑA",
+    "apellidomaternoalumno": "LARA",
+    "carreraalumno": "",
+    "grupo": 8
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 27,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "m.guerreroa@udd.cl",
+    "rutalumno": "21605843",
+    "nombrealumno": "MARTÍN ISAIAS",
+    "apellidopaternoalumno": "GUERRERO",
+    "apellidomaternoalumno": "ANCAPICHÚN",
+    "carreraalumno": "",
+    "grupo": 8
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 28,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "m.olivaresr@udd.cl",
+    "rutalumno": "21644638",
+    "nombrealumno": "MARTÍN ALEJANDRO",
+    "apellidopaternoalumno": "OLIVARES",
+    "apellidomaternoalumno": "ROJAS",
+    "carreraalumno": "",
+    "grupo": 9
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 29,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "spagem@udd.cl",
+    "rutalumno": "21612007",
+    "nombrealumno": "SANTIAGO ANDRÉS",
+    "apellidopaternoalumno": "PAGE",
+    "apellidomaternoalumno": "MUNITA",
+    "carreraalumno": "",
+    "grupo": 9
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 30,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "sramorinoc@udd.cl",
+    "rutalumno": "21782154",
+    "nombrealumno": "SEBASTIÁN",
+    "apellidopaternoalumno": "RAMORINO",
+    "apellidomaternoalumno": "CARRILLO",
+    "carreraalumno": "",
+    "grupo": 9
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 31,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "a.reyesp@udd.cl",
+    "rutalumno": "21150243",
+    "nombrealumno": "AGUSTÍN EDUARDO",
+    "apellidopaternoalumno": "REYES",
+    "apellidomaternoalumno": "PEREIRA",
+    "carreraalumno": "",
+    "grupo": 9
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 32,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "l.riquelmet@udd.cl",
+    "rutalumno": "21303074",
+    "nombrealumno": "LUCAS JEREMÍAS",
+    "apellidopaternoalumno": "RIQUELME",
+    "apellidomaternoalumno": "TORRES",
+    "carreraalumno": "",
+    "grupo": 9
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 33,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "d.romerob@udd.cl",
+    "rutalumno": "21439688",
+    "nombrealumno": "DANIEL ANDRÉS",
+    "apellidopaternoalumno": "ROMERO",
+    "apellidomaternoalumno": "BELTRÁN",
+    "carreraalumno": "",
+    "grupo": 9
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 34,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "s.ruizr@udd.cl",
+    "rutalumno": "21675942",
+    "nombrealumno": "SEBASTIAN FERNANDO",
+    "apellidopaternoalumno": "RUIZ",
+    "apellidomaternoalumno": "RIFFO",
+    "carreraalumno": "",
+    "grupo": 10
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 35,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "jsaavedrah@udd.cl",
+    "rutalumno": "21551254",
+    "nombrealumno": "JOSE IGNACIO",
+    "apellidopaternoalumno": "SAAVEDRA",
+    "apellidomaternoalumno": "HANS",
+    "carreraalumno": "",
+    "grupo": 10
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 36,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "a.torresf@udd.cl",
+    "rutalumno": "21740840",
+    "nombrealumno": "ÁLVARO FRANCISCO",
+    "apellidopaternoalumno": "TORRES",
+    "apellidomaternoalumno": "FERNÁNDEZ",
+    "carreraalumno": "",
+    "grupo": 10
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 37,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "r.varelar@udd.cl",
+    "rutalumno": "21765535",
+    "nombrealumno": "RENATO IGNACIO",
+    "apellidopaternoalumno": "VARELA",
+    "apellidomaternoalumno": "ROJAS",
+    "carreraalumno": "",
+    "grupo": 10
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 38,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 2,
+    "emailalumno": "matvergaraf@udd.cl",
+    "rutalumno": "20914842",
+    "nombrealumno": "MATÍAS ALEJANDRO",
+    "apellidopaternoalumno": "VERGARA",
+    "apellidomaternoalumno": "FLORES",
+    "carreraalumno": "",
+    "grupo": 10
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 39,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "j.azuajep@udd.cl",
+    "rutalumno": "26083316",
+    "nombrealumno": "JESUS ALEJANDRO",
+    "apellidopaternoalumno": "AZUAJE",
+    "apellidomaternoalumno": "PEREZ",
+    "carreraalumno": "",
+    "grupo": 11
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 40,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "lanascot@udd.cl",
+    "rutalumno": "21793579",
+    "nombrealumno": "LEANDRO",
+    "apellidopaternoalumno": "AÑASCO",
+    "apellidomaternoalumno": "TELLERI",
+    "carreraalumno": "",
+    "grupo": 11
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 41,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "r.barbosap@udd.cl",
+    "rutalumno": "21552660",
+    "nombrealumno": "RAIMUNDO",
+    "apellidopaternoalumno": "BARBOSA",
+    "apellidomaternoalumno": "PETIT",
+    "carreraalumno": "",
+    "grupo": 11
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 42,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "a.barrientosv@udd.cl",
+    "rutalumno": "21594003",
+    "nombrealumno": "ALEJANDRO PATRICIO",
+    "apellidopaternoalumno": "BARRIENTOS",
+    "apellidomaternoalumno": "VILLALOBOS",
+    "carreraalumno": "",
+    "grupo": 11
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 43,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "b.farinal@udd.cl",
+    "rutalumno": "21756083",
+    "nombrealumno": "BASTIÁN IGNACIO",
+    "apellidopaternoalumno": "FARIÑA",
+    "apellidomaternoalumno": "LARA",
+    "carreraalumno": "",
+    "grupo": 11
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 44,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "m.guerreroa@udd.cl",
+    "rutalumno": "21605843",
+    "nombrealumno": "MARTÍN ISAIAS",
+    "apellidopaternoalumno": "GUERRERO",
+    "apellidomaternoalumno": "ANCAPICHÚN",
+    "carreraalumno": "",
+    "grupo": 11
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 45,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "m.olivaresr@udd.cl",
+    "rutalumno": "21644638",
+    "nombrealumno": "MARTÍN ALEJANDRO",
+    "apellidopaternoalumno": "OLIVARES",
+    "apellidomaternoalumno": "ROJAS",
+    "carreraalumno": "",
+    "grupo": 11
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 46,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "spagem@udd.cl",
+    "rutalumno": "21612007",
+    "nombrealumno": "SANTIAGO ANDRÉS",
+    "apellidopaternoalumno": "PAGE",
+    "apellidomaternoalumno": "MUNITA",
+    "carreraalumno": "",
+    "grupo": 11
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 47,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "sramorinoc@udd.cl",
+    "rutalumno": "21782154",
+    "nombrealumno": "SEBASTIÁN",
+    "apellidopaternoalumno": "RAMORINO",
+    "apellidomaternoalumno": "CARRILLO",
+    "carreraalumno": "",
+    "grupo": 12
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 48,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "a.reyesp@udd.cl",
+    "rutalumno": "21150243",
+    "nombrealumno": "AGUSTÍN EDUARDO",
+    "apellidopaternoalumno": "REYES",
+    "apellidomaternoalumno": "PEREIRA",
+    "carreraalumno": "",
+    "grupo": 12
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 49,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "l.riquelmet@udd.cl",
+    "rutalumno": "21303074",
+    "nombrealumno": "LUCAS JEREMÍAS",
+    "apellidopaternoalumno": "RIQUELME",
+    "apellidomaternoalumno": "TORRES",
+    "carreraalumno": "",
+    "grupo": 12
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 50,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "d.romerob@udd.cl",
+    "rutalumno": "21439688",
+    "nombrealumno": "DANIEL ANDRÉS",
+    "apellidopaternoalumno": "ROMERO",
+    "apellidomaternoalumno": "BELTRÁN",
+    "carreraalumno": "",
+    "grupo": 12
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 51,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "s.ruizr@udd.cl",
+    "rutalumno": "21675942",
+    "nombrealumno": "SEBASTIAN FERNANDO",
+    "apellidopaternoalumno": "RUIZ",
+    "apellidomaternoalumno": "RIFFO",
+    "carreraalumno": "",
+    "grupo": 12
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 52,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "jsaavedrah@udd.cl",
+    "rutalumno": "21551254",
+    "nombrealumno": "JOSE IGNACIO",
+    "apellidopaternoalumno": "SAAVEDRA",
+    "apellidomaternoalumno": "HANS",
+    "carreraalumno": "",
+    "grupo": 12
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 53,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "a.torresf@udd.cl",
+    "rutalumno": "21740840",
+    "nombrealumno": "ÁLVARO FRANCISCO",
+    "apellidopaternoalumno": "TORRES",
+    "apellidomaternoalumno": "FERNÁNDEZ",
+    "carreraalumno": "",
+    "grupo": 12
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 54,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "r.varelar@udd.cl",
+    "rutalumno": "21765535",
+    "nombrealumno": "RENATO IGNACIO",
+    "apellidopaternoalumno": "VARELA",
+    "apellidomaternoalumno": "ROJAS",
+    "carreraalumno": "",
+    "grupo": 12
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 55,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "matvergaraf@udd.cl",
+    "rutalumno": "20914842",
+    "nombrealumno": "MATÍAS ALEJANDRO",
+    "apellidopaternoalumno": "VERGARA",
+    "apellidomaternoalumno": "FLORES",
+    "carreraalumno": "",
+    "grupo": 13
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 56,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "j.azuajep@udd.cl",
+    "rutalumno": "26083316",
+    "nombrealumno": "JESUS ALEJANDRO",
+    "apellidopaternoalumno": "AZUAJE",
+    "apellidomaternoalumno": "PEREZ",
+    "carreraalumno": "",
+    "grupo": 13
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 57,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "lanascot@udd.cl",
+    "rutalumno": "21793579",
+    "nombrealumno": "LEANDRO",
+    "apellidopaternoalumno": "AÑASCO",
+    "apellidomaternoalumno": "TELLERI",
+    "carreraalumno": "",
+    "grupo": 13
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 58,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "r.barbosap@udd.cl",
+    "rutalumno": "21552660",
+    "nombrealumno": "RAIMUNDO",
+    "apellidopaternoalumno": "BARBOSA",
+    "apellidomaternoalumno": "PETIT",
+    "carreraalumno": "",
+    "grupo": 13
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 59,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "a.barrientosv@udd.cl",
+    "rutalumno": "21594003",
+    "nombrealumno": "ALEJANDRO PATRICIO",
+    "apellidopaternoalumno": "BARRIENTOS",
+    "apellidomaternoalumno": "VILLALOBOS",
+    "carreraalumno": "",
+    "grupo": 13
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 60,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "b.farinal@udd.cl",
+    "rutalumno": "21756083",
+    "nombrealumno": "BASTIÁN IGNACIO",
+    "apellidopaternoalumno": "FARIÑA",
+    "apellidomaternoalumno": "LARA",
+    "carreraalumno": "",
+    "grupo": 13
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 61,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "m.guerreroa@udd.cl",
+    "rutalumno": "21605843",
+    "nombrealumno": "MARTÍN ISAIAS",
+    "apellidopaternoalumno": "GUERRERO",
+    "apellidomaternoalumno": "ANCAPICHÚN",
+    "carreraalumno": "",
+    "grupo": 13
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 62,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "m.olivaresr@udd.cl",
+    "rutalumno": "21644638",
+    "nombrealumno": "MARTÍN ALEJANDRO",
+    "apellidopaternoalumno": "OLIVARES",
+    "apellidomaternoalumno": "ROJAS",
+    "carreraalumno": "",
+    "grupo": 13
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 63,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "spagem@udd.cl",
+    "rutalumno": "21612007",
+    "nombrealumno": "SANTIAGO ANDRÉS",
+    "apellidopaternoalumno": "PAGE",
+    "apellidomaternoalumno": "MUNITA",
+    "carreraalumno": "",
+    "grupo": 14
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 64,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "sramorinoc@udd.cl",
+    "rutalumno": "21782154",
+    "nombrealumno": "SEBASTIÁN",
+    "apellidopaternoalumno": "RAMORINO",
+    "apellidomaternoalumno": "CARRILLO",
+    "carreraalumno": "",
+    "grupo": 14
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 65,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "a.reyesp@udd.cl",
+    "rutalumno": "21150243",
+    "nombrealumno": "AGUSTÍN EDUARDO",
+    "apellidopaternoalumno": "REYES",
+    "apellidomaternoalumno": "PEREIRA",
+    "carreraalumno": "",
+    "grupo": 14
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 66,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "l.riquelmet@udd.cl",
+    "rutalumno": "21303074",
+    "nombrealumno": "LUCAS JEREMÍAS",
+    "apellidopaternoalumno": "RIQUELME",
+    "apellidomaternoalumno": "TORRES",
+    "carreraalumno": "",
+    "grupo": 14
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 67,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "d.romerob@udd.cl",
+    "rutalumno": "21439688",
+    "nombrealumno": "DANIEL ANDRÉS",
+    "apellidopaternoalumno": "ROMERO",
+    "apellidomaternoalumno": "BELTRÁN",
+    "carreraalumno": "",
+    "grupo": 14
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 68,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "s.ruizr@udd.cl",
+    "rutalumno": "21675942",
+    "nombrealumno": "SEBASTIAN FERNANDO",
+    "apellidopaternoalumno": "RUIZ",
+    "apellidomaternoalumno": "RIFFO",
+    "carreraalumno": "",
+    "grupo": 14
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 69,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "jsaavedrah@udd.cl",
+    "rutalumno": "21551254",
+    "nombrealumno": "JOSE IGNACIO",
+    "apellidopaternoalumno": "SAAVEDRA",
+    "apellidomaternoalumno": "HANS",
+    "carreraalumno": "",
+    "grupo": 14
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 70,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "a.torresf@udd.cl",
+    "rutalumno": "21740840",
+    "nombrealumno": "ÁLVARO FRANCISCO",
+    "apellidopaternoalumno": "TORRES",
+    "apellidomaternoalumno": "FERNÁNDEZ",
+    "carreraalumno": "",
+    "grupo": 14
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 71,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "r.varelar@udd.cl",
+    "rutalumno": "21765535",
+    "nombrealumno": "RENATO IGNACIO",
+    "apellidopaternoalumno": "VARELA",
+    "apellidomaternoalumno": "ROJAS",
+    "carreraalumno": "",
+    "grupo": 15
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 72,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "matvergaraf@udd.cl",
+    "rutalumno": "20914842",
+    "nombrealumno": "MATÍAS ALEJANDRO",
+    "apellidopaternoalumno": "VERGARA",
+    "apellidomaternoalumno": "FLORES",
+    "carreraalumno": "",
+    "grupo": 15
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 73,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "l.riquelmet@udd.cl",
+    "rutalumno": "21303074",
+    "nombrealumno": "LUCAS JEREMÍAS",
+    "apellidopaternoalumno": "RIQUELME",
+    "apellidomaternoalumno": "TORRES",
+    "carreraalumno": "",
+    "grupo": 15
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 74,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "d.romerob@udd.cl",
+    "rutalumno": "21439688",
+    "nombrealumno": "DANIEL ANDRÉS",
+    "apellidopaternoalumno": "ROMERO",
+    "apellidomaternoalumno": "BELTRÁN",
+    "carreraalumno": "",
+    "grupo": 15
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 75,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "s.ruizr@udd.cl",
+    "rutalumno": "21675942",
+    "nombrealumno": "SEBASTIAN FERNANDO",
+    "apellidopaternoalumno": "RUIZ",
+    "apellidomaternoalumno": "RIFFO",
+    "carreraalumno": "",
+    "grupo": 15
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 76,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "jsaavedrah@udd.cl",
+    "rutalumno": "21551254",
+    "nombrealumno": "JOSE IGNACIO",
+    "apellidopaternoalumno": "SAAVEDRA",
+    "apellidomaternoalumno": "HANS",
+    "carreraalumno": "",
+    "grupo": 15
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 77,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "a.torresf@udd.cl",
+    "rutalumno": "21740840",
+    "nombrealumno": "ÁLVARO FRANCISCO",
+    "apellidopaternoalumno": "TORRES",
+    "apellidomaternoalumno": "FERNÁNDEZ",
+    "carreraalumno": "",
+    "grupo": 15
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 78,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "r.varelar@udd.cl",
+    "rutalumno": "21765535",
+    "nombrealumno": "RENATO IGNACIO",
+    "apellidopaternoalumno": "VARELA",
+    "apellidomaternoalumno": "ROJAS",
+    "carreraalumno": "",
+    "grupo": 15
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 79,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "matvergaraf@udd.cl",
+    "rutalumno": "20914842",
+    "nombrealumno": "MATÍAS ALEJANDRO",
+    "apellidopaternoalumno": "VERGARA",
+    "apellidomaternoalumno": "FLORES",
+    "carreraalumno": "",
+    "grupo": 16
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 80,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "l.riquelmet@udd.cl",
+    "rutalumno": "21303074",
+    "nombrealumno": "LUCAS JEREMÍAS",
+    "apellidopaternoalumno": "RIQUELME",
+    "apellidomaternoalumno": "TORRES",
+    "carreraalumno": "",
+    "grupo": 16
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 81,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "d.romerob@udd.cl",
+    "rutalumno": "21439688",
+    "nombrealumno": "DANIEL ANDRÉS",
+    "apellidopaternoalumno": "ROMERO",
+    "apellidomaternoalumno": "BELTRÁN",
+    "carreraalumno": "",
+    "grupo": 16
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 82,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "s.ruizr@udd.cl",
+    "rutalumno": "21675942",
+    "nombrealumno": "SEBASTIAN FERNANDO",
+    "apellidopaternoalumno": "RUIZ",
+    "apellidomaternoalumno": "RIFFO",
+    "carreraalumno": "",
+    "grupo": 16
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 83,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "jsaavedrah@udd.cl",
+    "rutalumno": "21551254",
+    "nombrealumno": "JOSE IGNACIO",
+    "apellidopaternoalumno": "SAAVEDRA",
+    "apellidomaternoalumno": "HANS",
+    "carreraalumno": "",
+    "grupo": 16
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 84,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "a.torresf@udd.cl",
+    "rutalumno": "21740840",
+    "nombrealumno": "ÁLVARO FRANCISCO",
+    "apellidopaternoalumno": "TORRES",
+    "apellidomaternoalumno": "FERNÁNDEZ",
+    "carreraalumno": "",
+    "grupo": 16
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 85,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "r.varelar@udd.cl",
+    "rutalumno": "21765535",
+    "nombrealumno": "RENATO IGNACIO",
+    "apellidopaternoalumno": "VARELA",
+    "apellidomaternoalumno": "ROJAS",
+    "carreraalumno": "",
+    "grupo": 16
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 86,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 3,
+    "emailalumno": "matvergaraf@udd.cl",
+    "rutalumno": "20914842",
+    "nombrealumno": "MATÍAS ALEJANDRO",
+    "apellidopaternoalumno": "VERGARA",
+    "apellidomaternoalumno": "FLORES",
+    "carreraalumno": "",
+    "grupo": 16
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 87,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 4,
+    "emailalumno": "c.albornozg@udd.cl",
+    "rutalumno": "26094270",
+    "nombrealumno": "CAMILA PAOLA",
+    "apellidopaternoalumno": "ALBORNOZ",
+    "apellidomaternoalumno": "GONZALEZ",
+    "carreraalumno": "",
+    "grupo": 17
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 88,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 4,
+    "emailalumno": "a.arteagac@udd.cl",
+    "rutalumno": "22398239",
+    "nombrealumno": "AMAIA CONSTANZA",
+    "apellidopaternoalumno": "ARTEAGA",
+    "apellidomaternoalumno": "COINDREAU",
+    "carreraalumno": "",
+    "grupo": 17
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 89,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 4,
+    "emailalumno": "a.badillal@udd.cl",
+    "rutalumno": "22461847",
+    "nombrealumno": "ALEX OSVALDO",
+    "apellidopaternoalumno": "BADILLA",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 17
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 90,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 4,
+    "emailalumno": "a.bisquertth@udd.cl",
+    "rutalumno": "21527786",
+    "nombrealumno": "ANDRÉS",
+    "apellidopaternoalumno": "BISQUERTT",
+    "apellidomaternoalumno": "HUDSON",
+    "carreraalumno": "",
+    "grupo": 17
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 91,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 4,
+    "emailalumno": "b.botellog@udd.cl",
+    "rutalumno": "22386205",
+    "nombrealumno": "BENJAMÍN EDUARDO",
+    "apellidopaternoalumno": "BOTELLO",
+    "apellidomaternoalumno": "GALAZ",
+    "carreraalumno": "",
+    "grupo": 17
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 92,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 4,
+    "emailalumno": "k.buchholtza@udd.cl",
+    "rutalumno": "20837048",
+    "nombrealumno": "KURT AUGUSTO",
+    "apellidopaternoalumno": "BUCHHOLTZ",
+    "apellidomaternoalumno": "ASTORQUIZA",
+    "carreraalumno": "",
+    "grupo": 18
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 93,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 4,
+    "emailalumno": "m.camposl@udd.cl",
+    "rutalumno": "22536228",
+    "nombrealumno": "MARTÍN ALONSO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 18
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 94,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 4,
+    "emailalumno": "ni.camposc@udd.cl",
+    "rutalumno": "22302955",
+    "nombrealumno": "NICOLÁS ALEJANDRO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "CLARO",
+    "carreraalumno": "",
+    "grupo": 18
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 95,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 4,
+    "emailalumno": "e.castelblancom@udd.cl",
+    "rutalumno": "22407418",
+    "nombrealumno": "EMILIO",
+    "apellidopaternoalumno": "CASTELBLANCO",
+    "apellidomaternoalumno": "MEDINA",
+    "carreraalumno": "",
+    "grupo": 18
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 96,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 4,
+    "emailalumno": "n.castilloo@udd.cl",
+    "rutalumno": "22685263",
+    "nombrealumno": "NICOLÁS ALONSO",
+    "apellidopaternoalumno": "CASTILLO",
+    "apellidomaternoalumno": "OYANADEL",
+    "carreraalumno": "",
+    "grupo": 18
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 97,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 5,
+    "emailalumno": "c.albornozg@udd.cl",
+    "rutalumno": "26094270",
+    "nombrealumno": "CAMILA PAOLA",
+    "apellidopaternoalumno": "ALBORNOZ",
+    "apellidomaternoalumno": "GONZALEZ",
+    "carreraalumno": "",
+    "grupo": 19
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 98,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 5,
+    "emailalumno": "a.arteagac@udd.cl",
+    "rutalumno": "22398239",
+    "nombrealumno": "AMAIA CONSTANZA",
+    "apellidopaternoalumno": "ARTEAGA",
+    "apellidomaternoalumno": "COINDREAU",
+    "carreraalumno": "",
+    "grupo": 20
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 99,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 5,
+    "emailalumno": "a.badillal@udd.cl",
+    "rutalumno": "22461847",
+    "nombrealumno": "ALEX OSVALDO",
+    "apellidopaternoalumno": "BADILLA",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 19
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 100,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 5,
+    "emailalumno": "a.bisquertth@udd.cl",
+    "rutalumno": "21527786",
+    "nombrealumno": "ANDRÉS",
+    "apellidopaternoalumno": "BISQUERTT",
+    "apellidomaternoalumno": "HUDSON",
+    "carreraalumno": "",
+    "grupo": 20
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 101,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 5,
+    "emailalumno": "b.botellog@udd.cl",
+    "rutalumno": "22386205",
+    "nombrealumno": "BENJAMÍN EDUARDO",
+    "apellidopaternoalumno": "BOTELLO",
+    "apellidomaternoalumno": "GALAZ",
+    "carreraalumno": "",
+    "grupo": 19
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 102,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 5,
+    "emailalumno": "k.buchholtza@udd.cl",
+    "rutalumno": "20837048",
+    "nombrealumno": "KURT AUGUSTO",
+    "apellidopaternoalumno": "BUCHHOLTZ",
+    "apellidomaternoalumno": "ASTORQUIZA",
+    "carreraalumno": "",
+    "grupo": 20
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 103,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 5,
+    "emailalumno": "m.camposl@udd.cl",
+    "rutalumno": "22536228",
+    "nombrealumno": "MARTÍN ALONSO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 19
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 104,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 5,
+    "emailalumno": "ni.camposc@udd.cl",
+    "rutalumno": "22302955",
+    "nombrealumno": "NICOLÁS ALEJANDRO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "CLARO",
+    "carreraalumno": "",
+    "grupo": 20
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 105,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 5,
+    "emailalumno": "e.castelblancom@udd.cl",
+    "rutalumno": "22407418",
+    "nombrealumno": "EMILIO",
+    "apellidopaternoalumno": "CASTELBLANCO",
+    "apellidomaternoalumno": "MEDINA",
+    "carreraalumno": "",
+    "grupo": 19
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 106,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 5,
+    "emailalumno": "n.castilloo@udd.cl",
+    "rutalumno": "22685263",
+    "nombrealumno": "NICOLÁS ALONSO",
+    "apellidopaternoalumno": "CASTILLO",
+    "apellidomaternoalumno": "OYANADEL",
+    "carreraalumno": "",
+    "grupo": 20
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 107,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 6,
+    "emailalumno": "c.albornozg@udd.cl",
+    "rutalumno": "26094270",
+    "nombrealumno": "CAMILA PAOLA",
+    "apellidopaternoalumno": "ALBORNOZ",
+    "apellidomaternoalumno": "GONZALEZ",
+    "carreraalumno": "",
+    "grupo": 21
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 108,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 6,
+    "emailalumno": "a.arteagac@udd.cl",
+    "rutalumno": "22398239",
+    "nombrealumno": "AMAIA CONSTANZA",
+    "apellidopaternoalumno": "ARTEAGA",
+    "apellidomaternoalumno": "COINDREAU",
+    "carreraalumno": "",
+    "grupo": 22
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 109,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 6,
+    "emailalumno": "a.badillal@udd.cl",
+    "rutalumno": "22461847",
+    "nombrealumno": "ALEX OSVALDO",
+    "apellidopaternoalumno": "BADILLA",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 21
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 110,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 6,
+    "emailalumno": "a.bisquertth@udd.cl",
+    "rutalumno": "21527786",
+    "nombrealumno": "ANDRÉS",
+    "apellidopaternoalumno": "BISQUERTT",
+    "apellidomaternoalumno": "HUDSON",
+    "carreraalumno": "",
+    "grupo": 22
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 111,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 6,
+    "emailalumno": "b.botellog@udd.cl",
+    "rutalumno": "22386205",
+    "nombrealumno": "BENJAMÍN EDUARDO",
+    "apellidopaternoalumno": "BOTELLO",
+    "apellidomaternoalumno": "GALAZ",
+    "carreraalumno": "",
+    "grupo": 21
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 112,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 6,
+    "emailalumno": "k.buchholtza@udd.cl",
+    "rutalumno": "20837048",
+    "nombrealumno": "KURT AUGUSTO",
+    "apellidopaternoalumno": "BUCHHOLTZ",
+    "apellidomaternoalumno": "ASTORQUIZA",
+    "carreraalumno": "",
+    "grupo": 22
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 113,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 6,
+    "emailalumno": "m.camposl@udd.cl",
+    "rutalumno": "22536228",
+    "nombrealumno": "MARTÍN ALONSO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 21
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 114,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 6,
+    "emailalumno": "ni.camposc@udd.cl",
+    "rutalumno": "22302955",
+    "nombrealumno": "NICOLÁS ALEJANDRO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "CLARO",
+    "carreraalumno": "",
+    "grupo": 22
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 115,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 6,
+    "emailalumno": "e.castelblancom@udd.cl",
+    "rutalumno": "22407418",
+    "nombrealumno": "EMILIO",
+    "apellidopaternoalumno": "CASTELBLANCO",
+    "apellidomaternoalumno": "MEDINA",
+    "carreraalumno": "",
+    "grupo": 21
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 116,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 6,
+    "emailalumno": "n.castilloo@udd.cl",
+    "rutalumno": "22685263",
+    "nombrealumno": "NICOLÁS ALONSO",
+    "apellidopaternoalumno": "CASTILLO",
+    "apellidomaternoalumno": "OYANADEL",
+    "carreraalumno": "",
+    "grupo": 22
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 117,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 7,
+    "emailalumno": "c.albornozg@udd.cl",
+    "rutalumno": "26094270",
+    "nombrealumno": "CAMILA PAOLA",
+    "apellidopaternoalumno": "ALBORNOZ",
+    "apellidomaternoalumno": "GONZALEZ",
+    "carreraalumno": "",
+    "grupo": 23
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 118,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 7,
+    "emailalumno": "a.arteagac@udd.cl",
+    "rutalumno": "22398239",
+    "nombrealumno": "AMAIA CONSTANZA",
+    "apellidopaternoalumno": "ARTEAGA",
+    "apellidomaternoalumno": "COINDREAU",
+    "carreraalumno": "",
+    "grupo": 24
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 119,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 7,
+    "emailalumno": "a.badillal@udd.cl",
+    "rutalumno": "22461847",
+    "nombrealumno": "ALEX OSVALDO",
+    "apellidopaternoalumno": "BADILLA",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 23
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 120,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 7,
+    "emailalumno": "a.bisquertth@udd.cl",
+    "rutalumno": "21527786",
+    "nombrealumno": "ANDRÉS",
+    "apellidopaternoalumno": "BISQUERTT",
+    "apellidomaternoalumno": "HUDSON",
+    "carreraalumno": "",
+    "grupo": 24
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 121,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 7,
+    "emailalumno": "b.botellog@udd.cl",
+    "rutalumno": "22386205",
+    "nombrealumno": "BENJAMÍN EDUARDO",
+    "apellidopaternoalumno": "BOTELLO",
+    "apellidomaternoalumno": "GALAZ",
+    "carreraalumno": "",
+    "grupo": 23
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 122,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 7,
+    "emailalumno": "k.buchholtza@udd.cl",
+    "rutalumno": "20837048",
+    "nombrealumno": "KURT AUGUSTO",
+    "apellidopaternoalumno": "BUCHHOLTZ",
+    "apellidomaternoalumno": "ASTORQUIZA",
+    "carreraalumno": "",
+    "grupo": 24
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 123,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 7,
+    "emailalumno": "m.camposl@udd.cl",
+    "rutalumno": "22536228",
+    "nombrealumno": "MARTÍN ALONSO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 23
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 124,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 7,
+    "emailalumno": "ni.camposc@udd.cl",
+    "rutalumno": "22302955",
+    "nombrealumno": "NICOLÁS ALEJANDRO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "CLARO",
+    "carreraalumno": "",
+    "grupo": 24
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 125,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 7,
+    "emailalumno": "e.castelblancom@udd.cl",
+    "rutalumno": "22407418",
+    "nombrealumno": "EMILIO",
+    "apellidopaternoalumno": "CASTELBLANCO",
+    "apellidomaternoalumno": "MEDINA",
+    "carreraalumno": "",
+    "grupo": 23
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 126,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 7,
+    "emailalumno": "n.castilloo@udd.cl",
+    "rutalumno": "22685263",
+    "nombrealumno": "NICOLÁS ALONSO",
+    "apellidopaternoalumno": "CASTILLO",
+    "apellidomaternoalumno": "OYANADEL",
+    "carreraalumno": "",
+    "grupo": 24
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 127,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 8,
+    "emailalumno": "c.albornozg@udd.cl",
+    "rutalumno": "26094270",
+    "nombrealumno": "CAMILA PAOLA",
+    "apellidopaternoalumno": "ALBORNOZ",
+    "apellidomaternoalumno": "GONZALEZ",
+    "carreraalumno": "",
+    "grupo": 25
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 128,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 8,
+    "emailalumno": "a.arteagac@udd.cl",
+    "rutalumno": "22398239",
+    "nombrealumno": "AMAIA CONSTANZA",
+    "apellidopaternoalumno": "ARTEAGA",
+    "apellidomaternoalumno": "COINDREAU",
+    "carreraalumno": "",
+    "grupo": 26
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 129,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 8,
+    "emailalumno": "a.badillal@udd.cl",
+    "rutalumno": "22461847",
+    "nombrealumno": "ALEX OSVALDO",
+    "apellidopaternoalumno": "BADILLA",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 25
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 130,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 8,
+    "emailalumno": "a.bisquertth@udd.cl",
+    "rutalumno": "21527786",
+    "nombrealumno": "ANDRÉS",
+    "apellidopaternoalumno": "BISQUERTT",
+    "apellidomaternoalumno": "HUDSON",
+    "carreraalumno": "",
+    "grupo": 26
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 131,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 8,
+    "emailalumno": "b.botellog@udd.cl",
+    "rutalumno": "22386205",
+    "nombrealumno": "BENJAMÍN EDUARDO",
+    "apellidopaternoalumno": "BOTELLO",
+    "apellidomaternoalumno": "GALAZ",
+    "carreraalumno": "",
+    "grupo": 25
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 132,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 8,
+    "emailalumno": "k.buchholtza@udd.cl",
+    "rutalumno": "20837048",
+    "nombrealumno": "KURT AUGUSTO",
+    "apellidopaternoalumno": "BUCHHOLTZ",
+    "apellidomaternoalumno": "ASTORQUIZA",
+    "carreraalumno": "",
+    "grupo": 26
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 133,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 8,
+    "emailalumno": "m.camposl@udd.cl",
+    "rutalumno": "22536228",
+    "nombrealumno": "MARTÍN ALONSO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 25
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 134,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 8,
+    "emailalumno": "ni.camposc@udd.cl",
+    "rutalumno": "22302955",
+    "nombrealumno": "NICOLÁS ALEJANDRO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "CLARO",
+    "carreraalumno": "",
+    "grupo": 26
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 135,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 8,
+    "emailalumno": "e.castelblancom@udd.cl",
+    "rutalumno": "22407418",
+    "nombrealumno": "EMILIO",
+    "apellidopaternoalumno": "CASTELBLANCO",
+    "apellidomaternoalumno": "MEDINA",
+    "carreraalumno": "",
+    "grupo": 25
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 136,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 8,
+    "emailalumno": "n.castilloo@udd.cl",
+    "rutalumno": "22685263",
+    "nombrealumno": "NICOLÁS ALONSO",
+    "apellidopaternoalumno": "CASTILLO",
+    "apellidomaternoalumno": "OYANADEL",
+    "carreraalumno": "",
+    "grupo": 26
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 137,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 9,
+    "emailalumno": "c.albornozg@udd.cl",
+    "rutalumno": "26094270",
+    "nombrealumno": "CAMILA PAOLA",
+    "apellidopaternoalumno": "ALBORNOZ",
+    "apellidomaternoalumno": "GONZALEZ",
+    "carreraalumno": "",
+    "grupo": 27
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 138,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 9,
+    "emailalumno": "a.arteagac@udd.cl",
+    "rutalumno": "22398239",
+    "nombrealumno": "AMAIA CONSTANZA",
+    "apellidopaternoalumno": "ARTEAGA",
+    "apellidomaternoalumno": "COINDREAU",
+    "carreraalumno": "",
+    "grupo": 28
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 139,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 9,
+    "emailalumno": "a.badillal@udd.cl",
+    "rutalumno": "22461847",
+    "nombrealumno": "ALEX OSVALDO",
+    "apellidopaternoalumno": "BADILLA",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 27
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 140,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 9,
+    "emailalumno": "a.bisquertth@udd.cl",
+    "rutalumno": "21527786",
+    "nombrealumno": "ANDRÉS",
+    "apellidopaternoalumno": "BISQUERTT",
+    "apellidomaternoalumno": "HUDSON",
+    "carreraalumno": "",
+    "grupo": 28
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 141,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 9,
+    "emailalumno": "b.botellog@udd.cl",
+    "rutalumno": "22386205",
+    "nombrealumno": "BENJAMÍN EDUARDO",
+    "apellidopaternoalumno": "BOTELLO",
+    "apellidomaternoalumno": "GALAZ",
+    "carreraalumno": "",
+    "grupo": 27
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 142,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 9,
+    "emailalumno": "k.buchholtza@udd.cl",
+    "rutalumno": "20837048",
+    "nombrealumno": "KURT AUGUSTO",
+    "apellidopaternoalumno": "BUCHHOLTZ",
+    "apellidomaternoalumno": "ASTORQUIZA",
+    "carreraalumno": "",
+    "grupo": 28
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 143,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 9,
+    "emailalumno": "m.camposl@udd.cl",
+    "rutalumno": "22536228",
+    "nombrealumno": "MARTÍN ALONSO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 27
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 144,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 9,
+    "emailalumno": "ni.camposc@udd.cl",
+    "rutalumno": "22302955",
+    "nombrealumno": "NICOLÁS ALEJANDRO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "CLARO",
+    "carreraalumno": "",
+    "grupo": 28
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 145,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 9,
+    "emailalumno": "e.castelblancom@udd.cl",
+    "rutalumno": "22407418",
+    "nombrealumno": "EMILIO",
+    "apellidopaternoalumno": "CASTELBLANCO",
+    "apellidomaternoalumno": "MEDINA",
+    "carreraalumno": "",
+    "grupo": 27
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 146,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 9,
+    "emailalumno": "n.castilloo@udd.cl",
+    "rutalumno": "22685263",
+    "nombrealumno": "NICOLÁS ALONSO",
+    "apellidopaternoalumno": "CASTILLO",
+    "apellidomaternoalumno": "OYANADEL",
+    "carreraalumno": "",
+    "grupo": 28
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 147,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 10,
+    "emailalumno": "c.albornozg@udd.cl",
+    "rutalumno": "26094270",
+    "nombrealumno": "CAMILA PAOLA",
+    "apellidopaternoalumno": "ALBORNOZ",
+    "apellidomaternoalumno": "GONZALEZ",
+    "carreraalumno": "",
+    "grupo": 29
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 148,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 10,
+    "emailalumno": "a.arteagac@udd.cl",
+    "rutalumno": "22398239",
+    "nombrealumno": "AMAIA CONSTANZA",
+    "apellidopaternoalumno": "ARTEAGA",
+    "apellidomaternoalumno": "COINDREAU",
+    "carreraalumno": "",
+    "grupo": 30
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 149,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 10,
+    "emailalumno": "a.badillal@udd.cl",
+    "rutalumno": "22461847",
+    "nombrealumno": "ALEX OSVALDO",
+    "apellidopaternoalumno": "BADILLA",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 29
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 150,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 10,
+    "emailalumno": "a.bisquertth@udd.cl",
+    "rutalumno": "21527786",
+    "nombrealumno": "ANDRÉS",
+    "apellidopaternoalumno": "BISQUERTT",
+    "apellidomaternoalumno": "HUDSON",
+    "carreraalumno": "",
+    "grupo": 30
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 151,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 10,
+    "emailalumno": "b.botellog@udd.cl",
+    "rutalumno": "22386205",
+    "nombrealumno": "BENJAMÍN EDUARDO",
+    "apellidopaternoalumno": "BOTELLO",
+    "apellidomaternoalumno": "GALAZ",
+    "carreraalumno": "",
+    "grupo": 29
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 152,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 10,
+    "emailalumno": "k.buchholtza@udd.cl",
+    "rutalumno": "20837048",
+    "nombrealumno": "KURT AUGUSTO",
+    "apellidopaternoalumno": "BUCHHOLTZ",
+    "apellidomaternoalumno": "ASTORQUIZA",
+    "carreraalumno": "",
+    "grupo": 30
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 153,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 10,
+    "emailalumno": "m.camposl@udd.cl",
+    "rutalumno": "22536228",
+    "nombrealumno": "MARTÍN ALONSO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 29
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 154,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 10,
+    "emailalumno": "ni.camposc@udd.cl",
+    "rutalumno": "22302955",
+    "nombrealumno": "NICOLÁS ALEJANDRO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "CLARO",
+    "carreraalumno": "",
+    "grupo": 30
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 155,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 10,
+    "emailalumno": "e.castelblancom@udd.cl",
+    "rutalumno": "22407418",
+    "nombrealumno": "EMILIO",
+    "apellidopaternoalumno": "CASTELBLANCO",
+    "apellidomaternoalumno": "MEDINA",
+    "carreraalumno": "",
+    "grupo": 29
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 156,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 10,
+    "emailalumno": "n.castilloo@udd.cl",
+    "rutalumno": "22685263",
+    "nombrealumno": "NICOLÁS ALONSO",
+    "apellidopaternoalumno": "CASTILLO",
+    "apellidomaternoalumno": "OYANADEL",
+    "carreraalumno": "",
+    "grupo": 30
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 157,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 11,
+    "emailalumno": "c.albornozg@udd.cl",
+    "rutalumno": "26094270",
+    "nombrealumno": "CAMILA PAOLA",
+    "apellidopaternoalumno": "ALBORNOZ",
+    "apellidomaternoalumno": "GONZALEZ",
+    "carreraalumno": "",
+    "grupo": 31
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 158,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 11,
+    "emailalumno": "a.arteagac@udd.cl",
+    "rutalumno": "22398239",
+    "nombrealumno": "AMAIA CONSTANZA",
+    "apellidopaternoalumno": "ARTEAGA",
+    "apellidomaternoalumno": "COINDREAU",
+    "carreraalumno": "",
+    "grupo": 32
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 159,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 11,
+    "emailalumno": "a.badillal@udd.cl",
+    "rutalumno": "22461847",
+    "nombrealumno": "ALEX OSVALDO",
+    "apellidopaternoalumno": "BADILLA",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 31
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 160,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 11,
+    "emailalumno": "a.bisquertth@udd.cl",
+    "rutalumno": "21527786",
+    "nombrealumno": "ANDRÉS",
+    "apellidopaternoalumno": "BISQUERTT",
+    "apellidomaternoalumno": "HUDSON",
+    "carreraalumno": "",
+    "grupo": 32
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 161,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 11,
+    "emailalumno": "b.botellog@udd.cl",
+    "rutalumno": "22386205",
+    "nombrealumno": "BENJAMÍN EDUARDO",
+    "apellidopaternoalumno": "BOTELLO",
+    "apellidomaternoalumno": "GALAZ",
+    "carreraalumno": "",
+    "grupo": 31
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 162,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 11,
+    "emailalumno": "k.buchholtza@udd.cl",
+    "rutalumno": "20837048",
+    "nombrealumno": "KURT AUGUSTO",
+    "apellidopaternoalumno": "BUCHHOLTZ",
+    "apellidomaternoalumno": "ASTORQUIZA",
+    "carreraalumno": "",
+    "grupo": 32
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 163,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 11,
+    "emailalumno": "m.camposl@udd.cl",
+    "rutalumno": "22536228",
+    "nombrealumno": "MARTÍN ALONSO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 31
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 164,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 11,
+    "emailalumno": "ni.camposc@udd.cl",
+    "rutalumno": "22302955",
+    "nombrealumno": "NICOLÁS ALEJANDRO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "CLARO",
+    "carreraalumno": "",
+    "grupo": 32
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 165,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 11,
+    "emailalumno": "e.castelblancom@udd.cl",
+    "rutalumno": "22407418",
+    "nombrealumno": "EMILIO",
+    "apellidopaternoalumno": "CASTELBLANCO",
+    "apellidomaternoalumno": "MEDINA",
+    "carreraalumno": "",
+    "grupo": 31
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 166,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 11,
+    "emailalumno": "n.castilloo@udd.cl",
+    "rutalumno": "22685263",
+    "nombrealumno": "NICOLÁS ALONSO",
+    "apellidopaternoalumno": "CASTILLO",
+    "apellidomaternoalumno": "OYANADEL",
+    "carreraalumno": "",
+    "grupo": 32
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 167,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 12,
+    "emailalumno": "c.albornozg@udd.cl",
+    "rutalumno": "26094270",
+    "nombrealumno": "CAMILA PAOLA",
+    "apellidopaternoalumno": "ALBORNOZ",
+    "apellidomaternoalumno": "GONZALEZ",
+    "carreraalumno": "",
+    "grupo": 33
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 168,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 12,
+    "emailalumno": "a.arteagac@udd.cl",
+    "rutalumno": "22398239",
+    "nombrealumno": "AMAIA CONSTANZA",
+    "apellidopaternoalumno": "ARTEAGA",
+    "apellidomaternoalumno": "COINDREAU",
+    "carreraalumno": "",
+    "grupo": 34
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 169,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 12,
+    "emailalumno": "a.badillal@udd.cl",
+    "rutalumno": "22461847",
+    "nombrealumno": "ALEX OSVALDO",
+    "apellidopaternoalumno": "BADILLA",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 33
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 170,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 12,
+    "emailalumno": "a.bisquertth@udd.cl",
+    "rutalumno": "21527786",
+    "nombrealumno": "ANDRÉS",
+    "apellidopaternoalumno": "BISQUERTT",
+    "apellidomaternoalumno": "HUDSON",
+    "carreraalumno": "",
+    "grupo": 34
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 171,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 12,
+    "emailalumno": "b.botellog@udd.cl",
+    "rutalumno": "22386205",
+    "nombrealumno": "BENJAMÍN EDUARDO",
+    "apellidopaternoalumno": "BOTELLO",
+    "apellidomaternoalumno": "GALAZ",
+    "carreraalumno": "",
+    "grupo": 33
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 172,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 12,
+    "emailalumno": "k.buchholtza@udd.cl",
+    "rutalumno": "20837048",
+    "nombrealumno": "KURT AUGUSTO",
+    "apellidopaternoalumno": "BUCHHOLTZ",
+    "apellidomaternoalumno": "ASTORQUIZA",
+    "carreraalumno": "",
+    "grupo": 34
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 173,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 12,
+    "emailalumno": "m.camposl@udd.cl",
+    "rutalumno": "22536228",
+    "nombrealumno": "MARTÍN ALONSO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 33
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 174,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 12,
+    "emailalumno": "ni.camposc@udd.cl",
+    "rutalumno": "22302955",
+    "nombrealumno": "NICOLÁS ALEJANDRO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "CLARO",
+    "carreraalumno": "",
+    "grupo": 34
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 175,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 12,
+    "emailalumno": "e.castelblancom@udd.cl",
+    "rutalumno": "22407418",
+    "nombrealumno": "EMILIO",
+    "apellidopaternoalumno": "CASTELBLANCO",
+    "apellidomaternoalumno": "MEDINA",
+    "carreraalumno": "",
+    "grupo": 33
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 176,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 12,
+    "emailalumno": "n.castilloo@udd.cl",
+    "rutalumno": "22685263",
+    "nombrealumno": "NICOLÁS ALONSO",
+    "apellidopaternoalumno": "CASTILLO",
+    "apellidomaternoalumno": "OYANADEL",
+    "carreraalumno": "",
+    "grupo": 34
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 177,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 13,
+    "emailalumno": "c.albornozg@udd.cl",
+    "rutalumno": "26094270",
+    "nombrealumno": "CAMILA PAOLA",
+    "apellidopaternoalumno": "ALBORNOZ",
+    "apellidomaternoalumno": "GONZALEZ",
+    "carreraalumno": "",
+    "grupo": 35
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 178,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 13,
+    "emailalumno": "a.arteagac@udd.cl",
+    "rutalumno": "22398239",
+    "nombrealumno": "AMAIA CONSTANZA",
+    "apellidopaternoalumno": "ARTEAGA",
+    "apellidomaternoalumno": "COINDREAU",
+    "carreraalumno": "",
+    "grupo": 36
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 179,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 13,
+    "emailalumno": "a.badillal@udd.cl",
+    "rutalumno": "22461847",
+    "nombrealumno": "ALEX OSVALDO",
+    "apellidopaternoalumno": "BADILLA",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 35
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 180,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 13,
+    "emailalumno": "a.bisquertth@udd.cl",
+    "rutalumno": "21527786",
+    "nombrealumno": "ANDRÉS",
+    "apellidopaternoalumno": "BISQUERTT",
+    "apellidomaternoalumno": "HUDSON",
+    "carreraalumno": "",
+    "grupo": 36
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 181,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 13,
+    "emailalumno": "b.botellog@udd.cl",
+    "rutalumno": "22386205",
+    "nombrealumno": "BENJAMÍN EDUARDO",
+    "apellidopaternoalumno": "BOTELLO",
+    "apellidomaternoalumno": "GALAZ",
+    "carreraalumno": "",
+    "grupo": 35
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 182,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 13,
+    "emailalumno": "k.buchholtza@udd.cl",
+    "rutalumno": "20837048",
+    "nombrealumno": "KURT AUGUSTO",
+    "apellidopaternoalumno": "BUCHHOLTZ",
+    "apellidomaternoalumno": "ASTORQUIZA",
+    "carreraalumno": "",
+    "grupo": 36
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 183,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 13,
+    "emailalumno": "m.camposl@udd.cl",
+    "rutalumno": "22536228",
+    "nombrealumno": "MARTÍN ALONSO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 35
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 184,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 13,
+    "emailalumno": "ni.camposc@udd.cl",
+    "rutalumno": "22302955",
+    "nombrealumno": "NICOLÁS ALEJANDRO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "CLARO",
+    "carreraalumno": "",
+    "grupo": 36
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 185,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 13,
+    "emailalumno": "e.castelblancom@udd.cl",
+    "rutalumno": "22407418",
+    "nombrealumno": "EMILIO",
+    "apellidopaternoalumno": "CASTELBLANCO",
+    "apellidomaternoalumno": "MEDINA",
+    "carreraalumno": "",
+    "grupo": 35
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 186,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 13,
+    "emailalumno": "n.castilloo@udd.cl",
+    "rutalumno": "22685263",
+    "nombrealumno": "NICOLÁS ALONSO",
+    "apellidopaternoalumno": "CASTILLO",
+    "apellidomaternoalumno": "OYANADEL",
+    "carreraalumno": "",
+    "grupo": 36
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 187,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 14,
+    "emailalumno": "c.albornozg@udd.cl",
+    "rutalumno": "26094270",
+    "nombrealumno": "CAMILA PAOLA",
+    "apellidopaternoalumno": "ALBORNOZ",
+    "apellidomaternoalumno": "GONZALEZ",
+    "carreraalumno": "",
+    "grupo": 37
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 188,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 14,
+    "emailalumno": "a.arteagac@udd.cl",
+    "rutalumno": "22398239",
+    "nombrealumno": "AMAIA CONSTANZA",
+    "apellidopaternoalumno": "ARTEAGA",
+    "apellidomaternoalumno": "COINDREAU",
+    "carreraalumno": "",
+    "grupo": 38
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 189,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 14,
+    "emailalumno": "a.badillal@udd.cl",
+    "rutalumno": "22461847",
+    "nombrealumno": "ALEX OSVALDO",
+    "apellidopaternoalumno": "BADILLA",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 37
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 190,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 14,
+    "emailalumno": "a.bisquertth@udd.cl",
+    "rutalumno": "21527786",
+    "nombrealumno": "ANDRÉS",
+    "apellidopaternoalumno": "BISQUERTT",
+    "apellidomaternoalumno": "HUDSON",
+    "carreraalumno": "",
+    "grupo": 38
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 191,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 14,
+    "emailalumno": "b.botellog@udd.cl",
+    "rutalumno": "22386205",
+    "nombrealumno": "BENJAMÍN EDUARDO",
+    "apellidopaternoalumno": "BOTELLO",
+    "apellidomaternoalumno": "GALAZ",
+    "carreraalumno": "",
+    "grupo": 37
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 192,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 14,
+    "emailalumno": "k.buchholtza@udd.cl",
+    "rutalumno": "20837048",
+    "nombrealumno": "KURT AUGUSTO",
+    "apellidopaternoalumno": "BUCHHOLTZ",
+    "apellidomaternoalumno": "ASTORQUIZA",
+    "carreraalumno": "",
+    "grupo": 38
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 193,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 14,
+    "emailalumno": "m.camposl@udd.cl",
+    "rutalumno": "22536228",
+    "nombrealumno": "MARTÍN ALONSO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 37
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 194,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 14,
+    "emailalumno": "ni.camposc@udd.cl",
+    "rutalumno": "22302955",
+    "nombrealumno": "NICOLÁS ALEJANDRO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "CLARO",
+    "carreraalumno": "",
+    "grupo": 38
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 195,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 14,
+    "emailalumno": "e.castelblancom@udd.cl",
+    "rutalumno": "22407418",
+    "nombrealumno": "EMILIO",
+    "apellidopaternoalumno": "CASTELBLANCO",
+    "apellidomaternoalumno": "MEDINA",
+    "carreraalumno": "",
+    "grupo": 37
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 196,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 14,
+    "emailalumno": "n.castilloo@udd.cl",
+    "rutalumno": "22685263",
+    "nombrealumno": "NICOLÁS ALONSO",
+    "apellidopaternoalumno": "CASTILLO",
+    "apellidomaternoalumno": "OYANADEL",
+    "carreraalumno": "",
+    "grupo": 38
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 197,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 15,
+    "emailalumno": "c.albornozg@udd.cl",
+    "rutalumno": "26094270",
+    "nombrealumno": "CAMILA PAOLA",
+    "apellidopaternoalumno": "ALBORNOZ",
+    "apellidomaternoalumno": "GONZALEZ",
+    "carreraalumno": "",
+    "grupo": 39
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 198,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 15,
+    "emailalumno": "a.arteagac@udd.cl",
+    "rutalumno": "22398239",
+    "nombrealumno": "AMAIA CONSTANZA",
+    "apellidopaternoalumno": "ARTEAGA",
+    "apellidomaternoalumno": "COINDREAU",
+    "carreraalumno": "",
+    "grupo": 40
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 199,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 15,
+    "emailalumno": "a.badillal@udd.cl",
+    "rutalumno": "22461847",
+    "nombrealumno": "ALEX OSVALDO",
+    "apellidopaternoalumno": "BADILLA",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 39
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 200,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 15,
+    "emailalumno": "a.bisquertth@udd.cl",
+    "rutalumno": "21527786",
+    "nombrealumno": "ANDRÉS",
+    "apellidopaternoalumno": "BISQUERTT",
+    "apellidomaternoalumno": "HUDSON",
+    "carreraalumno": "",
+    "grupo": 40
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 201,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 15,
+    "emailalumno": "b.botellog@udd.cl",
+    "rutalumno": "22386205",
+    "nombrealumno": "BENJAMÍN EDUARDO",
+    "apellidopaternoalumno": "BOTELLO",
+    "apellidomaternoalumno": "GALAZ",
+    "carreraalumno": "",
+    "grupo": 39
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 202,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 15,
+    "emailalumno": "k.buchholtza@udd.cl",
+    "rutalumno": "20837048",
+    "nombrealumno": "KURT AUGUSTO",
+    "apellidopaternoalumno": "BUCHHOLTZ",
+    "apellidomaternoalumno": "ASTORQUIZA",
+    "carreraalumno": "",
+    "grupo": 40
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 203,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 15,
+    "emailalumno": "m.camposl@udd.cl",
+    "rutalumno": "22536228",
+    "nombrealumno": "MARTÍN ALONSO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "LÓPEZ",
+    "carreraalumno": "",
+    "grupo": 39
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 204,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 15,
+    "emailalumno": "ni.camposc@udd.cl",
+    "rutalumno": "22302955",
+    "nombrealumno": "NICOLÁS ALEJANDRO",
+    "apellidopaternoalumno": "CAMPOS",
+    "apellidomaternoalumno": "CLARO",
+    "carreraalumno": "",
+    "grupo": 40
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 205,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 15,
+    "emailalumno": "e.castelblancom@udd.cl",
+    "rutalumno": "22407418",
+    "nombrealumno": "EMILIO",
+    "apellidopaternoalumno": "CASTELBLANCO",
+    "apellidomaternoalumno": "MEDINA",
+    "carreraalumno": "",
+    "grupo": 39
+  }
+},
+{
+  "model": "juego.alumno",
+  "pk": 206,
+  "fields": {
+    "profesor_idprofesor": 5,
+    "sesion": 15,
+    "emailalumno": "n.castilloo@udd.cl",
+    "rutalumno": "22685263",
+    "nombrealumno": "NICOLÁS ALONSO",
+    "apellidopaternoalumno": "CASTILLO",
+    "apellidomaternoalumno": "OYANADEL",
+    "carreraalumno": "",
+    "grupo": 40
+  }
+},
+{
+  "model": "juego.tematica",
+  "pk": 1,
+  "fields": {
+    "slug": "salud",
+    "title": "salud",
+    "hero": "esto es una prueba local",
+    "chips": [
+      "ayuda",
+      "bienestar",
+      "empatía"
+    ],
+    "accent": "#3b82f6",
+    "image": "images/tematicas/salud.png",
+    "activa": true,
+    "orden": 1
+  }
+},
+{
+  "model": "juego.desafio",
+  "pk": 2,
+  "fields": {
+    "idadministrador_idadministrador": 2,
+    "tematica": null,
+    "nombredesafio": "Ejemplo Desafio",
+    "tokensdesafio": 10,
+    "descripciondesafio": "Este es un desafío de ejemplo",
+    "imagen_desafio": "",
+    "summary": null,
+    "activo": true,
+    "orden": 0
+  }
+},
+{
+  "model": "juego.desafio",
+  "pk": 3,
+  "fields": {
+    "idadministrador_idadministrador": null,
+    "tematica": 1,
+    "nombredesafio": "ayuda adulto mayor",
+    "tokensdesafio": null,
+    "descripciondesafio": "la historia...",
+    "imagen_desafio": "desafios/buho.png",
+    "summary": "es solo un ejemplo",
+    "activo": true,
+    "orden": 1
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 5,
+  "fields": {
+    "sesion": 1,
+    "nombregrupo": "Grupo 1",
+    "usuario_idusuario": null,
+    "tokensgrupo": 10,
+    "etapa": 1,
+    "codigoacceso": "T6NF6G",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 3,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": false,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 6,
+  "fields": {
+    "sesion": 1,
+    "nombregrupo": "Grupo 2",
+    "usuario_idusuario": null,
+    "tokensgrupo": 12,
+    "etapa": 1,
+    "codigoacceso": "VAUH7P",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 1,
+    "recompensa_peer_otorgada": true,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": false,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 7,
+  "fields": {
+    "sesion": 1,
+    "nombregrupo": "Grupo 3",
+    "usuario_idusuario": null,
+    "tokensgrupo": 12,
+    "etapa": 1,
+    "codigoacceso": "VD5GDT",
+    "sopa_ganada": true,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 2,
+    "recompensa_peer_otorgada": true,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": false,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 8,
+  "fields": {
+    "sesion": 2,
+    "nombregrupo": "Grupo 1",
+    "usuario_idusuario": null,
+    "tokensgrupo": 22,
+    "etapa": 1,
+    "codigoacceso": "1BDUF5",
+    "sopa_ganada": true,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 2,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": "hola",
+    "listo_ranking": false,
+    "tema_elegido": "educacion",
+    "desafio_elegido": null,
+    "desafio_id_externo": "3",
+    "desafio_nombre": "Tecnología adultos mayores",
+    "desafio_descripcion": "El avance tecnológico en los últimos años ha sido incremental. Esto ha beneficiado a múltiples sectores, sin embargo el conocimiento y adaptación para los adultos mayores ha sido una gran dificultad. Osvaldo es un adulto mayor de 70 años y debe pedir ayuda a sus hijos o nietos cada vez que debe hacer trámites.",
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": true,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": false,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": true,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 9,
+  "fields": {
+    "sesion": 2,
+    "nombregrupo": "Grupo 2",
+    "usuario_idusuario": null,
+    "tokensgrupo": 22,
+    "etapa": 1,
+    "codigoacceso": "RAA1H5",
+    "sopa_ganada": true,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 1,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": "esto es un ejemplo",
+    "listo_ranking": false,
+    "tema_elegido": "salud",
+    "desafio_elegido": null,
+    "desafio_id_externo": "3",
+    "desafio_nombre": "Envejecimiento activo",
+    "desafio_descripcion": "La población chilena está envejeciendo rápidamente y muchos adultos mayores enfrentan soledad, pérdida de movilidad y falta de programas de prevención. Juana, de 72 años, vive sola desde que sus hijos se independizaron. Le gustaría mantenerse activa, pero no conoce programas accesibles que la motiven a hacer ejercicio, socializar y prevenir enfermedades.",
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": true,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": false,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": true,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 10,
+  "fields": {
+    "sesion": 2,
+    "nombregrupo": "Grupo 3",
+    "usuario_idusuario": null,
+    "tokensgrupo": 18,
+    "etapa": 1,
+    "codigoacceso": "E19MN6",
+    "sopa_ganada": true,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 3,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": "probando cosas",
+    "listo_ranking": false,
+    "tema_elegido": "sustentabilidad",
+    "desafio_elegido": null,
+    "desafio_id_externo": "2",
+    "desafio_nombre": "Acceso al agua en la agricultura",
+    "desafio_descripcion": "El agua dulce es un recurso natural fundamental para la vida. Hay zonas rurales en que el agua se ha hecho escasa. Camila es una agricultora de 50 años que cultiva paltas de exportación, ella está complicada de perder su negocio por la cantidad de agua que debe utilizar.",
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": true,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": false,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": true,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 11,
+  "fields": {
+    "sesion": 3,
+    "nombregrupo": "Grupo 1",
+    "usuario_idusuario": null,
+    "tokensgrupo": 20,
+    "etapa": 1,
+    "codigoacceso": "C0ZELY",
+    "sopa_ganada": true,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 3,
+    "recompensa_peer_otorgada": true,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": true,
+    "tema_elegido": "sustentabilidad",
+    "desafio_elegido": null,
+    "desafio_id_externo": "1",
+    "desafio_nombre": "Contaminación por fast fashion",
+    "desafio_descripcion": "La moda rápida ha traído graves consecuencias al medio ambiente. Especialmente en sectores del norte de Chile en donde los vertederos y basurales están afectando el diario vivir de las personas. Gabriela es una estudiante de 18 años que vive cerca de esta zona y debe pasar a diario por lugares con desagradables olores.",
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": true,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": true,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 12,
+  "fields": {
+    "sesion": 3,
+    "nombregrupo": "Grupo 2",
+    "usuario_idusuario": null,
+    "tokensgrupo": 12,
+    "etapa": 1,
+    "codigoacceso": "VNAD62",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 4,
+    "recompensa_peer_otorgada": true,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": true,
+    "tema_elegido": "sustentabilidad",
+    "desafio_elegido": null,
+    "desafio_id_externo": "3",
+    "desafio_nombre": "Gestión de residuos electrónicos",
+    "desafio_descripcion": "El aumento del consumo tecnológico ha generado toneladas de desechos electrónicos difíciles de reciclar. Francisco, de 29 años, cambió su celular y computador el año pasado, pero no sabe dónde llevar los antiguos dispositivos. Terminó guardándolos en un cajón, como millones de personas que desconocen alternativas de reciclaje.",
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": true,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": false,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": true,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 13,
+  "fields": {
+    "sesion": 3,
+    "nombregrupo": "Grupo 3",
+    "usuario_idusuario": null,
+    "tokensgrupo": 14,
+    "etapa": 1,
+    "codigoacceso": "YD101K",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 6,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": "sustentabilidad",
+    "desafio_elegido": null,
+    "desafio_id_externo": "1",
+    "desafio_nombre": "Contaminación por fast fashion",
+    "desafio_descripcion": "La moda rápida ha traído graves consecuencias al medio ambiente. Especialmente en sectores del norte de Chile en donde los vertederos y basurales están afectando el diario vivir de las personas. Gabriela es una estudiante de 18 años que vive cerca de esta zona y debe pasar a diario por lugares con desagradables olores.",
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": true,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": false,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 14,
+  "fields": {
+    "sesion": 3,
+    "nombregrupo": "Grupo 4",
+    "usuario_idusuario": null,
+    "tokensgrupo": 10,
+    "etapa": 1,
+    "codigoacceso": "93ZCQU",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 1,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": "educacion",
+    "desafio_elegido": null,
+    "desafio_id_externo": "1",
+    "desafio_nombre": "Educación financiera accesible",
+    "desafio_descripcion": "La ausencia de educación financiera en realidades económicas inestables dificulta la planificación y el uso responsable del dinero. Martina, joven emprendedora de 22 años, vende productos por redes sociales. Aunque gana dinero, no sabe cómo organizarlo ni cuánto debe ahorrar o invertir, lo que la mantiene en constante inestabilidad.",
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": true,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": false,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 15,
+  "fields": {
+    "sesion": 3,
+    "nombregrupo": "Grupo 5",
+    "usuario_idusuario": null,
+    "tokensgrupo": 10,
+    "etapa": 1,
+    "codigoacceso": "0X9BAB",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 2,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": "salud",
+    "desafio_elegido": null,
+    "desafio_id_externo": "2",
+    "desafio_nombre": "Obesidad",
+    "desafio_descripcion": "Más de un 70% de la población en Chile presenta sobrepeso u obesidad (MINSAL). Esta situación se debe a múltiples factores, entre ellos la falta de ejercicio y educación nutricional, disponibilidad de productos ultraprocesados y la desinformación. Simona tiene 27 años, una hija pequeña y trabaja tiempo completo. Sabe que la alimentación es clave, pero no ha podido organizar ni aprender a darle una nutrición buena a su hija.",
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": true,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": false,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 16,
+  "fields": {
+    "sesion": 3,
+    "nombregrupo": "Grupo 6",
+    "usuario_idusuario": null,
+    "tokensgrupo": 10,
+    "etapa": 1,
+    "codigoacceso": "CSWR28",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 5,
+    "recompensa_peer_otorgada": true,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": true,
+    "tema_elegido": "educacion",
+    "desafio_elegido": null,
+    "desafio_id_externo": "1",
+    "desafio_nombre": "Educación financiera accesible",
+    "desafio_descripcion": "La ausencia de educación financiera en realidades económicas inestables dificulta la planificación y el uso responsable del dinero. Martina, joven emprendedora de 22 años, vende productos por redes sociales. Aunque gana dinero, no sabe cómo organizarlo ni cuánto debe ahorrar o invertir, lo que la mantiene en constante inestabilidad.",
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": true,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": false,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": true,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 17,
+  "fields": {
+    "sesion": 4,
+    "nombregrupo": "Grupo 1",
+    "usuario_idusuario": null,
+    "tokensgrupo": 14,
+    "etapa": 1,
+    "codigoacceso": "GXX7QV",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 1,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": "salud",
+    "desafio_elegido": null,
+    "desafio_id_externo": "2",
+    "desafio_nombre": "Obesidad",
+    "desafio_descripcion": "Más de un 70% de la población en Chile presenta sobrepeso u obesidad (MINSAL). Esta situación se debe a múltiples factores, entre ellos la falta de ejercicio y educación nutricional, disponibilidad de productos ultraprocesados y la desinformación. Simona tiene 27 años, una hija pequeña y trabaja tiempo completo. Sabe que la alimentación es clave, pero no ha podido organizar ni aprender a darle una nutrición buena a su hija.",
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": true,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": true,
+    "lego_sin_foto": true,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": true,
+    "listo_f5": true,
+    "listo_f6": true,
+    "listo_f4_orden": true,
+    "listo_inicio_f3": true,
+    "listo_f2": true,
+    "listo_f2_empatia": true,
+    "bubble_tokens_otorgados": true
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 18,
+  "fields": {
+    "sesion": 4,
+    "nombregrupo": "Grupo 2",
+    "usuario_idusuario": null,
+    "tokensgrupo": 13,
+    "etapa": 1,
+    "codigoacceso": "I9V2NA",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 2,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": "educacion",
+    "desafio_elegido": null,
+    "desafio_id_externo": "3",
+    "desafio_nombre": "Tecnología adultos mayores",
+    "desafio_descripcion": "El avance tecnológico en los últimos años ha sido incremental. Esto ha beneficiado a múltiples sectores, sin embargo el conocimiento y adaptación para los adultos mayores ha sido una gran dificultad. Osvaldo es un adulto mayor de 70 años y debe pedir ayuda a sus hijos o nietos cada vez que debe hacer trámites.",
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": true,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": true,
+    "lego_sin_foto": true,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": true,
+    "listo_f5": true,
+    "listo_f6": true,
+    "listo_f4_orden": true,
+    "listo_inicio_f3": true,
+    "listo_f2": true,
+    "listo_f2_empatia": true,
+    "bubble_tokens_otorgados": true
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 19,
+  "fields": {
+    "sesion": 5,
+    "nombregrupo": "Grupo 1",
+    "usuario_idusuario": null,
+    "tokensgrupo": 10,
+    "etapa": 1,
+    "codigoacceso": "XTASNT9T",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": null,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 20,
+  "fields": {
+    "sesion": 5,
+    "nombregrupo": "Grupo 2",
+    "usuario_idusuario": null,
+    "tokensgrupo": 10,
+    "etapa": 1,
+    "codigoacceso": "655CXSRX",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": null,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 21,
+  "fields": {
+    "sesion": 6,
+    "nombregrupo": "Grupo 1",
+    "usuario_idusuario": null,
+    "tokensgrupo": 10,
+    "etapa": 1,
+    "codigoacceso": "21YBZZ6Z",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": null,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 22,
+  "fields": {
+    "sesion": 6,
+    "nombregrupo": "Grupo 2",
+    "usuario_idusuario": null,
+    "tokensgrupo": 10,
+    "etapa": 1,
+    "codigoacceso": "PXWYNW96",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": null,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 23,
+  "fields": {
+    "sesion": 7,
+    "nombregrupo": "Grupo 1",
+    "usuario_idusuario": null,
+    "tokensgrupo": 20,
+    "etapa": 1,
+    "codigoacceso": "K3GMP5B9",
+    "sopa_ganada": true,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": null,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": true,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": true,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 24,
+  "fields": {
+    "sesion": 7,
+    "nombregrupo": "hola",
+    "usuario_idusuario": null,
+    "tokensgrupo": 10,
+    "etapa": 1,
+    "codigoacceso": "AUUQW2P9",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": null,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": true,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": true,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 25,
+  "fields": {
+    "sesion": 8,
+    "nombregrupo": "Agentes UDD",
+    "usuario_idusuario": null,
+    "tokensgrupo": 20,
+    "etapa": 1,
+    "codigoacceso": "3C1VI189",
+    "sopa_ganada": true,
+    "sopa_tiempo_segundos": 40,
+    "sopa_completada_en": "2026-05-11T05:27:48.990Z",
+    "orden_presentacion": null,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": true,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": true,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 26,
+  "fields": {
+    "sesion": 8,
+    "nombregrupo": "1",
+    "usuario_idusuario": null,
+    "tokensgrupo": 12,
+    "etapa": 1,
+    "codigoacceso": "WJK3C6D2",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": null,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": true,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": true,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 27,
+  "fields": {
+    "sesion": 9,
+    "nombregrupo": "Los Estrategas",
+    "usuario_idusuario": null,
+    "tokensgrupo": 21,
+    "etapa": 1,
+    "codigoacceso": "YLI237P4",
+    "sopa_ganada": true,
+    "sopa_tiempo_segundos": 15,
+    "sopa_completada_en": "2026-05-11T05:50:46.640Z",
+    "orden_presentacion": 2,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": "salud",
+    "desafio_elegido": 3,
+    "desafio_id_externo": "3",
+    "desafio_nombre": "ayuda adulto mayor",
+    "desafio_descripcion": "la historia...",
+    "listo_f2_tematicas": true,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": true,
+    "lego_sin_foto": true,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": true,
+    "listo_f5": true,
+    "listo_f6": false,
+    "listo_f4_orden": true,
+    "listo_inicio_f3": true,
+    "listo_f2": true,
+    "listo_f2_empatia": true,
+    "bubble_tokens_otorgados": true
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 28,
+  "fields": {
+    "sesion": 9,
+    "nombregrupo": "Visionarios UDD",
+    "usuario_idusuario": null,
+    "tokensgrupo": 22,
+    "etapa": 1,
+    "codigoacceso": "YNQVM6U9",
+    "sopa_ganada": true,
+    "sopa_tiempo_segundos": 34,
+    "sopa_completada_en": "2026-05-11T05:51:05.188Z",
+    "orden_presentacion": 1,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "legos/zorro2.png",
+    "pitch_texto": "",
+    "listo_ranking": false,
+    "tema_elegido": "salud",
+    "desafio_elegido": 3,
+    "desafio_id_externo": "3",
+    "desafio_nombre": "ayuda adulto mayor",
+    "desafio_descripcion": "la historia...",
+    "listo_f2_tematicas": true,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": true,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": true,
+    "listo_f5": true,
+    "listo_f6": false,
+    "listo_f4_orden": true,
+    "listo_inicio_f3": true,
+    "listo_f2": true,
+    "listo_f2_empatia": true,
+    "bubble_tokens_otorgados": true
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 29,
+  "fields": {
+    "sesion": 10,
+    "nombregrupo": "Mentes Creativas",
+    "usuario_idusuario": null,
+    "tokensgrupo": 18,
+    "etapa": 1,
+    "codigoacceso": "GHCUDT9V",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": null,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 30,
+  "fields": {
+    "sesion": 10,
+    "nombregrupo": "Mentes Creativas",
+    "usuario_idusuario": null,
+    "tokensgrupo": 18,
+    "etapa": 1,
+    "codigoacceso": "A7LZYM1K",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": null,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 31,
+  "fields": {
+    "sesion": 11,
+    "nombregrupo": "Escuadrón Delta",
+    "usuario_idusuario": null,
+    "tokensgrupo": 10,
+    "etapa": 1,
+    "codigoacceso": "GD1FYRKR",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": null,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 32,
+  "fields": {
+    "sesion": 11,
+    "nombregrupo": "StartUp Squad",
+    "usuario_idusuario": null,
+    "tokensgrupo": 10,
+    "etapa": 1,
+    "codigoacceso": "Z3LUAMLY",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": null,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": null,
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": false,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": false,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 33,
+  "fields": {
+    "sesion": 12,
+    "nombregrupo": "Escuadrón Delta",
+    "usuario_idusuario": null,
+    "tokensgrupo": 18,
+    "etapa": 1,
+    "codigoacceso": "FOGR9G4N",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": null,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": "salud",
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": true,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": true,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 34,
+  "fields": {
+    "sesion": 12,
+    "nombregrupo": "Agentes UDD",
+    "usuario_idusuario": null,
+    "tokensgrupo": 18,
+    "etapa": 1,
+    "codigoacceso": "8Y9N62E0",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": null,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": "salud",
+    "desafio_elegido": null,
+    "desafio_id_externo": null,
+    "desafio_nombre": null,
+    "desafio_descripcion": null,
+    "listo_f2_tematicas": true,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": false,
+    "listo_f3_lego": false,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": false,
+    "listo_f3": false,
+    "listo_f4": false,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": false,
+    "listo_inicio_f3": false,
+    "listo_f2": true,
+    "listo_f2_empatia": false,
+    "bubble_tokens_otorgados": false
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 35,
+  "fields": {
+    "sesion": 13,
+    "nombregrupo": "Los Estrategas",
+    "usuario_idusuario": null,
+    "tokensgrupo": 43,
+    "etapa": 1,
+    "codigoacceso": "8YO2GLUV",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 1,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": "salud",
+    "desafio_elegido": 3,
+    "desafio_id_externo": "3",
+    "desafio_nombre": "ayuda adulto mayor",
+    "desafio_descripcion": "la historia...",
+    "listo_f2_tematicas": true,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": true,
+    "lego_sin_foto": true,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": true,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": true,
+    "listo_inicio_f3": true,
+    "listo_f2": true,
+    "listo_f2_empatia": true,
+    "bubble_tokens_otorgados": true
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 36,
+  "fields": {
+    "sesion": 13,
+    "nombregrupo": "Los Innovadores",
+    "usuario_idusuario": null,
+    "tokensgrupo": 34,
+    "etapa": 1,
+    "codigoacceso": "GXFRKX1X",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 2,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": "salud",
+    "desafio_elegido": 3,
+    "desafio_id_externo": "3",
+    "desafio_nombre": "ayuda adulto mayor",
+    "desafio_descripcion": "la historia...",
+    "listo_f2_tematicas": true,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": true,
+    "lego_sin_foto": true,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": true,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": true,
+    "listo_inicio_f3": true,
+    "listo_f2": true,
+    "listo_f2_empatia": true,
+    "bubble_tokens_otorgados": true
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 37,
+  "fields": {
+    "sesion": 14,
+    "nombregrupo": "Escuadrón Delta",
+    "usuario_idusuario": null,
+    "tokensgrupo": 23,
+    "etapa": 1,
+    "codigoacceso": "PQRZNMZ7",
+    "sopa_ganada": true,
+    "sopa_tiempo_segundos": 39,
+    "sopa_completada_en": "2026-05-12T05:11:48.193Z",
+    "orden_presentacion": 1,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": "salud",
+    "desafio_elegido": 3,
+    "desafio_id_externo": "3",
+    "desafio_nombre": "ayuda adulto mayor",
+    "desafio_descripcion": "la historia...",
+    "listo_f2_tematicas": true,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": true,
+    "lego_sin_foto": true,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": true,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": true,
+    "listo_inicio_f3": true,
+    "listo_f2": true,
+    "listo_f2_empatia": true,
+    "bubble_tokens_otorgados": true
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 38,
+  "fields": {
+    "sesion": 14,
+    "nombregrupo": "Los Estrategas",
+    "usuario_idusuario": null,
+    "tokensgrupo": 12,
+    "etapa": 1,
+    "codigoacceso": "9PR9L0ED",
+    "sopa_ganada": false,
+    "sopa_tiempo_segundos": null,
+    "sopa_completada_en": null,
+    "orden_presentacion": 2,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": "salud",
+    "desafio_elegido": 3,
+    "desafio_id_externo": "3",
+    "desafio_nombre": "ayuda adulto mayor",
+    "desafio_descripcion": "la historia...",
+    "listo_f2_tematicas": true,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": true,
+    "lego_sin_foto": true,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": true,
+    "listo_f5": false,
+    "listo_f6": false,
+    "listo_f4_orden": true,
+    "listo_inicio_f3": true,
+    "listo_f2": true,
+    "listo_f2_empatia": true,
+    "bubble_tokens_otorgados": true
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 39,
+  "fields": {
+    "sesion": 15,
+    "nombregrupo": "StartUp Squad",
+    "usuario_idusuario": null,
+    "tokensgrupo": 23,
+    "etapa": 1,
+    "codigoacceso": "RUFDYNFP",
+    "sopa_ganada": true,
+    "sopa_tiempo_segundos": 70,
+    "sopa_completada_en": "2026-05-12T07:08:01.909Z",
+    "orden_presentacion": 1,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "legos/panda.png",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": "salud",
+    "desafio_elegido": 3,
+    "desafio_id_externo": "3",
+    "desafio_nombre": "ayuda adulto mayor",
+    "desafio_descripcion": "la historia...",
+    "listo_f2_tematicas": true,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": true,
+    "lego_sin_foto": false,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": true,
+    "listo_f5": true,
+    "listo_f6": false,
+    "listo_f4_orden": true,
+    "listo_inicio_f3": true,
+    "listo_f2": true,
+    "listo_f2_empatia": true,
+    "bubble_tokens_otorgados": true
+  }
+},
+{
+  "model": "juego.grupo",
+  "pk": 40,
+  "fields": {
+    "sesion": 15,
+    "nombregrupo": "Misión Alfa",
+    "usuario_idusuario": null,
+    "tokensgrupo": 23,
+    "etapa": 1,
+    "codigoacceso": "IMMUSSY8",
+    "sopa_ganada": true,
+    "sopa_tiempo_segundos": 39,
+    "sopa_completada_en": "2026-05-12T07:07:31.165Z",
+    "orden_presentacion": 2,
+    "recompensa_peer_otorgada": false,
+    "foto_lego": "",
+    "pitch_texto": null,
+    "listo_ranking": false,
+    "tema_elegido": "salud",
+    "desafio_elegido": 3,
+    "desafio_id_externo": "3",
+    "desafio_nombre": "ayuda adulto mayor",
+    "desafio_descripcion": "la historia...",
+    "listo_f2_tematicas": true,
+    "listo_f2_tematica": false,
+    "listo_f2_desafio": true,
+    "listo_f3_lego": true,
+    "lego_sin_foto": true,
+    "listo_lobby": true,
+    "listo_f1": true,
+    "listo_f3": false,
+    "listo_f4": true,
+    "listo_f5": true,
+    "listo_f6": false,
+    "listo_f4_orden": true,
+    "listo_inicio_f3": true,
+    "listo_f2": true,
+    "listo_f2_empatia": true,
+    "bubble_tokens_otorgados": true
+  }
+},
+{
+  "model": "juego.idadministrador",
+  "pk": 2,
+  "fields": {
+    "usuario_idusuario": 5,
+    "email": "admin@misionemprende.cl"
+  }
+},
+{
+  "model": "juego.profesor",
+  "pk": 5,
+  "fields": {
+    "usuario_idusuario": 5,
+    "emailprofesor": "profe@udd.cl",
+    "facultad": "ingenieria"
+  }
+},
+{
+  "model": "juego.profesor",
+  "pk": 6,
+  "fields": {
+    "usuario_idusuario": 6,
+    "emailprofesor": "profe2@udd.cl",
+    "facultad": "derecho"
+  }
+},
+{
+  "model": "juego.reto",
+  "pk": 1,
+  "fields": {
+    "desafio_iddesafio": null,
+    "nombrereto": "Pitch relámpago",
+    "descripcionreto": "Presentación de 60 segundos con una idea clave.",
+    "recompensareto": null,
+    "costoreto": 3
+  }
+},
+{
+  "model": "juego.reto",
+  "pk": 2,
+  "fields": {
+    "desafio_iddesafio": null,
+    "nombrereto": "Relevo de pitch",
+    "descripcionreto": "La persona que presenta debe cambiar cada 30 segundos con un compañero del equipo, quien debe continuar la idea sin perder el hilo.",
+    "recompensareto": null,
+    "costoreto": 4
+  }
+},
+{
+  "model": "juego.reto",
+  "pk": 3,
+  "fields": {
+    "desafio_iddesafio": null,
+    "nombrereto": "Pitch sin palabras repetidas",
+    "descripcionreto": "Durante la presentación del pitch, no se puede repetir ninguna palabra en ningún momento.",
+    "recompensareto": null,
+    "costoreto": 6
+  }
+},
+{
+  "model": "juego.retogrupo",
+  "pk": 1,
+  "fields": {
+    "reto": 1,
+    "grupo_emisor": 6,
+    "grupo_receptor": 5,
+    "estado": "PEND",
+    "tokens_costo": 3,
+    "tokens_recompensa": 3,
+    "tokens_penalizacion": 3,
+    "fecha_creacion": "2025-12-02T08:27:54.791Z",
+    "fecha_resolucion": null
+  }
+},
+{
+  "model": "juego.retogrupo",
+  "pk": 3,
+  "fields": {
+    "reto": 1,
+    "grupo_emisor": 7,
+    "grupo_receptor": 5,
+    "estado": "PEND",
+    "tokens_costo": 3,
+    "tokens_recompensa": 3,
+    "tokens_penalizacion": 3,
+    "fecha_creacion": "2025-12-02T21:55:32.546Z",
+    "fecha_resolucion": null
+  }
+},
+{
+  "model": "juego.usuario",
+  "pk": 5,
+  "fields": {
+    "password": "e6c_i5u7C3I"
+  }
+},
+{
+  "model": "juego.usuario",
+  "pk": 6,
+  "fields": {
+    "password": "FbWe3XlytjI"
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 1,
+  "fields": {
+    "profesor": 5,
+    "nombre": "sesion prueba",
+    "fecha_creacion": "2025-12-01T06:06:45.007Z",
+    "grupo_presentando": null,
+    "fase_actual": "lobby",
+    "timer_corriendo": false,
+    "segundos_restantes": 0,
+    "timer_inicio_at": null,
+    "timer_fin_at": null,
+    "inicio_fase_habilitado": false,
+    "orden_sorteado": false,
+    "t_rompehielo": 180,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 900,
+    "t_pitch_prep": 600,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 2,
+  "fields": {
+    "profesor": 5,
+    "nombre": "sesion de prueba1",
+    "fecha_creacion": "2026-04-01T22:59:37.473Z",
+    "grupo_presentando": 9,
+    "fase_actual": "f1_bienvenida",
+    "timer_corriendo": false,
+    "segundos_restantes": 0,
+    "timer_inicio_at": null,
+    "timer_fin_at": null,
+    "inicio_fase_habilitado": false,
+    "orden_sorteado": false,
+    "t_rompehielo": 180,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 900,
+    "t_pitch_prep": 600,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 3,
+  "fields": {
+    "profesor": 5,
+    "nombre": "nueva sesion",
+    "fecha_creacion": "2026-04-02T02:49:38.330Z",
+    "grupo_presentando": 14,
+    "fase_actual": "f3_ranking",
+    "timer_corriendo": false,
+    "segundos_restantes": 0,
+    "timer_inicio_at": null,
+    "timer_fin_at": null,
+    "inicio_fase_habilitado": true,
+    "orden_sorteado": false,
+    "t_rompehielo": 180,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 900,
+    "t_pitch_prep": 600,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 4,
+  "fields": {
+    "profesor": 5,
+    "nombre": "sesion pequeña",
+    "fecha_creacion": "2026-04-25T04:12:34.475Z",
+    "grupo_presentando": null,
+    "fase_actual": "reflexion",
+    "timer_corriendo": false,
+    "segundos_restantes": 0,
+    "timer_inicio_at": null,
+    "timer_fin_at": null,
+    "inicio_fase_habilitado": true,
+    "orden_sorteado": true,
+    "t_rompehielo": 180,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 900,
+    "t_pitch_prep": 600,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 5,
+  "fields": {
+    "profesor": 5,
+    "nombre": "sesion 09-05",
+    "fecha_creacion": "2026-05-10T00:19:30.726Z",
+    "grupo_presentando": null,
+    "fase_actual": "f1_pre_sopa",
+    "timer_corriendo": false,
+    "segundos_restantes": 0,
+    "timer_inicio_at": null,
+    "timer_fin_at": null,
+    "inicio_fase_habilitado": true,
+    "orden_sorteado": false,
+    "t_rompehielo": 120,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 600,
+    "t_pitch_prep": 300,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 6,
+  "fields": {
+    "profesor": 5,
+    "nombre": "2",
+    "fecha_creacion": "2026-05-10T01:51:20.581Z",
+    "grupo_presentando": null,
+    "fase_actual": "f1_pre_sopa",
+    "timer_corriendo": false,
+    "segundos_restantes": 0,
+    "timer_inicio_at": null,
+    "timer_fin_at": null,
+    "inicio_fase_habilitado": true,
+    "orden_sorteado": false,
+    "t_rompehielo": 120,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 600,
+    "t_pitch_prep": 300,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 7,
+  "fields": {
+    "profesor": 5,
+    "nombre": "otra sesion de pruebas",
+    "fecha_creacion": "2026-05-10T02:04:49.356Z",
+    "grupo_presentando": null,
+    "fase_actual": "f2_tematicas",
+    "timer_corriendo": true,
+    "segundos_restantes": 120,
+    "timer_inicio_at": "2026-05-10T02:22:22.845Z",
+    "timer_fin_at": "2026-05-10T02:24:22.845Z",
+    "inicio_fase_habilitado": true,
+    "orden_sorteado": false,
+    "t_rompehielo": 120,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 600,
+    "t_pitch_prep": 300,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 8,
+  "fields": {
+    "profesor": 5,
+    "nombre": "nueva sesion",
+    "fecha_creacion": "2026-05-11T05:17:02.729Z",
+    "grupo_presentando": null,
+    "fase_actual": "f2_tematicas",
+    "timer_corriendo": true,
+    "segundos_restantes": 120,
+    "timer_inicio_at": "2026-05-11T05:35:40.698Z",
+    "timer_fin_at": "2026-05-11T05:37:40.698Z",
+    "inicio_fase_habilitado": true,
+    "orden_sorteado": false,
+    "t_rompehielo": 120,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 600,
+    "t_pitch_prep": 300,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 9,
+  "fields": {
+    "profesor": 5,
+    "nombre": "prueba",
+    "fecha_creacion": "2026-05-11T05:38:50.968Z",
+    "grupo_presentando": null,
+    "fase_actual": "reflexion",
+    "timer_corriendo": false,
+    "segundos_restantes": 0,
+    "timer_inicio_at": null,
+    "timer_fin_at": null,
+    "inicio_fase_habilitado": true,
+    "orden_sorteado": true,
+    "t_rompehielo": 120,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 600,
+    "t_pitch_prep": 300,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 10,
+  "fields": {
+    "profesor": 5,
+    "nombre": "prueba",
+    "fecha_creacion": "2026-05-11T07:29:59.562Z",
+    "grupo_presentando": null,
+    "fase_actual": "f1_sopa",
+    "timer_corriendo": false,
+    "segundos_restantes": 300,
+    "timer_inicio_at": null,
+    "timer_fin_at": null,
+    "inicio_fase_habilitado": false,
+    "orden_sorteado": false,
+    "t_rompehielo": 120,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 600,
+    "t_pitch_prep": 300,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 11,
+  "fields": {
+    "profesor": 5,
+    "nombre": "sesion",
+    "fecha_creacion": "2026-05-11T09:03:44.836Z",
+    "grupo_presentando": null,
+    "fase_actual": "f1_conocidos",
+    "timer_corriendo": false,
+    "segundos_restantes": 120,
+    "timer_inicio_at": null,
+    "timer_fin_at": null,
+    "inicio_fase_habilitado": true,
+    "orden_sorteado": false,
+    "t_rompehielo": 120,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 600,
+    "t_pitch_prep": 300,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 12,
+  "fields": {
+    "profesor": 5,
+    "nombre": "prueba",
+    "fecha_creacion": "2026-05-11T09:21:41.300Z",
+    "grupo_presentando": null,
+    "fase_actual": "f2_tematicas",
+    "timer_corriendo": true,
+    "segundos_restantes": 120,
+    "timer_inicio_at": "2026-05-11T10:21:42.518Z",
+    "timer_fin_at": "2026-05-11T10:23:42.518Z",
+    "inicio_fase_habilitado": true,
+    "orden_sorteado": false,
+    "t_rompehielo": 120,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 600,
+    "t_pitch_prep": 300,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 13,
+  "fields": {
+    "profesor": 5,
+    "nombre": "nueva sesion",
+    "fecha_creacion": "2026-05-11T21:25:20.344Z",
+    "grupo_presentando": null,
+    "fase_actual": "f5_evaluacion_pitch",
+    "timer_corriendo": false,
+    "segundos_restantes": 90,
+    "timer_inicio_at": null,
+    "timer_fin_at": null,
+    "inicio_fase_habilitado": true,
+    "orden_sorteado": true,
+    "t_rompehielo": 120,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 600,
+    "t_pitch_prep": 300,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 14,
+  "fields": {
+    "profesor": 5,
+    "nombre": "nuevo",
+    "fecha_creacion": "2026-05-12T05:06:18.559Z",
+    "grupo_presentando": null,
+    "fase_actual": "reflexion",
+    "timer_corriendo": false,
+    "segundos_restantes": 0,
+    "timer_inicio_at": null,
+    "timer_fin_at": null,
+    "inicio_fase_habilitado": true,
+    "orden_sorteado": true,
+    "t_rompehielo": 120,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 600,
+    "t_pitch_prep": 300,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.sesion",
+  "pk": 15,
+  "fields": {
+    "profesor": 5,
+    "nombre": "final",
+    "fecha_creacion": "2026-05-12T07:03:42.987Z",
+    "grupo_presentando": null,
+    "fase_actual": "reflexion",
+    "timer_corriendo": false,
+    "segundos_restantes": 0,
+    "timer_inicio_at": null,
+    "timer_fin_at": null,
+    "inicio_fase_habilitado": true,
+    "orden_sorteado": true,
+    "t_rompehielo": 120,
+    "t_diferencias": 300,
+    "t_empatia": 300,
+    "t_creatividad": 600,
+    "t_pitch_prep": 300,
+    "t_pitch": 90,
+    "t_tematicas": 120,
+    "t_presentacion": 90
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 1,
+  "fields": {
+    "sesion": 1,
+    "grupo_evaluador": 7,
+    "grupo_evaluado": 5,
+    "claridad": 5,
+    "creatividad": 4,
+    "viabilidad": 4,
+    "equipo": 5,
+    "presentacion": 3,
+    "comentario": "mejorar pitch",
+    "reflexion": null,
+    "fecha": "2025-12-02T23:18:28.345Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 2,
+  "fields": {
+    "sesion": 1,
+    "grupo_evaluador": 7,
+    "grupo_evaluado": 6,
+    "claridad": 5,
+    "creatividad": 5,
+    "viabilidad": 5,
+    "equipo": 5,
+    "presentacion": 5,
+    "comentario": "excelente trabajo",
+    "reflexion": null,
+    "fecha": "2025-12-02T23:33:58.552Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 3,
+  "fields": {
+    "sesion": 1,
+    "grupo_evaluador": 6,
+    "grupo_evaluado": 7,
+    "claridad": 5,
+    "creatividad": 5,
+    "viabilidad": 5,
+    "equipo": 5,
+    "presentacion": 5,
+    "comentario": "muy bien",
+    "reflexion": null,
+    "fecha": "2025-12-02T23:56:41.609Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 4,
+  "fields": {
+    "sesion": 1,
+    "grupo_evaluador": 6,
+    "grupo_evaluado": 5,
+    "claridad": 4,
+    "creatividad": 3,
+    "viabilidad": 3,
+    "equipo": 2,
+    "presentacion": 2,
+    "comentario": "Hay cosas que mejorar",
+    "reflexion": null,
+    "fecha": "2025-12-02T23:56:58.668Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 5,
+  "fields": {
+    "sesion": 2,
+    "grupo_evaluador": 8,
+    "grupo_evaluado": 9,
+    "claridad": 5,
+    "creatividad": 5,
+    "viabilidad": 5,
+    "equipo": 5,
+    "presentacion": 5,
+    "comentario": ".",
+    "reflexion": null,
+    "fecha": "2026-04-01T23:15:01.983Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 6,
+  "fields": {
+    "sesion": 2,
+    "grupo_evaluador": 8,
+    "grupo_evaluado": 10,
+    "claridad": 2,
+    "creatividad": 2,
+    "viabilidad": 2,
+    "equipo": 2,
+    "presentacion": 2,
+    "comentario": ".",
+    "reflexion": null,
+    "fecha": "2026-04-01T23:15:11.972Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 7,
+  "fields": {
+    "sesion": 2,
+    "grupo_evaluador": 9,
+    "grupo_evaluado": 8,
+    "claridad": 4,
+    "creatividad": 4,
+    "viabilidad": 3,
+    "equipo": 3,
+    "presentacion": 3,
+    "comentario": ".",
+    "reflexion": null,
+    "fecha": "2026-04-01T23:15:27.088Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 8,
+  "fields": {
+    "sesion": 2,
+    "grupo_evaluador": 9,
+    "grupo_evaluado": 10,
+    "claridad": 1,
+    "creatividad": 2,
+    "viabilidad": 3,
+    "equipo": 2,
+    "presentacion": 1,
+    "comentario": ".",
+    "reflexion": null,
+    "fecha": "2026-04-01T23:15:43.555Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 9,
+  "fields": {
+    "sesion": 2,
+    "grupo_evaluador": 10,
+    "grupo_evaluado": 8,
+    "claridad": 2,
+    "creatividad": 4,
+    "viabilidad": 2,
+    "equipo": 4,
+    "presentacion": 3,
+    "comentario": ".",
+    "reflexion": null,
+    "fecha": "2026-04-01T23:16:20.823Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 10,
+  "fields": {
+    "sesion": 2,
+    "grupo_evaluador": 10,
+    "grupo_evaluado": 9,
+    "claridad": 5,
+    "creatividad": 4,
+    "viabilidad": 4,
+    "equipo": 5,
+    "presentacion": 5,
+    "comentario": ".",
+    "reflexion": null,
+    "fecha": "2026-04-01T23:16:30.717Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 11,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 11,
+    "grupo_evaluado": 12,
+    "claridad": 3,
+    "creatividad": 4,
+    "viabilidad": 4,
+    "equipo": 4,
+    "presentacion": 4,
+    "comentario": "da",
+    "reflexion": null,
+    "fecha": "2026-04-02T02:59:49.738Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 12,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 11,
+    "grupo_evaluado": 13,
+    "claridad": 4,
+    "creatividad": 5,
+    "viabilidad": 4,
+    "equipo": 4,
+    "presentacion": 4,
+    "comentario": "da",
+    "reflexion": null,
+    "fecha": "2026-04-02T02:59:58.791Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 13,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 11,
+    "grupo_evaluado": 14,
+    "claridad": 2,
+    "creatividad": 1,
+    "viabilidad": 2,
+    "equipo": 2,
+    "presentacion": 2,
+    "comentario": "da",
+    "reflexion": null,
+    "fecha": "2026-04-02T03:00:06.628Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 14,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 11,
+    "grupo_evaluado": 15,
+    "claridad": 2,
+    "creatividad": 2,
+    "viabilidad": 3,
+    "equipo": 2,
+    "presentacion": 3,
+    "comentario": "da",
+    "reflexion": null,
+    "fecha": "2026-04-02T03:00:16.209Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 15,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 11,
+    "grupo_evaluado": 16,
+    "claridad": 2,
+    "creatividad": 3,
+    "viabilidad": 3,
+    "equipo": 3,
+    "presentacion": 4,
+    "comentario": "da",
+    "reflexion": null,
+    "fecha": "2026-04-02T03:00:24.521Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 16,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 16,
+    "grupo_evaluado": 12,
+    "claridad": 4,
+    "creatividad": 4,
+    "viabilidad": 5,
+    "equipo": 5,
+    "presentacion": 5,
+    "comentario": "da",
+    "reflexion": null,
+    "fecha": "2026-04-02T03:00:40.612Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 17,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 16,
+    "grupo_evaluado": 11,
+    "claridad": 3,
+    "creatividad": 4,
+    "viabilidad": 3,
+    "equipo": 3,
+    "presentacion": 3,
+    "comentario": "wa",
+    "reflexion": null,
+    "fecha": "2026-04-02T03:00:48.459Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 18,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 16,
+    "grupo_evaluado": 13,
+    "claridad": 3,
+    "creatividad": 3,
+    "viabilidad": 3,
+    "equipo": 3,
+    "presentacion": 4,
+    "comentario": "ew",
+    "reflexion": null,
+    "fecha": "2026-04-02T03:00:59.894Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 19,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 16,
+    "grupo_evaluado": 14,
+    "claridad": 4,
+    "creatividad": 5,
+    "viabilidad": 4,
+    "equipo": 4,
+    "presentacion": 5,
+    "comentario": "wa",
+    "reflexion": null,
+    "fecha": "2026-04-02T03:01:07.719Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 20,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 16,
+    "grupo_evaluado": 15,
+    "claridad": 3,
+    "creatividad": 3,
+    "viabilidad": 3,
+    "equipo": 4,
+    "presentacion": 3,
+    "comentario": "ew",
+    "reflexion": null,
+    "fecha": "2026-04-02T03:01:17.017Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 21,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 12,
+    "grupo_evaluado": 15,
+    "claridad": 4,
+    "creatividad": 3,
+    "viabilidad": 4,
+    "equipo": 4,
+    "presentacion": 3,
+    "comentario": "ds",
+    "reflexion": null,
+    "fecha": "2026-04-02T03:02:10.828Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 22,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 12,
+    "grupo_evaluado": 14,
+    "claridad": 3,
+    "creatividad": 4,
+    "viabilidad": 3,
+    "equipo": 4,
+    "presentacion": 4,
+    "comentario": "ew",
+    "reflexion": null,
+    "fecha": "2026-04-02T03:02:19.978Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 23,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 12,
+    "grupo_evaluado": 13,
+    "claridad": 4,
+    "creatividad": 4,
+    "viabilidad": 3,
+    "equipo": 5,
+    "presentacion": 3,
+    "comentario": "ew",
+    "reflexion": null,
+    "fecha": "2026-04-02T03:02:27.651Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 24,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 12,
+    "grupo_evaluado": 16,
+    "claridad": 3,
+    "creatividad": 3,
+    "viabilidad": 3,
+    "equipo": 4,
+    "presentacion": 3,
+    "comentario": "eww",
+    "reflexion": null,
+    "fecha": "2026-04-02T03:02:35.802Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 25,
+  "fields": {
+    "sesion": 3,
+    "grupo_evaluador": 12,
+    "grupo_evaluado": 11,
+    "claridad": 4,
+    "creatividad": 4,
+    "viabilidad": 3,
+    "equipo": 4,
+    "presentacion": 3,
+    "comentario": "da",
+    "reflexion": null,
+    "fecha": "2026-04-02T03:02:44.339Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 26,
+  "fields": {
+    "sesion": 4,
+    "grupo_evaluador": 18,
+    "grupo_evaluado": 17,
+    "claridad": 4,
+    "creatividad": 3,
+    "viabilidad": 3,
+    "equipo": 3,
+    "presentacion": 3,
+    "comentario": "o",
+    "reflexion": null,
+    "fecha": "2026-04-25T04:27:12.633Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 27,
+  "fields": {
+    "sesion": 4,
+    "grupo_evaluador": 17,
+    "grupo_evaluado": 18,
+    "claridad": 5,
+    "creatividad": 5,
+    "viabilidad": 5,
+    "equipo": 5,
+    "presentacion": 5,
+    "comentario": "t",
+    "reflexion": null,
+    "fecha": "2026-04-25T04:28:57.432Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 28,
+  "fields": {
+    "sesion": 9,
+    "grupo_evaluador": 27,
+    "grupo_evaluado": 28,
+    "claridad": 4,
+    "creatividad": 5,
+    "viabilidad": 4,
+    "equipo": 2,
+    "presentacion": 4,
+    "comentario": "",
+    "reflexion": null,
+    "fecha": "2026-05-11T06:54:17.858Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 29,
+  "fields": {
+    "sesion": 9,
+    "grupo_evaluador": 28,
+    "grupo_evaluado": 27,
+    "claridad": 2,
+    "creatividad": 3,
+    "viabilidad": 4,
+    "equipo": 2,
+    "presentacion": 4,
+    "comentario": "",
+    "reflexion": null,
+    "fecha": "2026-05-11T06:55:18.224Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 30,
+  "fields": {
+    "sesion": 13,
+    "grupo_evaluador": 36,
+    "grupo_evaluado": 35,
+    "claridad": 5,
+    "creatividad": 4,
+    "viabilidad": 2,
+    "equipo": 4,
+    "presentacion": 2,
+    "comentario": "",
+    "reflexion": null,
+    "fecha": "2026-05-11T23:32:06.312Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 31,
+  "fields": {
+    "sesion": 13,
+    "grupo_evaluador": 35,
+    "grupo_evaluado": 36,
+    "claridad": 3,
+    "creatividad": 3,
+    "viabilidad": 3,
+    "equipo": 3,
+    "presentacion": 3,
+    "comentario": "",
+    "reflexion": null,
+    "fecha": "2026-05-12T02:09:11.757Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 32,
+  "fields": {
+    "sesion": 14,
+    "grupo_evaluador": 38,
+    "grupo_evaluado": 37,
+    "claridad": 4,
+    "creatividad": 2,
+    "viabilidad": 4,
+    "equipo": 3,
+    "presentacion": 3,
+    "comentario": "",
+    "reflexion": null,
+    "fecha": "2026-05-12T06:21:36.507Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 33,
+  "fields": {
+    "sesion": 14,
+    "grupo_evaluador": 37,
+    "grupo_evaluado": 38,
+    "claridad": 3,
+    "creatividad": 3,
+    "viabilidad": 3,
+    "equipo": 3,
+    "presentacion": 3,
+    "comentario": "",
+    "reflexion": null,
+    "fecha": "2026-05-12T06:22:41.268Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 34,
+  "fields": {
+    "sesion": 15,
+    "grupo_evaluador": 40,
+    "grupo_evaluado": 39,
+    "claridad": 4,
+    "creatividad": 2,
+    "viabilidad": 4,
+    "equipo": 2,
+    "presentacion": 4,
+    "comentario": "",
+    "reflexion": null,
+    "fecha": "2026-05-12T07:14:26.914Z"
+  }
+},
+{
+  "model": "juego.evaluacion",
+  "pk": 35,
+  "fields": {
+    "sesion": 15,
+    "grupo_evaluador": 39,
+    "grupo_evaluado": 40,
+    "claridad": 4,
+    "creatividad": 2,
+    "viabilidad": 4,
+    "equipo": 4,
+    "presentacion": 5,
+    "comentario": "",
+    "reflexion": null,
+    "fecha": "2026-05-12T07:14:55.726Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 1,
+  "fields": {
+    "sesion": 2,
+    "grupo": 8,
+    "palabra": "IDEA",
+    "creada_en": "2026-04-01T23:05:28.117Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 2,
+  "fields": {
+    "sesion": 2,
+    "grupo": 8,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-04-01T23:05:38.623Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 3,
+  "fields": {
+    "sesion": 2,
+    "grupo": 8,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-04-01T23:05:44.511Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 4,
+  "fields": {
+    "sesion": 2,
+    "grupo": 8,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-04-01T23:05:47.120Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 5,
+  "fields": {
+    "sesion": 2,
+    "grupo": 8,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-04-01T23:05:50.086Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 6,
+  "fields": {
+    "sesion": 2,
+    "grupo": 9,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-04-01T23:06:17.526Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 7,
+  "fields": {
+    "sesion": 2,
+    "grupo": 9,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-04-01T23:06:20.943Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 8,
+  "fields": {
+    "sesion": 2,
+    "grupo": 9,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-04-01T23:06:22.671Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 9,
+  "fields": {
+    "sesion": 2,
+    "grupo": 9,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-04-01T23:06:24.519Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 10,
+  "fields": {
+    "sesion": 2,
+    "grupo": 9,
+    "palabra": "IDEA",
+    "creada_en": "2026-04-01T23:06:31.677Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 11,
+  "fields": {
+    "sesion": 2,
+    "grupo": 10,
+    "palabra": "IDEA",
+    "creada_en": "2026-04-01T23:06:44.687Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 12,
+  "fields": {
+    "sesion": 2,
+    "grupo": 10,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-04-01T23:06:46.013Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 13,
+  "fields": {
+    "sesion": 2,
+    "grupo": 10,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-04-01T23:06:47.606Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 14,
+  "fields": {
+    "sesion": 2,
+    "grupo": 10,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-04-01T23:06:50.366Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 15,
+  "fields": {
+    "sesion": 2,
+    "grupo": 10,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-04-01T23:06:51.926Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 16,
+  "fields": {
+    "sesion": 3,
+    "grupo": 11,
+    "palabra": "IDEA",
+    "creada_en": "2026-04-02T02:55:56.526Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 17,
+  "fields": {
+    "sesion": 3,
+    "grupo": 11,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-04-02T02:55:58.060Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 18,
+  "fields": {
+    "sesion": 3,
+    "grupo": 11,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-04-02T02:55:59.419Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 19,
+  "fields": {
+    "sesion": 3,
+    "grupo": 11,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-04-02T02:56:04.320Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 20,
+  "fields": {
+    "sesion": 3,
+    "grupo": 11,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-04-02T02:56:05.839Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 21,
+  "fields": {
+    "sesion": 4,
+    "grupo": 17,
+    "palabra": "IDEA",
+    "creada_en": "2026-04-25T04:16:09.462Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 22,
+  "fields": {
+    "sesion": 4,
+    "grupo": 17,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-04-25T04:16:17.883Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 23,
+  "fields": {
+    "sesion": 4,
+    "grupo": 18,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-04-25T04:16:26.589Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 24,
+  "fields": {
+    "sesion": 4,
+    "grupo": 18,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-04-25T04:16:32.160Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 25,
+  "fields": {
+    "sesion": 4,
+    "grupo": 18,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-04-25T04:16:38.187Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 26,
+  "fields": {
+    "sesion": 4,
+    "grupo": 17,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-04-25T04:16:47.570Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 27,
+  "fields": {
+    "sesion": 7,
+    "grupo": 23,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-05-10T02:20:39.770Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 28,
+  "fields": {
+    "sesion": 7,
+    "grupo": 23,
+    "palabra": "IDEA",
+    "creada_en": "2026-05-10T02:20:51.292Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 29,
+  "fields": {
+    "sesion": 7,
+    "grupo": 23,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-05-10T02:21:01.562Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 30,
+  "fields": {
+    "sesion": 7,
+    "grupo": 23,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-05-10T02:21:28.436Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 31,
+  "fields": {
+    "sesion": 7,
+    "grupo": 23,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-05-10T02:21:42.320Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 32,
+  "fields": {
+    "sesion": 8,
+    "grupo": 26,
+    "palabra": "IDEA",
+    "creada_en": "2026-05-11T05:27:26.177Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 33,
+  "fields": {
+    "sesion": 8,
+    "grupo": 25,
+    "palabra": "IDEA",
+    "creada_en": "2026-05-11T05:27:34.581Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 34,
+  "fields": {
+    "sesion": 8,
+    "grupo": 25,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-05-11T05:27:36.958Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 35,
+  "fields": {
+    "sesion": 8,
+    "grupo": 25,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-05-11T05:27:40.159Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 36,
+  "fields": {
+    "sesion": 8,
+    "grupo": 25,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-05-11T05:27:46.570Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 37,
+  "fields": {
+    "sesion": 8,
+    "grupo": 25,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-05-11T05:27:48.755Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 38,
+  "fields": {
+    "sesion": 8,
+    "grupo": 26,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-05-11T05:29:10.780Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 39,
+  "fields": {
+    "sesion": 9,
+    "grupo": 27,
+    "palabra": "IDEA",
+    "creada_en": "2026-05-11T05:50:36.345Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 40,
+  "fields": {
+    "sesion": 9,
+    "grupo": 27,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-05-11T05:50:39.568Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 41,
+  "fields": {
+    "sesion": 9,
+    "grupo": 27,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-05-11T05:50:41.909Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 42,
+  "fields": {
+    "sesion": 9,
+    "grupo": 27,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-05-11T05:50:44.830Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 43,
+  "fields": {
+    "sesion": 9,
+    "grupo": 27,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-05-11T05:50:46.309Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 44,
+  "fields": {
+    "sesion": 9,
+    "grupo": 28,
+    "palabra": "IDEA",
+    "creada_en": "2026-05-11T05:50:57.718Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 45,
+  "fields": {
+    "sesion": 9,
+    "grupo": 28,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-05-11T05:50:59.213Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 46,
+  "fields": {
+    "sesion": 9,
+    "grupo": 28,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-05-11T05:51:00.857Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 47,
+  "fields": {
+    "sesion": 9,
+    "grupo": 28,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-05-11T05:51:03.237Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 48,
+  "fields": {
+    "sesion": 9,
+    "grupo": 28,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-05-11T05:51:04.869Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 49,
+  "fields": {
+    "sesion": 10,
+    "grupo": 30,
+    "palabra": "IDEA",
+    "creada_en": "2026-05-11T09:01:20.798Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 50,
+  "fields": {
+    "sesion": 10,
+    "grupo": 30,
+    "palabra": "VALOR",
+    "creada_en": "2026-05-11T09:01:24.321Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 51,
+  "fields": {
+    "sesion": 10,
+    "grupo": 30,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-05-11T09:01:27.554Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 52,
+  "fields": {
+    "sesion": 10,
+    "grupo": 30,
+    "palabra": "IMPACTO",
+    "creada_en": "2026-05-11T09:01:30.718Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 53,
+  "fields": {
+    "sesion": 10,
+    "grupo": 30,
+    "palabra": "CLIENTE",
+    "creada_en": "2026-05-11T09:01:32.661Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 54,
+  "fields": {
+    "sesion": 10,
+    "grupo": 30,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-05-11T09:01:36.170Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 55,
+  "fields": {
+    "sesion": 10,
+    "grupo": 30,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-05-11T09:01:38.602Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 56,
+  "fields": {
+    "sesion": 10,
+    "grupo": 30,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-05-11T09:01:41.788Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 57,
+  "fields": {
+    "sesion": 10,
+    "grupo": 29,
+    "palabra": "IDEA",
+    "creada_en": "2026-05-11T09:02:30.428Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 58,
+  "fields": {
+    "sesion": 10,
+    "grupo": 29,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-05-11T09:02:36.336Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 59,
+  "fields": {
+    "sesion": 10,
+    "grupo": 29,
+    "palabra": "IMPACTO",
+    "creada_en": "2026-05-11T09:02:39.034Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 60,
+  "fields": {
+    "sesion": 10,
+    "grupo": 29,
+    "palabra": "CLIENTE",
+    "creada_en": "2026-05-11T09:02:43.517Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 61,
+  "fields": {
+    "sesion": 10,
+    "grupo": 29,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-05-11T09:02:51.273Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 62,
+  "fields": {
+    "sesion": 10,
+    "grupo": 29,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-05-11T09:02:54.098Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 63,
+  "fields": {
+    "sesion": 10,
+    "grupo": 29,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-05-11T09:03:01.117Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 64,
+  "fields": {
+    "sesion": 10,
+    "grupo": 29,
+    "palabra": "VALOR",
+    "creada_en": "2026-05-11T09:03:09.446Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 65,
+  "fields": {
+    "sesion": 12,
+    "grupo": 34,
+    "palabra": "IDEA",
+    "creada_en": "2026-05-11T09:42:20.326Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 66,
+  "fields": {
+    "sesion": 12,
+    "grupo": 34,
+    "palabra": "VALOR",
+    "creada_en": "2026-05-11T09:42:23.299Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 67,
+  "fields": {
+    "sesion": 12,
+    "grupo": 34,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-05-11T09:42:24.884Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 68,
+  "fields": {
+    "sesion": 12,
+    "grupo": 34,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-05-11T09:42:27.078Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 69,
+  "fields": {
+    "sesion": 12,
+    "grupo": 34,
+    "palabra": "IMPACTO",
+    "creada_en": "2026-05-11T09:42:29.363Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 70,
+  "fields": {
+    "sesion": 12,
+    "grupo": 34,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-05-11T09:42:31.103Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 71,
+  "fields": {
+    "sesion": 12,
+    "grupo": 34,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-05-11T09:42:35.797Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 72,
+  "fields": {
+    "sesion": 12,
+    "grupo": 34,
+    "palabra": "CLIENTE",
+    "creada_en": "2026-05-11T09:42:38.255Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 73,
+  "fields": {
+    "sesion": 12,
+    "grupo": 33,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-05-11T09:42:44.564Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 74,
+  "fields": {
+    "sesion": 12,
+    "grupo": 33,
+    "palabra": "IMPACTO",
+    "creada_en": "2026-05-11T09:42:46.589Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 75,
+  "fields": {
+    "sesion": 12,
+    "grupo": 33,
+    "palabra": "CLIENTE",
+    "creada_en": "2026-05-11T09:42:49.005Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 76,
+  "fields": {
+    "sesion": 12,
+    "grupo": 33,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-05-11T09:42:50.788Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 77,
+  "fields": {
+    "sesion": 12,
+    "grupo": 33,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-05-11T09:42:56.381Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 78,
+  "fields": {
+    "sesion": 12,
+    "grupo": 33,
+    "palabra": "IDEA",
+    "creada_en": "2026-05-11T09:42:59.367Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 79,
+  "fields": {
+    "sesion": 12,
+    "grupo": 33,
+    "palabra": "VALOR",
+    "creada_en": "2026-05-11T09:43:09.480Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 80,
+  "fields": {
+    "sesion": 12,
+    "grupo": 33,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-05-11T09:43:11.980Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 81,
+  "fields": {
+    "sesion": 13,
+    "grupo": 36,
+    "palabra": "IDEA",
+    "creada_en": "2026-05-11T21:33:05.887Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 82,
+  "fields": {
+    "sesion": 13,
+    "grupo": 36,
+    "palabra": "VALOR",
+    "creada_en": "2026-05-11T21:33:11.091Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 83,
+  "fields": {
+    "sesion": 13,
+    "grupo": 36,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-05-11T21:33:15.499Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 84,
+  "fields": {
+    "sesion": 13,
+    "grupo": 36,
+    "palabra": "CLIENTE",
+    "creada_en": "2026-05-11T21:33:17.210Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 85,
+  "fields": {
+    "sesion": 13,
+    "grupo": 36,
+    "palabra": "IMPACTO",
+    "creada_en": "2026-05-11T21:33:18.747Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 86,
+  "fields": {
+    "sesion": 13,
+    "grupo": 36,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-05-11T21:33:22.290Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 87,
+  "fields": {
+    "sesion": 13,
+    "grupo": 36,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-05-11T21:33:24.520Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 88,
+  "fields": {
+    "sesion": 13,
+    "grupo": 36,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-05-11T21:33:26.679Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 89,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "palabra": "IDEA",
+    "creada_en": "2026-05-11T21:34:00.810Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 90,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "palabra": "VALOR",
+    "creada_en": "2026-05-11T23:10:58.479Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 91,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-05-11T23:11:03.957Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 92,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "palabra": "IMPACTO",
+    "creada_en": "2026-05-11T23:11:15.992Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 93,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "palabra": "CLIENTE",
+    "creada_en": "2026-05-11T23:11:20.106Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 94,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-05-11T23:12:19.455Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 95,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-05-11T23:12:23.000Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 96,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-05-11T23:12:25.543Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 97,
+  "fields": {
+    "sesion": 14,
+    "grupo": 37,
+    "palabra": "IDEA",
+    "creada_en": "2026-05-12T05:11:13.602Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 98,
+  "fields": {
+    "sesion": 14,
+    "grupo": 37,
+    "palabra": "CLIENTE",
+    "creada_en": "2026-05-12T05:11:24.601Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 99,
+  "fields": {
+    "sesion": 14,
+    "grupo": 37,
+    "palabra": "IMPACTO",
+    "creada_en": "2026-05-12T05:11:31.567Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 100,
+  "fields": {
+    "sesion": 14,
+    "grupo": 37,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-05-12T05:11:34.431Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 101,
+  "fields": {
+    "sesion": 14,
+    "grupo": 37,
+    "palabra": "VALOR",
+    "creada_en": "2026-05-12T05:11:40.174Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 102,
+  "fields": {
+    "sesion": 14,
+    "grupo": 37,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-05-12T05:11:41.827Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 103,
+  "fields": {
+    "sesion": 14,
+    "grupo": 37,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-05-12T05:11:45.185Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 104,
+  "fields": {
+    "sesion": 14,
+    "grupo": 37,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-05-12T05:11:47.874Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 105,
+  "fields": {
+    "sesion": 14,
+    "grupo": 38,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-05-12T05:12:00.797Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 106,
+  "fields": {
+    "sesion": 14,
+    "grupo": 38,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-05-12T05:12:11.442Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 107,
+  "fields": {
+    "sesion": 15,
+    "grupo": 39,
+    "palabra": "IDEA",
+    "creada_en": "2026-05-12T07:06:57.022Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 108,
+  "fields": {
+    "sesion": 15,
+    "grupo": 40,
+    "palabra": "CLIENTE",
+    "creada_en": "2026-05-12T07:07:02.950Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 109,
+  "fields": {
+    "sesion": 15,
+    "grupo": 40,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-05-12T07:07:10.692Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 110,
+  "fields": {
+    "sesion": 15,
+    "grupo": 40,
+    "palabra": "IDEA",
+    "creada_en": "2026-05-12T07:07:15.230Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 111,
+  "fields": {
+    "sesion": 15,
+    "grupo": 40,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-05-12T07:07:21.221Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 112,
+  "fields": {
+    "sesion": 15,
+    "grupo": 40,
+    "palabra": "VALOR",
+    "creada_en": "2026-05-12T07:07:24.199Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 113,
+  "fields": {
+    "sesion": 15,
+    "grupo": 40,
+    "palabra": "IMPACTO",
+    "creada_en": "2026-05-12T07:07:26.263Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 114,
+  "fields": {
+    "sesion": 15,
+    "grupo": 40,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-05-12T07:07:28.930Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 115,
+  "fields": {
+    "sesion": 15,
+    "grupo": 40,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-05-12T07:07:30.908Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 116,
+  "fields": {
+    "sesion": 15,
+    "grupo": 39,
+    "palabra": "LIDERAZGO",
+    "creada_en": "2026-05-12T07:07:38.895Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 117,
+  "fields": {
+    "sesion": 15,
+    "grupo": 39,
+    "palabra": "CLIENTE",
+    "creada_en": "2026-05-12T07:07:45.261Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 118,
+  "fields": {
+    "sesion": 15,
+    "grupo": 39,
+    "palabra": "EQUIPO",
+    "creada_en": "2026-05-12T07:07:48.133Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 119,
+  "fields": {
+    "sesion": 15,
+    "grupo": 39,
+    "palabra": "NEGOCIO",
+    "creada_en": "2026-05-12T07:07:50.804Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 120,
+  "fields": {
+    "sesion": 15,
+    "grupo": 39,
+    "palabra": "CREATIVIDAD",
+    "creada_en": "2026-05-12T07:07:53.389Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 121,
+  "fields": {
+    "sesion": 15,
+    "grupo": 39,
+    "palabra": "VALOR",
+    "creada_en": "2026-05-12T07:07:57.906Z"
+  }
+},
+{
+  "model": "juego.palabrasopaencontrada",
+  "pk": 122,
+  "fields": {
+    "sesion": 15,
+    "grupo": 39,
+    "palabra": "IMPACTO",
+    "creada_en": "2026-05-12T07:08:01.642Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 1,
+  "fields": {
+    "sesion": 9,
+    "grupo": 27,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Gustos",
+    "texto": "no se",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-11T06:02:18.180Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 2,
+  "fields": {
+    "sesion": 9,
+    "grupo": 27,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Emociones",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-11T06:02:18.181Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 3,
+  "fields": {
+    "sesion": 9,
+    "grupo": 27,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Obstáculos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-11T06:02:18.182Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 4,
+  "fields": {
+    "sesion": 9,
+    "grupo": 27,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Entorno",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-11T06:02:18.183Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 5,
+  "fields": {
+    "sesion": 9,
+    "grupo": 27,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Hábitos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-11T06:02:18.184Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 6,
+  "fields": {
+    "sesion": 9,
+    "grupo": 27,
+    "desafio": 3,
+    "tipo": "otro",
+    "titulo": "Otro 1",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-11T06:02:18.185Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 7,
+  "fields": {
+    "sesion": 9,
+    "grupo": 27,
+    "desafio": 3,
+    "tipo": "otro",
+    "titulo": "Otro 2",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-11T06:02:18.186Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 8,
+  "fields": {
+    "sesion": 9,
+    "grupo": 28,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Gustos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-11T06:02:25.034Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 9,
+  "fields": {
+    "sesion": 9,
+    "grupo": 28,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Emociones",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-11T06:02:25.036Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 10,
+  "fields": {
+    "sesion": 9,
+    "grupo": 28,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Obstáculos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-11T06:02:25.037Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 11,
+  "fields": {
+    "sesion": 9,
+    "grupo": 28,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Entorno",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-11T06:02:25.038Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 12,
+  "fields": {
+    "sesion": 9,
+    "grupo": 28,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Hábitos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-11T06:02:25.039Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 13,
+  "fields": {
+    "sesion": 9,
+    "grupo": 28,
+    "desafio": 3,
+    "tipo": "otro",
+    "titulo": "Otro 1",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-11T06:02:25.040Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 27,
+  "fields": {
+    "sesion": 13,
+    "grupo": 36,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Gustos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T01:37:21.766Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 28,
+  "fields": {
+    "sesion": 13,
+    "grupo": 36,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Emociones",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T01:37:21.768Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 29,
+  "fields": {
+    "sesion": 13,
+    "grupo": 36,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Obstáculos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T01:37:21.769Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 30,
+  "fields": {
+    "sesion": 13,
+    "grupo": 36,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Entorno",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T01:37:21.770Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 31,
+  "fields": {
+    "sesion": 13,
+    "grupo": 36,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Hábitos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T01:37:21.771Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 32,
+  "fields": {
+    "sesion": 13,
+    "grupo": 36,
+    "desafio": 3,
+    "tipo": "otro",
+    "titulo": "Otro 1",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T01:37:21.771Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 33,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Gustos",
+    "texto": "holaaaaa",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T01:37:27.064Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 34,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Emociones",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T01:37:27.065Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 35,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Obstáculos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T01:37:27.065Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 36,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Entorno",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T01:37:27.066Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 37,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Hábitos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T01:37:27.067Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 38,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "desafio": 3,
+    "tipo": "otro",
+    "titulo": "Otro 1",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T01:37:27.068Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 39,
+  "fields": {
+    "sesion": 13,
+    "grupo": 35,
+    "desafio": 3,
+    "tipo": "otro",
+    "titulo": "Otro 2",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T01:37:27.069Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 40,
+  "fields": {
+    "sesion": 14,
+    "grupo": 37,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Gustos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T05:14:07.471Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 41,
+  "fields": {
+    "sesion": 14,
+    "grupo": 37,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Emociones",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T05:14:07.473Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 42,
+  "fields": {
+    "sesion": 14,
+    "grupo": 37,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Obstáculos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T05:14:07.474Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 43,
+  "fields": {
+    "sesion": 14,
+    "grupo": 37,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Entorno",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T05:14:07.475Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 44,
+  "fields": {
+    "sesion": 14,
+    "grupo": 37,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Hábitos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T05:14:07.475Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 45,
+  "fields": {
+    "sesion": 14,
+    "grupo": 37,
+    "desafio": 3,
+    "tipo": "otro",
+    "titulo": "Otro 1",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T05:14:07.476Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 46,
+  "fields": {
+    "sesion": 14,
+    "grupo": 38,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Gustos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T05:14:09.702Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 47,
+  "fields": {
+    "sesion": 14,
+    "grupo": 38,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Emociones",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T05:14:09.703Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 48,
+  "fields": {
+    "sesion": 14,
+    "grupo": 38,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Obstáculos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T05:14:09.703Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 49,
+  "fields": {
+    "sesion": 14,
+    "grupo": 38,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Entorno",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T05:14:09.703Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 50,
+  "fields": {
+    "sesion": 14,
+    "grupo": 38,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Hábitos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T05:14:09.704Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 51,
+  "fields": {
+    "sesion": 14,
+    "grupo": 38,
+    "desafio": 3,
+    "tipo": "otro",
+    "titulo": "Otro 1",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T05:14:09.705Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 52,
+  "fields": {
+    "sesion": 15,
+    "grupo": 39,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Gustos",
+    "texto": "holaaa",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T07:10:21.562Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 53,
+  "fields": {
+    "sesion": 15,
+    "grupo": 39,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Emociones",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T07:10:21.563Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 54,
+  "fields": {
+    "sesion": 15,
+    "grupo": 39,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Obstáculos",
+    "texto": "esto es una prueba solamente",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T07:10:21.564Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 55,
+  "fields": {
+    "sesion": 15,
+    "grupo": 39,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Entorno",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T07:10:21.564Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 56,
+  "fields": {
+    "sesion": 15,
+    "grupo": 39,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Hábitos",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T07:10:21.565Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 57,
+  "fields": {
+    "sesion": 15,
+    "grupo": 39,
+    "desafio": 3,
+    "tipo": "otro",
+    "titulo": "Otro 1",
+    "texto": "",
+    "relato": "",
+    "link": "",
+    "creada_en": "2026-05-12T07:10:21.565Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 58,
+  "fields": {
+    "sesion": 15,
+    "grupo": 40,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Gustos",
+    "texto": "",
+    "relato": "es un relato muy breve",
+    "link": "",
+    "creada_en": "2026-05-12T07:10:24.067Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 59,
+  "fields": {
+    "sesion": 15,
+    "grupo": 40,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Emociones",
+    "texto": "",
+    "relato": "es un relato muy breve",
+    "link": "",
+    "creada_en": "2026-05-12T07:10:24.069Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 60,
+  "fields": {
+    "sesion": 15,
+    "grupo": 40,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Obstáculos",
+    "texto": "",
+    "relato": "es un relato muy breve",
+    "link": "",
+    "creada_en": "2026-05-12T07:10:24.070Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 61,
+  "fields": {
+    "sesion": 15,
+    "grupo": 40,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Entorno",
+    "texto": "",
+    "relato": "es un relato muy breve",
+    "link": "",
+    "creada_en": "2026-05-12T07:10:24.071Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 62,
+  "fields": {
+    "sesion": 15,
+    "grupo": 40,
+    "desafio": 3,
+    "tipo": "base",
+    "titulo": "Hábitos",
+    "texto": "",
+    "relato": "es un relato muy breve",
+    "link": "",
+    "creada_en": "2026-05-12T07:10:24.072Z"
+  }
+},
+{
+  "model": "juego.bubblemaprespuesta",
+  "pk": 63,
+  "fields": {
+    "sesion": 15,
+    "grupo": 40,
+    "desafio": 3,
+    "tipo": "otro",
+    "titulo": "Otro 1",
+    "texto": "",
+    "relato": "es un relato muy breve",
+    "link": "",
+    "creada_en": "2026-05-12T07:10:24.072Z"
+  }
+},
+{
+  "model": "juego.ruletalegoopcion",
+  "pk": 1,
+  "fields": {
+    "codigo": "1",
+    "emoji": ":)",
+    "titulo": "1",
+    "descripcion": "ejemplo",
+    "tokens": 2,
+    "porcentaje": 20,
+    "activa": true,
+    "orden": 1
+  }
+},
+{
+  "model": "juego.ruletalegoopcion",
+  "pk": 2,
+  "fields": {
+    "codigo": "2",
+    "emoji": ":(",
+    "titulo": "2",
+    "descripcion": "ejemplo 2",
+    "tokens": -2,
+    "porcentaje": 40,
+    "activa": true,
+    "orden": 2
+  }
+},
+{
+  "model": "juego.ruletalegoopcion",
+  "pk": 3,
+  "fields": {
+    "codigo": "3",
+    "emoji": ":3",
+    "titulo": "3",
+    "descripcion": "hola",
+    "tokens": 2,
+    "porcentaje": 40,
+    "activa": true,
+    "orden": 3
+  }
+}
+]

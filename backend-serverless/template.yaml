@@ -27,13 +27,6 @@ Parameters:
     Default: profe123
     Description: Clave temporal de acceso del profesor.
 
-  DynamoDbEndpointLocal:
-    Type: String
-    Default: ""
-    Description: >
-      Endpoint de DynamoDB local (solo para sam local). Vacío en AWS real,
-      donde el SDK usa el endpoint real de DynamoDB automáticamente.
-
 Globals:
   Function:
     Runtime: nodejs22.x
@@ -49,7 +42,6 @@ Globals:
         DURACION_TOKEN_SEGUNDOS: "28800"
         ORIGEN_CORS: !Ref OrigenCors
         ENTORNO: !Ref Entorno
-        DYNAMODB_ENDPOINT: !Ref DynamoDbEndpointLocal
 
   HttpApi:
     CorsConfiguration:
@@ -113,7 +105,7 @@ Resources:
     Properties:
       CodeUri: .
       Handler: src/acceso/api.manejador
-      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Role: arn:aws:iam::876388743639:role/LabRole
       Events:
         Ingresar:
           Type: HttpApi
@@ -138,7 +130,7 @@ Resources:
     Properties:
       CodeUri: .
       Handler: src/profesor/api.manejador
-      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Role: arn:aws:iam::876388743639:role/LabRole
       Events:
         IngresarProfesor:
           Type: HttpApi
@@ -187,7 +179,7 @@ Resources:
     Properties:
       CodeUri: .
       Handler: src/sesiones/api.manejador
-      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Role: arn:aws:iam::876388743639:role/LabRole
       Events:
         ObtenerSesionActual:
           Type: HttpApi
@@ -212,7 +204,7 @@ Resources:
     Properties:
       CodeUri: .
       Handler: src/fase1/api.manejador
-      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Role: arn:aws:iam::876388743639:role/LabRole
       Events:
         EstadoFase1:
           Type: HttpApi
@@ -279,7 +271,7 @@ Resources:
     Properties:
       CodeUri: .
       Handler: src/fase2/api.manejador
-      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Role: arn:aws:iam::876388743639:role/LabRole
       Events:
         EstadoFase2:
           Type: HttpApi
@@ -346,7 +338,7 @@ Resources:
     Properties:
       CodeUri: .
       Handler: src/fase3/api.manejador
-      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
+      Role: arn:aws:iam::876388743639:role/LabRole
       Events:
         EstadoFase3:
           Type: HttpApi
@@ -395,91 +387,6 @@ Resources:
       BuildProperties:
         EntryPoints:
           - src/fase3/api.ts
-        Bundle: true
-        Minify: false
-        Sourcemap: true
-        Target: es2022
-        Platform: node
-        Format: cjs
-  FuncionFase4:
-    Type: AWS::Serverless::Function
-    Properties:
-      CodeUri: .
-      Handler: src/fase4/api.manejador
-      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
-      Events:
-        EstadoFase4:
-          Type: HttpApi
-          Properties:
-            ApiId: !Ref ApiBackend
-            Path: /api/fase4/estado
-            Method: GET
-        ListoFase4:
-          Type: HttpApi
-          Properties:
-            ApiId: !Ref ApiBackend
-            Path: /api/fase4/listo
-            Method: POST
-        GuardarPitchFase4:
-          Type: HttpApi
-          Properties:
-            ApiId: !Ref ApiBackend
-            Path: /api/fase4/pitch/guardar
-            Method: POST
-        IniciarPitchFase4:
-          Type: HttpApi
-          Properties:
-            ApiId: !Ref ApiBackend
-            Path: /api/fase4/pitch/iniciar
-            Method: POST
-    Metadata:
-      BuildMethod: esbuild
-      BuildProperties:
-        EntryPoints:
-          - src/fase4/api.ts
-        Bundle: true
-        Minify: false
-        Sourcemap: true
-        Target: es2022
-        Platform: node
-        Format: cjs
-
-  FuncionFase5:
-    Type: AWS::Serverless::Function
-    Properties:
-      CodeUri: .
-      Handler: src/fase5/api.manejador
-      Role: !Sub "arn:aws:iam::${AWS::AccountId}:role/LabRole"
-      Events:
-        EstadoFase5:
-          Type: HttpApi
-          Properties:
-            ApiId: !Ref ApiBackend
-            Path: /api/fase5/estado
-            Method: GET
-        EvaluarFase5:
-          Type: HttpApi
-          Properties:
-            ApiId: !Ref ApiBackend
-            Path: /api/fase5/evaluar
-            Method: POST
-        RankingFase5:
-          Type: HttpApi
-          Properties:
-            ApiId: !Ref ApiBackend
-            Path: /api/fase5/ranking
-            Method: GET
-        RankingListoFase5:
-          Type: HttpApi
-          Properties:
-            ApiId: !Ref ApiBackend
-            Path: /api/fase5/ranking/listo
-            Method: POST
-    Metadata:
-      BuildMethod: esbuild
-      BuildProperties:
-        EntryPoints:
-          - src/fase5/api.ts
         Bundle: true
         Minify: false
         Sourcemap: true
