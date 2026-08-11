@@ -1,4 +1,4 @@
-const API_URL = "https://wpds72sr2j.execute-api.us-east-1.amazonaws.com";
+const API_URL = "";
 
 async function llamarApi(ruta, opciones = {}) {
   const token = localStorage.getItem("tokenAcceso");
